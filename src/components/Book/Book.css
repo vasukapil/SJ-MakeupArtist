@@ -10,24 +10,31 @@ td {
   text-align: center;
 
   padding: 25px;
-  font-size: 22px;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
   
   
   
   
 }
 
-table td a{
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 20px;
-    background-color: rgba(116, 113, 113, 1);
-    margin-top: 15px;
+td a{
+  width:150px;
+  height: 40px;
+  background: #747171;
+border-radius: 20px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+color: #fff !important;
+padding: 10px 28px;
 
-    
-
-    
 }
+
 .space{
-    height:550px;
+  margin-left: 240px;
 }
+

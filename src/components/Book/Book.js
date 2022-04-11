@@ -12,7 +12,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Book = () => {
   return (
-    <div className="contain">
+  
     <Accordion
     sx={{
        
@@ -20,6 +20,8 @@ const Book = () => {
         border:"none ",
         borderBottom:"1px solid gray",
         boxShadow:"none",
+        width:"100vw",
+        textAlign:"center"
 
       }}
     >
@@ -42,8 +44,8 @@ expandIcon={<ExpandMoreIcon />}
               <tr>
                   <td>Sohni Juneja</td>
                   <td>₹ 40,000</td>
-                  <td><a>Book Now</a></td>
-                  <td><a>Call Now</a></td>
+                  <td><a className="White">Book Now</a></td>
+                  <td><a className="White">Call Now</a></td>
               </tr>
 
               <tr>
@@ -65,8 +67,6 @@ expandIcon={<ExpandMoreIcon />}
       </AccordionDetails>
     </Accordion>
     
-    
-  </div>
   )
 }
 

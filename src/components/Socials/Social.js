@@ -24,6 +24,18 @@ div img{
     display:block;
 
     
+
+}
+
+div{
+    margin-top:90px;
+}
+div img:last-child{
+    margin-bottom:70px;
+}
+
+.insta{
+    margin-bottom:75px;
 }
 
 @media (max-width: 768px){
@@ -60,7 +72,7 @@ const Social = () => {
   return (
     <SocialMedia>
         <Logo>
-                <img src="./Images/image 18.png"></img>
+                <img className="insta" src="./Images/image 18.png"></img>
                 <div>
                     <img src="./Images/FOLLOW US ON.png"></img>
                     <img src="./Images/image 19.png"></img>

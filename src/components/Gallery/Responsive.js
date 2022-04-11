@@ -1,6 +1,13 @@
+import { Accordion } from "@mui/material";
 import React, { Component } from "react";
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Slider from "react-slick";
 import './Slider.css'
+
+
 
 export default class Responsive extends Component {
   render() {
@@ -39,9 +46,39 @@ export default class Responsive extends Component {
       ]
     };
     return (
-      <div>
+
+
+      <Accordion style={{border:"none"}}
+    sx={{
+       
+        // display:"none",
+        border:"none ",
+        borderBottom:"1px solid gray",
+        boxShadow:"none",
+        width:"100vw",
+        textAlign:"center",
+
+
+      }}
+    >
+      <AccordionSummary sx={{
+    
+    // display:"none",
+    color:"gray",
+    
+boxShadow:"none",
+}}
+expandIcon={<ExpandMoreIcon />}
+        aria-controls="panel1a-content"
+        id="panel1a-header"
+      >
+          
+        <Typography  style={{ fontWeight: 500 , color:"rgba(70, 67, 67, 1)"}} sx={{ mx: "auto"  }} className="type" align="center" variant="h5">SOHNI JUNEJA SCHOOL OF MAKEUP</Typography>
+      </AccordionSummary >
+      <AccordionDetails className="space"></AccordionDetails>
+        
         <Slider className="slider" {...settings}>
-          <div>
+          <div className="sliderGallery">
             <h3>
                 <img src="./Images/Rectangle 57.png"></img>
             </h3>
@@ -68,7 +105,7 @@ export default class Responsive extends Component {
             <h3><img src="./Images/Rectangle 57.png"></img></h3>
           </div>
         </Slider>
-      </div>
+      </Accordion>
     );
   }
 }

@@ -20,7 +20,7 @@ import Modal from './components/Modal/Modal'
 import CarouselUse from './components/Carousel/CarouselUse'
 import Responsive from './components/Gallery/Responsive'
 import Book from './components/Book/Book'
-import CustomArrows from './components/Slick/CustomArrows'
+import SliderSync from './components/SliderSync/SliderSync'
 
 
 
@@ -39,7 +39,8 @@ const Home = () => {
         <Accolades/>
         <Accordian/>
         <Modal/>
-        <CustomArrows/>
+        <SliderSync/>
+
     
 
        

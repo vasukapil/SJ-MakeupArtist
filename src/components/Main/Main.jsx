@@ -61,8 +61,8 @@ article{
 
     .White{
         color:#fff;
-        height:24px;
         text-align:center;
+        padding-top:5px;
     }
     
 

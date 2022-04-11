@@ -1,3 +1,18 @@
 .slider{
     width: 100vw;
 }
+
+.sliderGallery img{
+
+    width: 274.27px;
+    height: 353.05px;
+
+}
+.space{
+    width: 1142px;
+}
+.sliderGallery  img:first-child{
+
+    margin-left: 50px;
+   
+}
