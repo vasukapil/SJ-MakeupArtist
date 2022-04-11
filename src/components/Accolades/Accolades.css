@@ -1,0 +1,10 @@
+.Accolades h2{
+    text-align: center;
+    font-size:40px;
+    padding-bottom: 45px;
+}
+.Accolades ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

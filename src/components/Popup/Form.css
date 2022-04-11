@@ -1,0 +1,7 @@
+.container{
+    display: flex;
+}
+
+input[type=radio]{
+    font-size: 20px;
+}

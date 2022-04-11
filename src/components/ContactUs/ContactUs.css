@@ -1,0 +1,157 @@
+.Contact-Container h2{
+
+    font-size: 24px;
+    margin-bottom: 70px;
+
+}
+.Contact-Container p{
+    text-align: center;
+    font-size: 20px;
+}
+.pOne,.pTwo,.pThree{
+    height: 30px;
+
+}
+.pOne{
+    width: 458px;
+    margin-left: 170px;
+}
+.pTwo{
+    width: 519px;
+    margin-left: 150px;
+}
+.pThree{
+    width: 741px;
+    margin-left: 62px;
+}
+.ContactUs{
+    text-align: center;
+}
+.Contact-info{
+    width: 800px;
+    margin-top: 55px;
+    margin-left: 275px;
+
+
+
+}
+.Contact-info span{
+    font-weight: 600;
+    margin-bottom: 15px;
+    
+}
+.Contact-info div{
+    display: inline-block;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+}
+.ContactUs{
+    text-align: center;
+   
+}
+.p-wrapper{
+    width: 800px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+}
+.Address{
+    margin-top: 60px;
+}
+.Address span{
+
+    font-weight: 600;
+    margin-bottom: 50px;
+    font-size: 22px;
+    
+}
+.FAQ{
+    margin-top: 50px;
+    
+}
+
+@media only screen and (max-width: 600px){
+
+    .Contact-Container h2{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .Contact-Container{
+    font-size: 14px;
+    text-align: center;
+
+    }
+
+
+    .p-wrapper{
+        width: 100%;
+        text-align: center;
+    }
+
+    .Contact-info{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+
+    }
+    .article1 span{
+        font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+color: #464343;
+    }
+    .article1{
+       margin-left: 14em;
+    }
+    .article1 p:nth-child(2){
+        text-decoration: underline;
+        font-size: 15px;
+    }
+    .article1 p{
+        font-size: 15px;
+    
+    }
+    .Address{
+        width: 100%;
+    }
+    .Address span{
+
+        font-size: 18px;
+    }
+
+    .Address p{
+
+        font-size: 14px;
+    }
+
+    .pOne{
+        width: 100%;
+        font-size: 14px;
+        margin-left: 0;
+
+    }
+    .pTwo{
+        width: 100%;
+        font-size: 14px;
+        margin-left: 0;
+    }
+    .pThree{
+        width: 100%;
+        height: 42px;
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    .FAQ{
+
+        width: 380px;
+        margin: auto;
+    }
+
+}
+
+

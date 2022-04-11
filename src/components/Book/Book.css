@@ -1,0 +1,33 @@
+table {
+    border-collapse: separate;
+    border-spacing: 30px;
+    
+  }
+
+
+td {
+  width: 275px;
+  text-align: center;
+
+  padding: 25px;
+  font-size: 22px;
+  
+  
+  
+  
+}
+
+table td a{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(116, 113, 113, 1);
+    margin-top: 15px;
+
+    
+
+    
+}
+.space{
+    height:550px;
+}

@@ -1,0 +1,48 @@
+
+.Media-Gallery{
+    width: 100vw;
+    height: 700px;
+    margin-left: 120px;
+    margin-top: 93px;
+    margin-bottom: 120px;
+}
+.Media-Gallery img{
+    height: 228px;
+    width: 228px;
+    padding: 15px;
+}
+.Media-Container article{
+    width: 150px;
+    height: 34px;
+    font-size: 18px;
+    border-radius: 20px;
+    text-align: center;
+}
+.Media-Box .button{
+    
+    margin-left: -80px;
+    text-align: center;
+    margin-top: 85px;
+
+}
+.Media-Box h2{
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+
+    .mobile-gallery{
+        display: none;
+    }
+    .Media-Gallery img{
+        width: 130px;
+        height: 130px;
+
+    }
+    .Media-Gallery {
+        margin-left: 0;
+        margin-bottom: 0px;
+        height: 420px;
+    }
+
+}
