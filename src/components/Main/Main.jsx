@@ -21,6 +21,14 @@ const Container_main=styled.div`
 
 const Leftdetails=styled.div`
 
+width: 646px;
+height: 189px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+
 margin: auto 0;
 flex-wrap: wrap;
 text-align: left;
@@ -29,6 +37,11 @@ padding-left:2.875em;
 h1{
     font-size:3.75em;
     text-align:left;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+margin-bottom:35px;
 }
 p{
     max-width:33.75em;
@@ -45,14 +58,16 @@ article{
     margin-left:10px;
     font-size:24px;
     margin-top:3px;
+
+    .White{
+        color:#fff;
+        height:24px;
+        text-align:center;
+    }
     
 
 }
-.White{
-    color:#fff;
-    height:24px;
-    text-align:center;
-}
+
 @media (max-width: 768px) {
 
     display: none;
