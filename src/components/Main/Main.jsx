@@ -175,6 +175,17 @@ img{
 `
 const Bottomdetails=styled.div`
 
+display:flex;
+
+h2{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+text-align:center;
+margin-top:18px;
+}
+
 img:not(:first-child){
 
     height:130px;
@@ -335,10 +346,23 @@ const Main = () => {
 
         <Bottomdetails>
 
+
+            <div>
             <img src="./Images/Rectangle 68.png" alt="" />
+            <h2>Bridal Look</h2>
+            </div>
+            <div>
             <img src="./Images/Rectangle 46.png" alt="" />
+            <h2>Party Look</h2>
+            </div>
+            <div>
             <img src="./Images/Rectangle 76.png" alt="" />
+            <h2>Fashion</h2>
+            </div>
+            <div>
             <img src="./Images/Rectangle 77.png" alt="" />
+            <h2>Day Look</h2>
+            </div>
 
         </Bottomdetails>
         </Rightdetails>

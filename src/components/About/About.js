@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import "./About.css";
 
@@ -88,6 +89,8 @@ const About = () => {
           exhibit the beauty of her clients, she grasps the essence of this
           understanding.</p>
       </div>
+
+      <Footer/>
     </div>
   );
 };

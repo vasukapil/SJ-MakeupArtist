@@ -110,6 +110,8 @@ flex:1;
 
 const Testimonial = () => {
   return (
+
+    <>
     <Container>
         <Heading>Testimonials</Heading>
         <Wrapper>
@@ -128,6 +130,47 @@ const Testimonial = () => {
             </Second>
         </Wrapper>
     </Container>
+
+    <Container className="slider2">
+        <Heading>Testimonials</Heading>
+        <Wrapper>
+
+            <img className="l" src="./Images/Left.png"></img>
+            <img className="r" src="./Images/Right.png"></img>
+
+            <First><img src="./Images/Ellipse 5 (1).png"></img></First>
+            <Second><Heading className="inner">Vatsala Wilson</Heading>
+            
+            <Paragraph className="p1">I am glad that I had you as my makeup artist on our big day. Thank you so much for all your help, you are one seriously talented woman! I looked so beautiful and not to mention that makeup looked stubbing on me. 
+            </Paragraph>
+
+            <Paragraph className="p2">You made me feel so comfortable (not to forget the soft brush touch, asmr feeling), I couldn't have picked a better makeup artist.</Paragraph>
+            
+            </Second>
+        </Wrapper>
+    </Container>
+
+    <Container className="slider3">
+        <Heading>Testimonials</Heading>
+        <Wrapper>
+
+            <img className="l" src="./Images/Left.png"></img>
+            <img className="r" src="./Images/Right.png"></img>
+
+            <First><img src="./Images/Ellipse 5 (1).png"></img></First>
+            <Second><Heading className="inner">Vatsala Wilson</Heading>
+            
+            <Paragraph className="p1">I am glad that I had you as my makeup artist on our big day. Thank you so much for all your help, you are one seriously talented woman! I looked so beautiful and not to mention that makeup looked stubbing on me. 
+            </Paragraph>
+
+            <Paragraph className="p2">You made me feel so comfortable (not to forget the soft brush touch, asmr feeling), I couldn't have picked a better makeup artist.</Paragraph>
+            
+            </Second>
+        </Wrapper>
+    </Container>
+
+    </>
+
   )
 }
 

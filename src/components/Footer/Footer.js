@@ -4,11 +4,21 @@ import React from 'react'
 
 const Container = styled.div`
 
+height:360px;
+background-color:rgba(241, 241, 241, 1);
+
 h1{
     font-size:24px;
     text-align:center;
-    margin-top:50px;
+    margin-top:80px;
+    padding:10px;
 
+}
+
+.footer{
+
+    margin-left:620px;
+    margin-top:29px;
 }
 
 
@@ -16,10 +26,19 @@ h1{
 `
 const Contacts=styled.div`
 
+height:100px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+justify-content:center;
+allign-items:center;
+
 span{
     margin-right:66px;
     margin-top:49px;
     font-size:20px;
+    margin-left:15px;
 }
 
 
@@ -33,8 +52,13 @@ const Wrapper=styled.div`
         justify-content:space-between;
         width:900px;
         margin:0px auto;
+        margin-bottom:52px;
         list-style:none;
         padding:10px 5px;
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
 
     }
 
@@ -42,14 +66,14 @@ const Wrapper=styled.div`
 
 const Right=styled.div`
 
-margin-left:200px;
-margin-top:-600px;
+margin-left:620px;
 margin-right:-100px;
+
 
 `
 const Content=styled.div`
 
-.Container{
+.Container2{
     display:flex;
     justify-content:center;
 }
@@ -76,7 +100,7 @@ const Footer = () => {
         </Wrapper>
         <Content>
             <div className="social-wrapper">
-        <div className="Container">
+        <div className="Container2">
         <Contacts>
             <img src="./Images/Telephone.png"></img>
             <span>+91-9999963537</span>
@@ -98,7 +122,7 @@ const Footer = () => {
            <img className="image-nav" src="./Images/Mail.png" alt="" />
            
          </Right>
-         <div>
+         <div className="footer">
              <span>copyright@sohnijuneja.com</span>
          </div>
          </div>

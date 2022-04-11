@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer/Footer'
 import Navbar from '../Navbar/Navbar'
 import './Publication.css'
 
@@ -36,6 +37,8 @@ const Publication = () => {
             <article>View More</article>
         </div>
         
+            <Footer/>
+
         </div>
   )
 }

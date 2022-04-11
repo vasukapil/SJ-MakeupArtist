@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer/Footer'
 import Navbar from '../Navbar/Navbar'
 import './Media.css'
 
@@ -50,6 +51,8 @@ export const Media = () => {
         </div>
 
         <article>View More</article>
+
+        <Footer/>
 
         
         </div>

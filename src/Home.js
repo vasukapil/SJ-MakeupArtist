@@ -40,6 +40,8 @@ const Home = () => {
         <Accordian/>
         <Modal/>
         <SliderSync/>
+        <Footer/>
+   
 
     
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import FAQ from '../FAQ/FAQ'
+import Footer from '../Footer/Footer'
 import Navbar from '../Navbar/Navbar'
 import './ContactUs.css'
 
@@ -48,6 +49,8 @@ const ContactUs = () => {
         </div>
 
         </div>
+
+        <Footer/>
         </div>
   )
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import "./Service.css";
 
@@ -90,6 +91,7 @@ appointment with Best wedding Makeup Artist in Delhi.</p>
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
     </>
   );

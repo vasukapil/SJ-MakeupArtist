@@ -23,21 +23,7 @@ export default class AsNavFor extends Component {
 
   render() {
 
-    var settings = {
-        dots: true,
-        infinite: true,
-        speed: 1000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        lazyLoad: true,
-        centerMode: true,
-        adaptiveHeight: true,
-        fade: true,
-        arrows: true,
-        autoplaySpeed: 5000,
-        className: 'slides'
-};
+
     return (
       <div>
         <h2>Slider Syncing (AsNavFor)</h2>
