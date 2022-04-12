@@ -38,8 +38,6 @@ const Home = () => {
         <Blog/>
         <Accolades/>
         <Accordian/>
-        <Modal/>
-        <SliderSync/>
         <Footer/>
    
 

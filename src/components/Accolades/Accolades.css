@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 .Accolades h2{
     text-align: center;
     font-size:40px;
     padding-bottom: 45px;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+margin-top: 86px;
 }
 .Accolades ul{
     display: flex;

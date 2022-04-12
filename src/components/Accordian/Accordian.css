@@ -4,6 +4,8 @@
 }
 h1{
     text-align: center;
+    padding-bottom: 69px;
+    padding-top: 86px;
 }
 
 @media screen and (max-width: 600px){

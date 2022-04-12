@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import './Testimonial.css'
 
 const Container=styled.div`
  
@@ -17,7 +18,10 @@ width:100vw;
 const Heading=styled.h1`
 
 text-align:center;
-font-size:40px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
 padding-top:20px;
 @media (max-width: 768px){
     font-size:30px;
@@ -77,6 +81,10 @@ line-height:21px;
 text-align:center;
 padding-right:20px;
 font-weight:400;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
 `
 const Second=styled.div`
 flex:1;

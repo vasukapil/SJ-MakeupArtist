@@ -34,7 +34,16 @@ expandIcon={<ExpandMoreIcon />}
         id="panel1a-header"
       >
           
-        <Typography align="center" variant="h5">How do I book an appointment?</Typography>
+        <Typography style={{
+
+          fontFamily: 'Poppins',
+          fontStyle:'normal',
+          fontWeight:'400',
+          fontSize:'20px',
+          color:'#464343'
+           
+        
+        }} align="center" variant="h5">How do I book an appointment?</Typography>
       </AccordionSummary >
       <AccordionDetails>
         <Typography>
@@ -59,7 +68,16 @@ boxShadow:"none",
         aria-controls="panel2a-content"
         id="panel2a-header"
       >
-        <Typography  align="center" variant="h5">How many looks are available?</Typography>
+        <Typography style={{
+
+fontFamily: 'Poppins',
+fontStyle:'normal',
+fontWeight:'400',
+fontSize:'20px',
+color:'#464343'
+ 
+
+}}  align="center" variant="h5">How many looks are available?</Typography>
       </AccordionSummary>
       <AccordionDetails>
         <Typography>
@@ -83,7 +101,16 @@ boxShadow:"none",
         aria-controls="panel3a-content"
         id="panel3a-header"
       >
-        <Typography  align="center" variant="h5">How to reschedule/ cancel?</Typography>
+        <Typography style={{
+
+fontFamily: 'Poppins',
+fontStyle:'normal',
+fontWeight:'400',
+fontSize:'20px',
+color:'#464343'
+ 
+
+}}  align="center" variant="h5">How to reschedule/ cancel?</Typography>
       </AccordionSummary>
     </Accordion>
     <Accordion sx={{
@@ -101,7 +128,16 @@ boxShadow:"none",
         aria-controls="panel1a-content"
         id="panel1a-header"
       >
-        <Typography  align="center" variant="h5">How much is the minimum advance?</Typography>
+        <Typography style={{
+
+fontFamily: 'Poppins',
+fontStyle:'normal',
+fontWeight:'400',
+fontSize:'20px',
+color:'#464343'
+ 
+
+}}  align="center" variant="h5">How much is the minimum advance?</Typography>
       </AccordionSummary>
       <AccordionDetails>
         <Typography>
@@ -125,7 +161,16 @@ boxShadow:"none",
         aria-controls="panel1a-content"
         id="panel1a-header"
       >
-        <Typography  align="right" variant="h5">Payment Methods</Typography>
+        <Typography style={{
+
+fontFamily: 'Poppins',
+fontStyle:'normal',
+fontWeight:'400',
+fontSize:'20px',
+color:'#464343'
+ 
+
+}} align="right" variant="h5">Payment Methods</Typography>
       </AccordionSummary>
       <AccordionDetails>
         <Typography>
