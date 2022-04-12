@@ -108,7 +108,7 @@ flex:1;
 }
 `
 
-const Testimonial = () => {
+const Testimonial = ({name}) => {
   return (
 
     <>

@@ -1,8 +1,32 @@
 
 
+import { Settings } from "@material-ui/icons";
 import React, { Component } from "react";
 import Slider from "react-slick";
 import './SliderSync.css'
+
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block"}}
+        onClick={onClick}
+      />
+    );
+  }
+  
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block"
+       }}
+        onClick={onClick}
+      />
+    );
+  }
 
 
 export default class AsNavFor extends Component {
@@ -23,15 +47,24 @@ export default class AsNavFor extends Component {
 
   render() {
 
+    const settings = {
+        dots: false,
+        infinite: true,
+        slidesToScroll: 1,
+        nextArrow: <SampleNextArrow className="SampleNextArrow" />,
+        prevArrow: <SamplePrevArrow className="SamplePrevArrow" />
+      };
+
 
     return (
       <div>
-        <h2>Slider Syncing (AsNavFor)</h2>
-        <h4>First Slider</h4>
-        <Slider
+    
+        <div className="sliderContainer">
+        <Slider {...settings}
           asNavFor={this.state.nav2}
           ref={slider => (this.slider1 = slider)}
         >
+
           <div className="firstimgSS">
             <img src="./Images/Rectangle 70.png" alt="" width="250px" height="auto" />
             </div>
@@ -46,28 +79,35 @@ export default class AsNavFor extends Component {
             </div>
          
         </Slider>
-        <h4>Second Slider</h4>
-        <Slider
+        </div>
+
+        <div className="img-slider-contain">
+    
+        <Slider {...Settings}
           asNavFor={this.state.nav1}
           ref={slider => (this.slider2 = slider)}
           slidesToShow={4}
           swipeToSlide={true}
           focusOnSelect={true}
-          arrows={true}
+        
+          
         >
+           
           <div className="img-slide">
-        <img src="./Images/Rectangle 68.png" alt="" width="50px" height="auto" />
+        <img src="./Images/Rectangle 78.png" alt="" width="115px" height="auto" />
         </div>
         <div className="img-slide">
-        <img src="./Images/Rectangle 46.png" alt="" width="50px" height="auto" />
+        <img src="./Images/Rectangle 46.png" alt="" width="115px" height="auto" />
         </div>
         <div className="img-slide">
-        <img src="./Images/Rectangle 76.png" alt="" width="50px" height="auto" />
+        <img src="./Images/Rectangle 76.png" alt="" width="115px" height="auto" />
         </div>
         <div className="img-slide">
-        <img src="./Images/Rectangle 77.png" alt="" width="50px" height="auto" />
+        <img src="./Images/Rectangle 77.png" alt="" width="115px" height="auto" />
         </div>
+        
         </Slider>
+        </div>
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import SliderSync from '../SliderSync/SliderSync'
 import './Main.css'
 
 
@@ -328,44 +329,13 @@ const Main = () => {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec posuere mauris, ut lacinia lectus. Donec ut enim mauris. Sed molestie Lorem ipsum dolor sit amet, </p>
          <article><p className="White">Read More</p></article>
         </Leftdetails>
-        <Rightdetails>
-            <Imgdiv>
-            <div className="bride">
-        <img className="firstimg"src="./Images/Rectangle 70.png" alt="" />
-        <img className="firstimg-m"src="./Images/Rectangle 70.png" alt="" />
-        <img className="firstimg-m"src="./Images/Rectangle 70.png" alt="" />
+     
+
+        <div className="SliderSyncwrapper">
+
+        <SliderSync/>
+
         </div>
-        <LeftArrow>
-            <img className="lefticon"src="./Images/Left.png" alt="" />
-            
-        </LeftArrow>
-        <RightArrow>
-        <img className="righticon" src="./Images/Right.png" alt="" />
-        </RightArrow>
-          </Imgdiv>
-
-        <Bottomdetails>
-
-
-            <div>
-            <img src="./Images/Rectangle 68.png" alt="" />
-            <h2>Bridal Look</h2>
-            </div>
-            <div>
-            <img src="./Images/Rectangle 46.png" alt="" />
-            <h2>Party Look</h2>
-            </div>
-            <div>
-            <img src="./Images/Rectangle 76.png" alt="" />
-            <h2>Fashion</h2>
-            </div>
-            <div>
-            <img src="./Images/Rectangle 77.png" alt="" />
-            <h2>Day Look</h2>
-            </div>
-
-        </Bottomdetails>
-        </Rightdetails>
 
 
 

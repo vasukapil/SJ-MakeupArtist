@@ -1,23 +1,98 @@
 
 
-.img-slide{
-    margin:10px;
-    padding: 2%;
-    width: 600px;
-    position: relative;
-    text-align: center;
-}
+
 .slick-track{
     display: flex;
 
 }
 .slick-slide{
-    display: flex;
-    align-items: center;
+    width: 50px;
 }
 .img-slide{
-    width: 50px;
+    margin-left: 10px;
 
 }
+.img-slider-contain .slick-slide{
+    width: auto !important;
+    
+   
+}
+.slick-prev:before{
+    content: none !important;
+}
+.img-slider-contain{
+    margin-left:60px;
+}
+.sliderContainer{
+    width: 500px;
+    margin-left: 70px;
+}
+.firstimgSS img{
+    width: 500px;
+    height: 562px;
+}
 
-  
+.slick-arrow.slick-prev{
+    left:-12px;
+    z-index: 1;
+}
+
+.slick-arrow.slick-next{
+    right: -13px;
+}
+
+.img-slider-contain .slick-current{
+    border:2px solid red;
+   padding-right: 2px;
+}
+
+.img-slider-contain img{
+    margin-top:4px;
+    margin-right: 4px;
+}
+.slick-arrow.slick-next{
+ 
+
+    height:20px;
+width:10px;
+border:2px solid black;
+border-radius:10px;
+padding: 20px;
+position:absolute;
+top:50%;
+right:-1em;
+font-size: 20px;
+}
+
+.slick-arrow.slick-next{
+    background-repeat: no-repeat;
+background-position: center;
+background-color: white;
+    background-image: url('/Users/sudhirkumar/Website/SJ makeup/public/Images/Right.png');
+height:20px;
+width:10px;
+border:2px solid black;
+border-radius:10px;
+padding: 20px;
+position:absolute;
+top:50%;
+right:-1em;
+font-size: 20px;
+}
+
+.slick-arrow.slick-prev{
+    background-repeat: no-repeat;
+background-position: center;
+background-color: white;
+    background-image: url('/Users/sudhirkumar/Website/SJ makeup/public/Images/Left.png');
+height:20px;
+width:10px;
+border:2px solid black;
+border-radius:10px;
+padding: 20px;
+position:absolute;
+top:50%;
+right:-1em;
+left:-1em;
+font-size: 20px;
+}
