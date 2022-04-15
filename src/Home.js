@@ -21,6 +21,7 @@ import CarouselUse from './components/Carousel/CarouselUse'
 import Responsive from './components/Gallery/Responsive'
 import Book from './components/Book/Book'
 import SliderSync from './components/SliderSync/SliderSync'
+import TestimonialSlider from './components/TestimonialSlider/TestimonialSlider'
 
 
 
@@ -34,12 +35,12 @@ const Home = () => {
         <Book/>
         <Responsive/>
         <Social/>
-        <Testimonial/>
+        <TestimonialSlider/>
         <Blog/>
         <Accolades/>
         <Accordian/>
         <Footer/>
-   
+        <CarouselUse/>
 
     
 

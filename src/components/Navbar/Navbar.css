@@ -4,7 +4,7 @@
 }
 .Menu li{
     display: inline;
-    padding: 10px;
+    
     border-left-style: solid;
     border-color: #909090;
     font-size: 28px;
@@ -20,6 +20,8 @@
 
     color: rgba(70, 67, 67, 1);
     text-decoration: none;
+    margin-left: 22.7px;
+
 
 }
 .linkText:hover{
@@ -39,6 +41,7 @@
 .Menu li:last-child{
     border-right-style: solid;
     border-color: #909090;
+    padding-right: 15px;
 }
 @media screen and (max-width: 480px) {
  

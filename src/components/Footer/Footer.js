@@ -1,7 +1,29 @@
 import styled from '@emotion/styled'
 import React from 'react'
 
+const MobileContainer=styled.div`
 
+.not-flex{
+    display:none;
+}
+
+@media (max-width: 768px) {
+
+    .not-flex{
+        display:block;
+        margin-top:-100px;
+        margin-left:76px;
+    }
+
+}
+
+`
+
+const OuterRight=styled.div`
+
+   
+
+`
 const Container = styled.div`
 
 height:360px;
@@ -19,7 +41,35 @@ h1{
 
     margin-left:620px;
     margin-top:29px;
+
+    @media (max-width: 768px) {
+        display:none;
+    }
 }
+
+@media (max-width: 768px) {
+
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    margin-top:60px;
+ 
+    .mb-first{
+        display:flex;
+        flex-direction:column;
+        width:50%;
+        order:2;
+    }
+    h1{
+        margin-top:0px;
+        margin-left:0;
+        font-size:16px;
+        text-align:left;
+    }
+  
+}
+
+
 
 
 
@@ -41,6 +91,11 @@ span{
     margin-left:15px;
 }
 
+@media (max-width: 768px) {
+ 
+    height:52px;
+    
+}
 
 
 `
@@ -62,12 +117,30 @@ font-size: 20px;
 
     }
 
+    @media (max-width: 768px) {
+
+        ul{
+            display:flex;
+            flex-direction:column;
+            order:2;
+            font-size:12px;
+            width:100%;
+
+ 
+    }
+
 `
 
 const Right=styled.div`
 
 margin-left:620px;
 margin-right:-100px;
+
+@media (max-width: 768px) {
+
+    display:none;
+}
+
 
 
 `
@@ -78,6 +151,34 @@ const Content=styled.div`
     justify-content:center;
 }
 
+.checkh1{
+    display:none;
+}
+
+@media (max-width: 768px) {
+        .Container2{
+            display:flex;
+            flex-direction:column;
+            width:90%;
+            order:1;
+ 
+        }
+         .checkh1{
+                display:block;
+         }
+        .Container2 span{
+            width: 139px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            margin-right:0;
+        }
+        h1{
+            font-size:16px;
+        }
+}
+
 
 `
 
@@ -85,7 +186,9 @@ const Content=styled.div`
 
 const Footer = () => {
   return (
+      <MobileContainer>
     <Container>
+        <div className="mb-first">
         <h1>Useful Links</h1>
         <Wrapper>
         <ul>
@@ -98,9 +201,12 @@ const Footer = () => {
             <li>Contact Us</li>
         </ul>
         </Wrapper>
+        </div>
+     
         <Content>
-            <div className="social-wrapper">
-        <div className="Container2">
+            <div className="check">
+                <h1 className="checkh1">Contact Us</h1>
+            <div className="Container2">
         <Contacts>
             <img src="./Images/Telephone.png"></img>
             <span>+91-9999963537</span>
@@ -114,7 +220,8 @@ const Footer = () => {
             <span>123, lane, opp. Sai Temple, Emerald Hills, Dehradun- 248001</span>
         </Contacts>
         </div>
-      
+        </div>
+
         <Right>
            <img className="image-nav" src="./Images/fb.png" alt="" />
            <img className="image-nav" src="./Images/Insta.png" alt="" />
@@ -125,9 +232,25 @@ const Footer = () => {
          <div className="footer">
              <span>copyright@sohnijuneja.com</span>
          </div>
-         </div>
+         
          </Content>
+        
+         
     </Container>
+
+    <div className="not-flex">
+        <OuterRight>
+           <img className="image-nav" src="./Images/fb.png" alt="" />
+           <img className="image-nav" src="./Images/Insta.png" alt="" />
+           <img className="image-nav" src="./Images/Link.png" alt="" />
+           <img className="image-nav" src="./Images/Mail.png" alt="" />
+           
+         </OuterRight>
+         <div className="footer">
+             <span>copyright@sohnijuneja.com</span>
+         </div>
+         </div>
+    </MobileContainer>
   )
 }
 

@@ -11,7 +11,7 @@ height:100vh;
 width:100vw;
 
 @media (max-width: 768px){
-    width:100vw;
+    width:100%;
     height:100vh;
 }
 
@@ -41,10 +41,10 @@ const First=styled.div`
    flex:1;
 
    @media (max-width: 768px){
-    width:100vw;
+    width:80%;
     justify-content:center;
     align-items:center;
-    margin-left:50px;
+ 
 
    }
    img{
@@ -139,7 +139,6 @@ font-size: 20px;
        display:none;
     }
     
-     
 
 `
 const Blog = () => {

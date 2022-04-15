@@ -13,7 +13,7 @@ const About = () => {
           <img src="./Images/Rectangle 6.png"></img>
         </div>
         <div className="Second">
-          <p>
+          <p className="numberone">
             <b>Sohni Juneja</b>, a product of <b>National Institute of Fashion Technology
             (Delhi)</b> where she got her proficiency in her passion for Designing
             and Styling. During the tenure of the course, she interned with the
@@ -21,11 +21,12 @@ const About = () => {
             label of Designer Raghavendra Rathore as a stylist and made her
             presence felt.
           </p>
-          <p>
+          <p className="numberone">
             You made me feel so comfortable (not to forget the soft brush touch,
             asmr feeling), I couldn't have picked a better makeup artist.
           </p>
-          <p>
+          <div className="hidden">
+          <p className="mob">
             Her Quest for adding more feathers to her cap and wanting to have
             the ability to give people a whole body makeover took her to Pearl
             Academy, in association with Developments at London Institute (DALI)
@@ -43,8 +44,30 @@ const About = () => {
             realms, from Smokey to well-defined, she masters it all, wanting to
             add drama to each look differently every time.
           </p>
+          </div>
         </div>
       </div>
+
+      <div className="show">
+          <p className="mob">
+            Her Quest for adding more feathers to her cap and wanting to have
+            the ability to give people a whole body makeover took her to Pearl
+            Academy, in association with Developments at London Institute (DALI)
+            at <b>London College of Fashion</b>, where she took up Fashion Media Makeup
+            and topped her Batch.
+          </p>
+          <p>
+            Emoting with the feminine desires of looking their best on their
+            special day, <b>Sohni Juneja</b> has vowed many a bride with her power to
+            transform. She understands what works on models for the runways must
+            be translated differently for the everyday woman. With her dainty,
+            yet sure strokes she can take you to ̰ completely different
+          </p>
+          <p>
+            realms, from Smokey to well-defined, she masters it all, wanting to
+            add drama to each look differently every time.
+          </p>
+          </div>
 
       <div className="outer">
         <p>

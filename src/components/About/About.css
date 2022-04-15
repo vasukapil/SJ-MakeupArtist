@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .Container{
 
     height: 100vh;
@@ -18,6 +20,9 @@
     width: 673px;
     font-size: 18px;
     margin-left: 50px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
 }
 .Container h2{
     font-size: 28px;
@@ -44,6 +49,12 @@ h3{
     width: 1200px;
     margin-bottom: 90px;
 }
+.outer p{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+
+}
 .Last{
     margin-left: 110px;
     margin-bottom: 90px;
@@ -55,6 +66,9 @@ h3{
     margin:20px 0;
 
 }
+.show{
+    display: none;
+}
 
 @media only screen and (max-width: 600px)  {
 
@@ -65,10 +79,31 @@ h3{
         margin-left:19px;
         margin-right: 18px;
     }
-    .Second p{
-        width: 210px;
-        font-size: 12px;
-        margin-left: 50px;
+   
+  p .numberone{
+
+font-size: 10px ;
+
     }
+
+    .About-Section{
+        width:100%;
+
+    }
+    .hidden{
+        display: none;
+    }
+    .show{
+        display: block;
+        font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+
+    }
+
+    
     
 }

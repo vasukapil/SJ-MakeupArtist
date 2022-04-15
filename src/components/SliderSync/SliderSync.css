@@ -32,7 +32,7 @@
     height: 562px;
 }
 
-.slick-arrow.slick-prev{
+  .slick-arrow.slick-prev{  
     left:-12px;
     z-index: 1;
 }

@@ -88,13 +88,12 @@ const Right=styled.div`
 `
 const Menu=styled.div`
 width:100%;
-margin-left:250px;
+margin-left:280px;
 margin-bottom:50px;
 
  ul li:first-child{
   font-weight: 600;
   font-size: 22px;
-  margin:19.75px;
   font-family: 'Roboto';
 font-style: normal;
 
@@ -106,7 +105,7 @@ font-style: normal;
 
   font-weight: 400;
    font-size: 18px;
-  margin:23.75px;
+  margin:13.75px;
   font-family: 'Roboto';
 font-style: normal;
 
@@ -146,8 +145,8 @@ const Navbar = () => {
             <li><NavLink className="linkText" to="/">Home</NavLink></li>
             <li><NavLink className="linkText" to="/about">About Us</NavLink></li>
             <li><NavLink className="linkText" to="/services">Services</NavLink></li>
-            <li><NavLink className="linkText" to="/publications">Media</NavLink></li>
-            <li><NavLink className="linkText" to="/media">Album</NavLink></li>
+            <li><NavLink className="linkText" to="/media">Media</NavLink></li>
+            <li><NavLink className="linkText" to="/album">Album</NavLink></li>
             <li><NavLink className="linkText" to="/blog">Blog</NavLink></li>
             <li><NavLink className="linkText" to="/contact">Contact Us</NavLink></li>
         </ul>

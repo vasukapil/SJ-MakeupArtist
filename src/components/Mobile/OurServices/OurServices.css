@@ -1,0 +1,31 @@
+.services-h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  margin:0 auto;
+}
+.text-wrap-mb{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 0.625rem;
+line-height: 0.75rem;
+text-align: center;
+width: 22.625;
+height: auto;
+}
+.s1,.s2,.s3,.s4{
+    width: 6 rem;
+    background: #FFFFFF;
+    height: auto;
+border: 1px solid #747171;
+box-sizing: border-box;
+border-radius: 20px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 0.625rem;
+line-height: 0.9375rem;
+}
