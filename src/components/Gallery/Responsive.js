@@ -61,11 +61,12 @@ export default class Responsive extends Component {
 
       }}
     >
-      <AccordionSummary sx={{
+      <AccordionSummary className="checking" sx={{
     
     // display:"none",
     color:"gray",
-    
+    border:'none',
+    outline:'none',
 boxShadow:"none",
 }}
 expandIcon={<ExpandMoreIcon />}
@@ -77,7 +78,7 @@ expandIcon={<ExpandMoreIcon />}
       </AccordionSummary >
       <AccordionDetails className="space"></AccordionDetails>
         
-        <Slider className="slider" {...settings}>
+        <Slider className="sliderWrap" {...settings}>
           <div className="sliderGallery">
             <h3>
                 <img src="./Images/Rectangle 57.png"></img>

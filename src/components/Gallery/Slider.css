@@ -1,4 +1,4 @@
-.slider{
+.sliderWrap{
     width: 100vw;
 }
 
@@ -15,4 +15,27 @@
 
     margin-left: 50px;
    
+}
+.sliderWrap .slick-prev {
+    margin-left: 50px;
+    background-color: grey;
+    
+}
+.sliderWrap .slick-next{
+    margin-right: 36px;
+    background-color: grey;
+    content: ' ';
+}
+.sliderWrap .slick-next:before{
+    display: none;
+}
+
+.checking .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root{
+margin-left: -500px;
+transform: rotate(270deg);
+}
+.checking .css-o4b71y-MuiAccordionSummary-content.Mui-expanded{
+    border-bottom: 1px solid #909090;
+
+    padding-bottom: 7px;
 }
