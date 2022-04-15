@@ -49,6 +49,7 @@ div img:last-child{
 const Gallery=styled.div`
 
 height: 45.313em;
+margin-bottom:6rem;
 
 img{
     height:430px:
