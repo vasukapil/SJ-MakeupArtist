@@ -3,6 +3,7 @@ import Testimonial from '../Testimonial/Testimonial'
 
 import React, { Component } from "react";
 import Slider from "react-slick";
+import './TestimonialSlider.css'
 
 export default class SimpleSlider extends Component {
   render() {

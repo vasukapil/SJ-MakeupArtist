@@ -118,6 +118,8 @@ const Third=styled.div`
 `
 const View=styled.div`
 
+margin:auto;
+
    margin-top:25px;
   text-align:center;
   border: 1px solid;
@@ -125,7 +127,6 @@ const View=styled.div`
   background-color:rgba(116, 113, 113, 1);
   color:#fff;
   width: 9em;
-  margin:auto;
   font-size:20px;
   padding:8px;
   margin-top:48px;

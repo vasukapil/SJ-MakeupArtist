@@ -13,14 +13,15 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const Book = () => {
   return (
   
-    <Accordion defaultActiveKey={['0']} alwaysOpen
+    <Accordion className="toastwrap" defaultActiveKey={['0']} alwaysOpen
     sx={{
        
         // display:"none",
         border:"none ",
         borderTop:"none",
-        borderBottom:"1px solid gray",
+        borderBottom:"none",
         boxShadow:"none",
+        outline:"none",
         width:"100vw",
         textAlign:"center"
 
@@ -40,7 +41,7 @@ expandIcon={<ExpandMoreIcon />}
           
         <Typography  style={{ fontWeight: 500 , color:"rgba(70, 67, 67, 1)"}} sx={{ mx: "auto"  }} className="type" align="center" variant="h5">BOOK SERVICES</Typography>
       </AccordionSummary >
-      <AccordionDetails className="space" >
+      <AccordionDetails className="space2" >
       <table>
               <tr>
                   <td>Sohni Juneja</td>

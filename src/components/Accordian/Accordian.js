@@ -9,10 +9,12 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 const Accordian = () => {
+ 
+
   return (
     <div className="contain">
         <h1>FAQ'S</h1>
-    <Accordion
+    <Accordion 
     sx={{
        
         // display:"none",

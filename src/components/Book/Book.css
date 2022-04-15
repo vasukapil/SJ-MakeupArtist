@@ -36,7 +36,19 @@ padding: 10px 28px;
 
 }
 
-.space{
+.space2{
   margin-left: 240px;
 }
 
+.toastwrap .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root{
+  margin-left: -590px;
+transform: rotate(270deg);
+}
+ .MuiAccordionSummary-expandIconWrapper.Mui-expanded.css-yw020d-MuiAccordionSummary-expandIconWrapper{
+  transform: rotate(360deg);
+  
+}
+.MuiAccordionSummary-content.Mui-expanded.MuiAccordionSummary-contentGutters.css-o4b71y-MuiAccordionSummary-content{
+  border-bottom: 1px solid;
+  padding-bottom: 7px;
+}

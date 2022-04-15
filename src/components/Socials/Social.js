@@ -5,7 +5,7 @@ const SocialMedia=styled.div`
 
 height:100%;
 width:100%;
-margin-top:170px;
+margin-top: 2rem;
 
 
 @media (max-width: 768px){

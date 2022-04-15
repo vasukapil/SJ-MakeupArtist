@@ -42,8 +42,10 @@
 }
 
 .img-slider-contain .slick-current{
-    border:2px solid red;
+    border:3px solid rgba(70, 67, 67, 1);
+    padding-top: 2px;
    padding-right: 2px;
+   transform: translate(1px);
 }
 
 .img-slider-contain img{
@@ -95,4 +97,20 @@ top:50%;
 right:-1em;
 left:-1em;
 font-size: 20px;
+}
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    color: none;
+outline: none; 
+outline-color: initial;
+    outline-style: none;
+    outline-width: initial;
+background: none;
+background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+   
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
 }
