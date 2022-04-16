@@ -48,20 +48,39 @@ div img:last-child{
 `
 const Gallery=styled.div`
 
+display:flex;
+justfy-content:space-between;
+align-items:center;
+width:100%;
+
 height: 45.313em;
 margin-bottom:6rem;
+margin-left:3%;
 
-img{
-    height:430px:
-    width: 430px;
-    padding-right:10px;
+.imgone{
+    flex:1;
+    width:50%;
+    justfy-content:center;
+align-items:center;
+text-align:center;
+
     
-}
-img:first-child{
-    margin-left:10px;
 
-    @media (max-width: 768px){
-       display:none;
+    img{
+        width:92%;
+      
+        
+    }
+
+}
+.imgtwo{
+    flex:1;
+    width:50%;
+
+    img{
+        width:92%;
+        
+
     }
 }
 
@@ -81,8 +100,13 @@ const Social = () => {
         </Logo>
 
         <Gallery>
+            <div className="imgone">
             <img src="./Images/Group 46.png"></img>
+            </div>
+            <div className="imgtwo">
             <img src="./Images/Group 47.png"></img>
+            </div>
+
         </Gallery>
 
     </SocialMedia>

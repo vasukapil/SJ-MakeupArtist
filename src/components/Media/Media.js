@@ -50,7 +50,11 @@ export const Media = () => {
 
         </div>
 
-        <article>View More</article>
+        <div className="span-contain">
+
+        <span className="viewmore">View More</span>
+
+        </div>
 
         <Footer/>
 
