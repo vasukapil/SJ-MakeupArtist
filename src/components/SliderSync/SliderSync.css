@@ -52,25 +52,13 @@
     margin-top:4px;
     margin-right: 4px;
 }
-.slick-arrow.slick-next{
- 
 
-    height:20px;
-width:10px;
-border:2px solid black;
-border-radius:10px;
-padding: 20px;
-position:absolute;
-top:50%;
-right:-1em;
-font-size: 20px;
-}
 
 .slick-arrow.slick-next{
     background-repeat: no-repeat;
 background-position: center;
 background-color: white;
-
+background-image: url('/Users/sudhirkumar/Website/SJ makeup/public/Images/Right.png');
 height:20px;
 width:10px;
 border:2px solid black;
@@ -86,7 +74,7 @@ font-size: 20px;
     background-repeat: no-repeat;
 background-position: center;
 background-color: white;
-
+background-image: url('/Users/sudhirkumar/Website/SJ makeup/public/Images/Left.png');
 height:20px;
 width:10px;
 border:2px solid black;
@@ -113,4 +101,11 @@ background-image: initial;
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
+}
+.img-slide-h2{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+text-align: center;
 }

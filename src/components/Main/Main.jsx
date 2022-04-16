@@ -3,11 +3,20 @@ import styled from "styled-components";
 import SliderSync from "../SliderSync/SliderSync";
 import "./Main.css";
 
+const Main_Boundary=styled.div`
+
+max-width:100%;
+height:100%;
+
+`
+
 const Container_main = styled.div`
 
+    width:94%;
   height: 80%;
   display: flex;
   justify-content: space-around;
+  margin:auto;
   padding-bottom: 50px;
 
   @media (max-width: 768px) {
@@ -20,6 +29,7 @@ const Container_main = styled.div`
 const Leftdetails = styled.div`
   width: 50%;
   max-height: 189px;
+  flex:1;
 
   font-family: "Montserrat";
   font-style: normal;
@@ -130,6 +140,8 @@ const Leftdetail = styled.div`
   }
 `;
 const Rightdetails = styled.div`
+
+  flex:1;
   img {
     height: 562px;
     width: 500px;
@@ -253,7 +265,7 @@ const Mobile = styled.div`
 
 const Main = () => {
   return (
-    <div>
+    <div className="Main_Boundary">
       <Container_main>
         <Leftdetails>
           <h1>Sohni Juneja</h1>
@@ -268,7 +280,7 @@ const Main = () => {
         </Leftdetails>
 
         <div className="SliderSyncwrapper">
-          <SliderSync />
+          <SliderSync  />
         </div>
       </Container_main>
 

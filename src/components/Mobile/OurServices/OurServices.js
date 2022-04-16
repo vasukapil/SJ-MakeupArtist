@@ -35,6 +35,23 @@ const OurServices = () => {
         <span className="s4">OFFERS</span>
 
       </div>
+
+      <div className="hair-box">
+
+        <div className="hair-box-image">
+          <img></img>
+        </div>
+        <div className="hair-box-para">
+        <p className="mobile-hair1">
+            As Makeup plays an important role in glamorizing the look of a person. It is always a great desire of every woman to look her best on her special day.
+            </p>
+
+            <p className="mobile-hair2">From the elaborate and traditional, to the trendy and quirky, our experienced hands can give any twist to your tresses. Sohni Juneja provides hair style & hair extension service from eccentric to knotty, to cultural and with latest tradition, you can get adorable look so that every eye can appreciate your look on the big day.</p>
+
+           
+        </div>
+
+      </div>
     </div>
   );
 };
