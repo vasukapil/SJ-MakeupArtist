@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import Navbar from '../Navbar/Navbar'
 import './Blog.css'
-
+import Slider from "react-slick";
+import './Blog.css'
 
 
 const Container=styled.div`
@@ -12,7 +13,26 @@ width:100vw;
 
 @media (max-width: 768px){
     width:100%;
-    height:100vh;
+    margin-top:50px;
+height:auto;
+}
+@media(max-width:600px) {
+    .slick-next::after {
+        right: 5px;
+        content: ">";
+        top: 30%;
+        color: black;
+        font-size: 32px;
+        font-weight: bolder;
+        font-family: monospace;
+        position: absolute;
+        width: 25px;
+        z-index: 9999999;
+        height: 25px;
+        }
+    .slick-next {
+        background: red;
+    }
 }
 
 `
@@ -24,9 +44,10 @@ justify-content:space-around;
 
 @media (max-width: 768px){
     width:100vw;
-    height:100vh;
+    // height:100vh;
     margin:auto;
-
+    padding: 12px;
+}
 
 
 
@@ -36,6 +57,11 @@ const Heading=styled.h1`
   text-align : center;
   margin-top:20px;
   font-size: 40px;
+  @media (max-width: 768px){
+    font-size:25px;
+    padding:0;
+    margin-bottom:20px;
+   }
 `
 const First=styled.div`
    flex:1;
@@ -57,22 +83,31 @@ const First=styled.div`
    p{
     margin-left:30px;
    }
-   .p1{
-
-    @media (max-width: 768px){
-
+   
+   @media (max-width: 768px){
+    width: 100%;
+    display: inline-block;
+    padding: 12px;
+        .p1{
         font-size:15px;
-        width:390px;
-        text-align:center;
-
+        text-align : center;
+        }
+        img{
+            width:95%;
+            height:auto;
+            margin-left:0;
+            margin-top:0px;
+            margin-left:2.5%;
+     
+        }
+        .p2,.p3{
+            display:none;
+        }
 
     }
 
-   }
-   .p2,.p3{
-    @media (max-width: 768px){
-       display:none;
-    }
+   .p2,.p3,.p1{
+       margin-left:3%;
     }
 
 `
@@ -84,6 +119,9 @@ margin-top:40px;
 }
 @media (max-width: 768px){
     display:none;
+    width: 100%;
+    display: inline-block;
+    padding: 12px;
 }
 .p2,.p3{
 @media (max-width: 768px){
@@ -94,18 +132,23 @@ p{
     margin-left:30px;
 }
    flex:1;
+   @media (max-width: 768px){
+    img{
+        margin-left:0px;
+        margin-top:0px;
+       }
+ }
 `
 const Third=styled.div`
 
    flex:1;
 
-   @media (max-width: 768px){
-    display:none;
- }
+ 
 
  .p2,.p3{
     @media (max-width: 768px){
        display:none;
+       
     }
     }
    img{
@@ -115,6 +158,15 @@ const Third=styled.div`
    p{
     margin-left:30px;
    }
+   @media (max-width: 768px){
+    width: 100%;
+    display: inline-block;
+    padding: 12px;
+    img{
+        margin-left:0px;
+        margin-top:0px;
+       }
+ }
 `
 const View=styled.div`
 
@@ -143,10 +195,45 @@ font-size: 20px;
 
 `
 const Blog = () => {
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        initialSlide: 0,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              initialSlide: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      };
   return (
     <Container>
         <Heading>Blog</Heading>
-        <Wrapper>
+        <Wrapper className="sllAr">
+        <Slider className="sliderWrap sliderWrapAr" {...settings}>
 
             <First>
                 <img src="./Images/Rectangle 17.png"></img>
@@ -166,6 +253,8 @@ const Blog = () => {
                 <p className="p2">By Sohni- June 30, 2021</p>
                 <p className="p3">Read More</p>
             </Third>
+        </Slider>
+
         </Wrapper>
         <View>
             View More

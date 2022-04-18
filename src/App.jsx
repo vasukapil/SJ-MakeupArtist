@@ -21,9 +21,6 @@ function App() {
         <Route path="/media" element={<Publication/>}/>
         <Route path="/album" element={<Media/>}/>
         <Route path="/blog" element={<Blog/>}/>
-        
-
-        
       </Routes>
          
     </Router>
@@ -31,3 +28,6 @@ function App() {
 }
 
 export default App;
+
+
+// testing
