@@ -1,21 +1,21 @@
-.contain{
+.contain {
     width: 900px;
     margin: auto;
 }
-h1{
+
+h1 {
     text-align: center;
     padding-bottom: 69px;
     padding-top: 86px;
 }
 
-@media screen and (max-width: 600px){
-
-    .contain{
-        width:420px;
+@media screen and (max-width: 750px) {
+    .contain {
+        width: 420px;
     }
-    h1{
-        font-size: 20px;
-        
+    .contain>h1 {
+        font-size: 25px;
+        padding: 0;
+        margin-top: 60px;
     }
-    
 }

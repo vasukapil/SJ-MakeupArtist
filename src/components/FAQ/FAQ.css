@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-.contain{
+.contain {
     width: 900px;
     margin: auto;
 }
-h1{
+
+h1 {
     text-align: center;
     font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
 }

@@ -9,6 +9,7 @@ margin-top: 2rem;
 
 
 @media (max-width: 768px){
+margin-top:50px;
     width:100vw;
     height:100vh;
 }
@@ -39,14 +40,29 @@ div img:last-child{
 }
 
 @media (max-width: 768px){
+    
     height: 60px;
     margin-top:0;
     margin-bottom:50px;
+    .insta{
+        width: 50px;
+        margin-bottom:10px;
+    }
+.foll{
+    height:14px;
+}
+.ins{
+    height: 60px;
+}
+div{
+
+}
 }
 
 
 `
 const Gallery=styled.div`
+display: flex;
 
 display:flex;
 justfy-content:space-between;
@@ -94,12 +110,14 @@ const Social = () => {
         <Logo>
                 <img className="insta" src="./Images/image 18.png"></img>
                 <div>
-                    <img src="./Images/FOLLOW US ON.png"></img>
-                    <img src="./Images/image 19.png"></img>
+                    <img className="foll" src="./Images/FOLLOW US ON.png"></img>
+                    <img className="ins" src="./Images/image 19.png"></img>
                 </div>
         </Logo>
 
         <Gallery>
+            <img  src="./Images/Group 46.png"></img>
+            <img  src="./Images/Group 47.png"></img>
             <div className="imgone">
             <img src="./Images/Group 46.png"></img>
             </div>

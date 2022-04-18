@@ -22,7 +22,7 @@ export default class Responsive extends Component {
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 3,
             infinite: true,
             dots: true
@@ -31,7 +31,7 @@ export default class Responsive extends Component {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 4,
             slidesToScroll: 2,
             initialSlide: 2
           }
@@ -39,8 +39,8 @@ export default class Responsive extends Component {
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToShow: 4,
+            slidesToScroll: 2
           }
         }
       ]
@@ -80,7 +80,7 @@ expandIcon={<ExpandMoreIcon />}
       </AccordionSummary >
       <AccordionDetails className="space"></AccordionDetails>
         
-        <Slider className="sliderWrap" {...settings}>
+        <Slider className="sliderWrap sliderWrapAr" {...settings}>
           <div className="sliderGallery">
             <h3>
                 <img src="./Images/Rectangle 57.png"></img>
