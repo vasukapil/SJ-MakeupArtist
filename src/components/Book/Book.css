@@ -1,42 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 table {
     border-collapse: separate;
     border-spacing: 30px;
-    
-  }
-
+}
 
 td {
-  width: 275px;
-  text-align: center;
-
-  padding: 25px;
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-  
-  
-  
-  
+    width: 275px;
+    text-align: center;
+    padding: 25px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
 }
 
-td a{
-  width:150px;
-  height: 40px;
-  background: #747171;
-border-radius: 20px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-color: #fff !important;
-padding: 10px 28px;
-
+td a {
+    width: 150px;
+    height: 40px;
+    background: #747171;
+    border-radius: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff !important;
+    padding: 10px 28px;
 }
 
-.space{
-  margin-left: 240px;
+.space {
+    /* margin-left: 240px; */
+    max-width: 1200px;
+    margin: auto;
 }
 
+@media (max-width: 768px) {
+    .space {
+        margin: 0;
+        padding: 0;
+        max-width: 100vw;
+    }
+    table {
+        border-spacing: 0;
+    }
+    td {
+        font-size: 12px;
+        padding: 10px 0px;
+        text-align: center;
+    }
+    .White {
+        font-size: 10px;
+        padding: 2px 8px;
+    }
+    h5 {
+        font-size: 16px !important;
+    }
+    .mainDiiv {
+        margin-top: 60px;
+    }
+}

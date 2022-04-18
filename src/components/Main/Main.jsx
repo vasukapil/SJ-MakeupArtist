@@ -123,11 +123,42 @@ const Leftdetail = styled.div`
     color: #fff;
     height: 24px;
     margin: 10px;
-
-    @media (max-width: 768px) {
-      text-align: center;
-    }
   }
+  
+      @media (max-width: 768px) {
+        text-align: center;
+        margin:0;
+        width:45%;
+        padding:0;
+        margin:5%;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        h1{
+          margin: 0;
+          padding:0;
+          font-size:20px;
+        }
+        article, p{
+          display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:12px;
+    opacity:0.8;
+    line-height: 13px;
+        }
+        article{
+          width:75px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-bottom:2px;
+        }
+        .White{
+          padding:0 ! important;
+          font-size:11px;
+        }
+      }
 `;
 const Rightdetails = styled.div`
   img {
@@ -142,11 +173,7 @@ const Rightdetail = styled.div`
   }
 
   @media (max-width: 768px) {
-    flex: 1;
-    img {
-      width: 172px;
-      height: 199px;
-    }
+width:50%;
   }
 `;
 const Bottomdetails = styled.div`
@@ -233,6 +260,17 @@ const Imgdiv = styled.div`
   @media (max-width: 768px) {
     .firstimg-m {
       display: inline-block;
+    }
+    margin:0;
+    width:100%;
+    height:auto;
+    .bride{
+      img{
+        margin:0;
+        width:90%;
+      object-fit:cover;
+      height:auto;
+      }
     }
   }
 

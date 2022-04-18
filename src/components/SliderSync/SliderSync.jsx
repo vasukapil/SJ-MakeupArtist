@@ -52,14 +52,25 @@ export default class AsNavFor extends Component {
         infinite: true,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow className="SampleNextArrow" />,
-        prevArrow: <SamplePrevArrow className="SamplePrevArrow" />
+        prevArrow: <SamplePrevArrow className="SamplePrevArrow" />,
+        responsive: [
+
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1.2,
+            slidesToScroll: 1,
+            // initialSlide: 2
+          }
+        },
+      ]
       };
 
 
     return (
       <div>
     
-        <div className="sliderContainer">
+        <div className="sliderContainer reArrow">
         <Slider {...settings}
           asNavFor={this.state.nav2}
           ref={slider => (this.slider1 = slider)}
@@ -88,9 +99,7 @@ export default class AsNavFor extends Component {
           ref={slider => (this.slider2 = slider)}
           slidesToShow={4}
           swipeToSlide={true}
-          focusOnSelect={true}
-        
-          
+          focusOnSelect={true}  
         >
            
           <div className="img-slide">

@@ -1,0 +1,6 @@
+@media(max-width: 600px) {
+    h1 {
+        padding-bottom: 40px;
+        margin-top: 30px;
+    }
+}

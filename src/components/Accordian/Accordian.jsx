@@ -19,6 +19,7 @@ const Accordian = () => {
         border:"none ",
         borderBottom:"1px solid gray",
         boxShadow:"none",
+        maxWidth:"88%",
 
       }}
     >
@@ -43,7 +44,7 @@ expandIcon={<ExpandMoreIcon />}
           color:'#464343'
            
         
-        }} align="center" variant="h5">How do I book an appointment?</Typography>
+        }} variant="h5">How do I book an appointment?</Typography>
       </AccordionSummary >
       <AccordionDetails>
         <Typography>
@@ -58,6 +59,7 @@ expandIcon={<ExpandMoreIcon />}
         border:"none ",
         borderBottom:"1px solid gray",
 boxShadow:"none",
+maxWidth:"88%",
 
       }}
     >
@@ -77,7 +79,7 @@ fontSize:'20px',
 color:'#464343'
  
 
-}}  align="center" variant="h5">How many looks are available?</Typography>
+}} variant="h5">How many looks are available?</Typography>
       </AccordionSummary>
       <AccordionDetails>
         <Typography>
@@ -92,6 +94,7 @@ color:'#464343'
         border:"none",
         borderBottom:"1px solid gray",
         boxShadow:"none",
+        maxWidth:"88%",
 
       }}>
       <AccordionSummary sx={{
@@ -110,7 +113,7 @@ fontSize:'20px',
 color:'#464343'
  
 
-}}  align="center" variant="h5">How to reschedule/ cancel?</Typography>
+}} variant="h5">How to reschedule/ cancel?</Typography>
       </AccordionSummary>
     </Accordion>
     <Accordion sx={{
@@ -119,6 +122,7 @@ color:'#464343'
         border:"none ",
         borderBottom:"1px solid gray",
         boxShadow:"none",
+        maxWidth:"88%",
 
       }}>
       <AccordionSummary sx={{
@@ -137,7 +141,7 @@ fontSize:'20px',
 color:'#464343'
  
 
-}}  align="center" variant="h5">How much is the minimum advance?</Typography>
+}} variant="h5">How much is the minimum advance?</Typography>
       </AccordionSummary>
       <AccordionDetails>
         <Typography>
@@ -152,6 +156,7 @@ color:'#464343'
         border:"none ",
         boxShadow:"none",
         borderBottom:"1px solid gray",
+        maxWidth:"88%",
 
       }}>
       <AccordionSummary sx={{

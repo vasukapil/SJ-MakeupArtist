@@ -8,9 +8,11 @@ height:100vh;
 width:100vw;
 
 @media (max-width: 768px){
-    height:100vh;
+    // height:100vh;
     width:100vw;
-    margin-top:130px;
+    // margin-top:250px;
+    height:auto;
+    padding:0 10px;
 }
 
 `
@@ -24,7 +26,8 @@ font-weight: 500;
 font-size: 40px;
 padding-top:20px;
 @media (max-width: 768px){
-    font-size:30px;
+    font-size:25px;
+    padding:0;
 }
 
 
@@ -48,7 +51,10 @@ align-items:center;
 .l{
     left:20px;
 }
-
+@media (max-width: 768px) {
+    height:auto;
+    // margin-top:60px;
+}
 `
 const First=styled.div`
 flex:1;
@@ -62,15 +68,23 @@ img{
     height:661px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin-left:106px;
-
+}
     @media (max-width: 768px){
-        width:150px;
-        height:206.5px;
+        width:50%;
+        height:auto;
+        margin-top: 0;
+        margin-bottom:0px;
+        img{
+            margin: auto;
+            width:80%;
+            height:auto;
+
+        }
     }
 
 
     
-}
+
 
 `
 const Paragraph=styled.div`
@@ -90,9 +104,12 @@ const Second=styled.div`
 flex:1;
 
 @media (max-width: 768px){
-
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
     margin:auto;
-    padding:auto;
+    padding-right:10px;
 }
 
 .inner{
@@ -114,6 +131,20 @@ flex:1;
        display:none;
     }
 }
+@media (max-width: 768px) {
+    margin-top: 0;
+    margin-bottom:0px;
+    .inner{
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+    .p1, p2{
+        font-size:11px;
+        margin-top:10px;
+        padding-right:0px;
+    }
+}
 `
 
 const Testimonial = ({name}) => {
@@ -121,7 +152,7 @@ const Testimonial = ({name}) => {
 
     <>
     <Container>
-        <Heading>Testimonials</Heading>
+        {/* <Heading>Testimonials</Heading> */}
         <Wrapper>
 
             <img className="l" src="./Images/Left.png"></img>

@@ -40,12 +40,7 @@ const Home = () => {
         <Accolades/>
         <Accordian/>
         <Footer/>
-        <CarouselUse/>
-
-    
-
-       
-       
+        <CarouselUse/>       
     </div>
   )
 }
