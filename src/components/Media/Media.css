@@ -50,15 +50,35 @@ font-size: 18px;
     .mobile-gallery{
         display: none;
     }
+
     .Media-Gallery img{
         width: 130px;
         height: 130px;
+       padding: 4px;
 
     }
     .Media-Gallery {
-        margin-left: 0;
+        margin-left: 3%;
         margin-bottom: 0px;
-        height: 420px;
+        height: 26.25rem;
+        max-width: 100%;
     }
+
+    .Media-Box .button{
+        margin-left: 0;
+    }
+    .viewmore{
+        width: 4.938rem;
+height: 1.143rem;
+border-radius: 1.25rem;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 0.625rem;
+line-height: 1rem;
+padding: 0.125rem 0.5rem;
+    }
+    
+
 
 }

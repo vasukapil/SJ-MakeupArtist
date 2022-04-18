@@ -1,12 +1,14 @@
 import React from "react";
 import Footer from "../Footer/Footer";
+import { About_mb } from "../Mobile/About_mb/About_mb";
 import Navbar from "../Navbar/Navbar";
 import "./About.css";
 
 const About = () => {
   return (
+    <>
     <div className="Container">
-      <Navbar />
+      <Navbar className="navbar-check" />
       <h2>About Us</h2>
       <div className="About-Section">
         <div className="First">
@@ -114,7 +116,11 @@ const About = () => {
       </div>
 
       <Footer/>
+
+     
     </div>
+     <About_mb className="mobile-about-section"/>
+    </>
   );
 };
 

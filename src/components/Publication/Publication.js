@@ -35,10 +35,12 @@ const Publication = () => {
 
             </div>
 
+            </div>
+
             <div className="ap-contain">
             <article className="ap">View More</article>
             </div>
-        </div>
+        
         
             <Footer/>
 

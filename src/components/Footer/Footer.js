@@ -1,24 +1,12 @@
 import styled from '@emotion/styled'
 import React from 'react'
+import './Footer.css'
 
 const MobileContainer=styled.div`
 
 width:100%;
 
 
-.not-flex{
-    display:none;
-}
-
-@media (max-width: 768px) {
-
-    .not-flex{
-        display:block;
-        margin-top:-100px;
-        margin-left:76px;
-    }
-
-}
 
 `
 
@@ -221,20 +209,20 @@ const Footer = () => {
         </Wrapper>
         </div>
      
-        <Content>
+        <Content >
             <div className="check">
                 <h1 className="checkh1">Contact Us</h1>
             <div className="Container2">
                 
-        <Contacts>
+        <Contacts className="content">
             <img src="./Images/Telephone.png"></img>
             <span>+91-9999963537</span>
         </Contacts>
-        <Contacts>
+        <Contacts className="content">
         <img src="./Images/Group 188.png"></img>
             <span>R - 255, 2nd Floor, G K- 1, Delhi - 110048</span>
         </Contacts>
-        <Contacts>
+        <Contacts className="content">
         <img src="./Images/Group 188.png"></img>
             <span>123, lane, opp. Sai Temple, Emerald Hills, Dehradun- 248001</span>
         </Contacts>

@@ -1,0 +1,10 @@
+.content-container{
+    width: 100%;
+    height: auto;
+    background-color: rgba(241, 241, 241, 1);
+}
+
+.contact-contents{
+    display: flex;
+    
+}

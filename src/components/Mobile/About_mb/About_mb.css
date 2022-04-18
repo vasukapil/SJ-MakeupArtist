@@ -1,0 +1,85 @@
+@media only screen and (max-width:768px) {
+  
+.about-box{
+    height: auto;
+    width: auto;
+}
+
+.flex-mb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}    
+
+.Last-about h3{
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+}
+.About-para{
+    flex: 1;
+    width: 50%;
+    margin-top: 20px;
+    margin-right: 4%;
+}
+.about-image{
+    flex: 1;
+    width: 50%;
+    margin-left: 5%;
+   
+   
+}
+.about-image img{
+    width: 9.375rem;
+    height: 10.813rem;
+    margin-right: 0;
+
+}
+p{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 0.625rem;
+
+
+}
+.about-h2{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 1.125rem;
+text-align: center;
+}
+
+.About-para p{
+ 
+    line-height: 12px;
+}
+.hidden-about{
+    /* display: none; */
+}
+.outer-about-mb{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.Readmore h2{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+text-align: center;
+margin-bottom: 0;
+}
+.Readmore{
+    text-align: center;
+}
+.Readmore img{
+
+
+}
+}

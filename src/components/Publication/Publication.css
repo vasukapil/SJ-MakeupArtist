@@ -75,36 +75,65 @@ font-size: 18px;
 
 @media only screen and (max-width: 600px){
 
+    .flex-Container{
+        display: flex;
+        align-items: baseline;
+       
+    }
+
     .First-flex img{
-width: 115px;
-height: 260.12px;
-margin-right: 15px;
+width: 7.188rem;
+height: 16.25rem;
+margin-right: 0.938rem;
 
 border: 0.5px solid #464343;
 box-sizing: border-box;
   }
 
   .Second-One img{
-  width: 100.63px;
-height: 141.54px;
-margin:10px;
+  width: 6.289rem;
+height: 8.813rem;
+margin:0.625rem;
+
   }
   .Second-Two img:first-child{
-    width: 100.63px;
-    height: 100.63px;
-    margin:10px;
+    width: 6.289rem;
+    height: 6.289rem;
+    margin:0.625rem;
   }
   .Second-Two img:last-child{
-    width: 100.63px;
-    height: 114.26px;
-    margin:10px;
+    width: 6.289rem;
+    height: 8rem;
+    margin:0.625rem;
     
   }
   .flex-Container{
-      width: 400px;
+      width: 25rem;
   }
   .Second-One{
       display: flex;
+      height: 9rem;
+      
+  }
+
+  .ap-contain{
+    margin: auto;
+    width: fit-content;
+    margin-top: 1.875rem;
+  }
+
+  .ap{
+    width:4.938rem;
+    height: 1.125rem;
+    border-radius: 1.25rem;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 0.625rem;
+line-height: 0.938rem;
+margin-top: 0;
+
+color: #FFFFFF;
   }
 
 }

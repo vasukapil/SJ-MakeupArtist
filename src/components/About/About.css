@@ -69,41 +69,20 @@ font-weight: 400;
 .show{
     display: none;
 }
+.mobile-about-section{
+    display: none;
+}
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width:768px) {
 
-    .First img{
-
-        width:150px;
-        height: 173px;
-        margin-left:19px;
-        margin-right: 18px;
-    }
-   
-  p .numberone{
-
-font-size: 10px ;
-
-    }
-
-    .About-Section{
-        width:100%;
-
-    }
-    .hidden{
+    .Container{
         display: none;
     }
-    .show{
+
+    .mobile-about-section{
         display: block;
-        font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 10px;
-line-height: 12px;
-
-
     }
+   
+    
 
-    
-    
 }
