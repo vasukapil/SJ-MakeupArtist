@@ -3,11 +3,13 @@
 .wrapper{
     height:100vh;
     width:100vw;
+
+    
+
+
   
 }
-.mobile-hair1,.mobile-hair2,.mobile-outer1,.mobile-outer2{
-    display: none;
-}
+
 .Service-Container p{
     margin-left: 146px;
     margin-right: 125px;
@@ -107,7 +109,18 @@ font-weight: 500;
     margin-bottom: 25px;
 }
 
+.Service_mb{
+    display: none;
+}
+
 @media only screen and (max-width: 600px){
+
+    .wrapper{
+        display:none;
+    }
+    .Service_mb{
+        display: block;
+    }
 
     .Box-Container .mobile-hair1,.Box-Container .mobile-hair2{
         display: block;

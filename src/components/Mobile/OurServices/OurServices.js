@@ -1,9 +1,10 @@
 import React from "react";
+import './OurServices.css'
 
 const OurServices = () => {
   return (
     <div className="Service-Container-mb">
-      <h1 className="services-h1">OurServices</h1>
+      <h1 className="services-h1">Our Services</h1>
 
       <div className="text-wrap-mb">
         <p>
@@ -37,10 +38,13 @@ const OurServices = () => {
       </div>
 
       <div className="hair-box">
+        <h2 className="hair-h2">HAIR STYLING</h2>
+        <div className="pureflex">
         <div className="hair-box-image">
-          <img></img>
+          <img className="img-hair"  src="./Images/Rectangle 62.png"></img>
         </div>
         <div className="hair-box-para">
+          
           <p className="mobile-hair1">
             As Makeup plays an important role in glamorizing the look of a
             person. It is always a great desire of every woman to look her best
@@ -54,6 +58,7 @@ const OurServices = () => {
             knotty, to cultural and with latest tradition, you can get adorable
             look so that every eye can appreciate your look on the big day.
           </p>
+        </div>
         </div>
 
         <div className="outer-mb">
@@ -72,6 +77,9 @@ const OurServices = () => {
 
             </p>
           
+        </div>
+        <div className="btn-view">
+          <p>View Gallery</p>
         </div>
       </div>
     </div>
