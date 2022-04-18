@@ -48,12 +48,12 @@ export default class Responsive extends Component {
     return (
 
 
-      <Accordion style={{border:"none"}}
+      <Accordion 
     sx={{
        
         // display:"none",
         border:"none ",
-        borderBottom:"1px solid gray",
+        borderTop:"none",
         boxShadow:"none",
         width:"100vw",
         textAlign:"center",
@@ -64,10 +64,12 @@ export default class Responsive extends Component {
       <AccordionSummary className="checking" sx={{
     
     // display:"none",
-    color:"gray",
-    border:'none',
-    outline:'none',
-boxShadow:"none",
+    border:"none ",
+        borderTop:"none",
+        borderBottom:"none",
+        boxShadow:"none",
+        outline:"none",
+        width:"100vw",
 }}
 expandIcon={<ExpandMoreIcon />}
         aria-controls="panel1a-content"

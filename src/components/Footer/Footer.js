@@ -3,6 +3,9 @@ import React from 'react'
 
 const MobileContainer=styled.div`
 
+width:100%;
+
+
 .not-flex{
     display:none;
 }
@@ -148,8 +151,23 @@ const Content=styled.div`
 
 .Container2{
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
+    align-items:center;
+    text-align:center;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+
+    margin:auto;
+    width:90%;
+
+    span{
+        font-size: 18px;
+    }
 }
+
+
+
 
 .checkh1{
     display:none;
@@ -207,6 +225,7 @@ const Footer = () => {
             <div className="check">
                 <h1 className="checkh1">Contact Us</h1>
             <div className="Container2">
+                
         <Contacts>
             <img src="./Images/Telephone.png"></img>
             <span>+91-9999963537</span>
@@ -219,6 +238,7 @@ const Footer = () => {
         <img src="./Images/Group 188.png"></img>
             <span>123, lane, opp. Sai Temple, Emerald Hills, Dehradun- 248001</span>
         </Contacts>
+
         </div>
         </div>
 

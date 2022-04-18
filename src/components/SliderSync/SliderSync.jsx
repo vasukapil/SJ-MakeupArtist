@@ -78,15 +78,19 @@ export default class AsNavFor extends Component {
 
           <div className="firstimgSS">
             <img src="./Images/Rectangle 70.png" alt="" width="250px" height="auto" />
+           
             </div>
             <div className="firstimgSS">
             <img src="./Images/Rectangle 58.png" alt="" width="250px" height="auto" />
+            
             </div>
             <div className="firstimgSS">
             <img src="./Images/Rectangle 60.png" alt="" width="250px" height="auto" />
+            
             </div>
             <div className="firstimgSS">
             <img src="./Images/Rectangle 59.png" alt="" width="250px" height="auto" />
+            
             </div>
          
         </Slider>
@@ -104,15 +108,19 @@ export default class AsNavFor extends Component {
            
           <div className="img-slide">
         <img src="./Images/Rectangle 78.png" alt="" width="115px" height="auto" />
+        <h2 className="img-slide-h2"  width="250px">Bridal Look</h2>
         </div>
         <div className="img-slide">
         <img src="./Images/Rectangle 46.png" alt="" width="115px" height="auto" />
+        <h2 className="img-slide-h2" width="250px">Party Look</h2>
         </div>
         <div className="img-slide">
         <img src="./Images/Rectangle 76.png" alt="" width="115px" height="auto" />
+        <h2 className="img-slide-h2" width="250px">Fashion</h2>
         </div>
         <div className="img-slide">
         <img src="./Images/Rectangle 77.png" alt="" width="115px" height="auto" />
+        <h2 className="img-slide-h2" width="250px">Day Look</h2>
         </div>
         
         </Slider>

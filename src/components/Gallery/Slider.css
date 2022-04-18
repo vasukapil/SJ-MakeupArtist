@@ -30,9 +30,15 @@
     display: none;
 }
 
+<<<<<<< HEAD
 .checking .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
     margin-left: -500px;
     transform: rotate(270deg);
+=======
+.checking .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root{
+margin-left: -495px;
+transform: rotate(270deg);
+>>>>>>> upstream/main
 }
 
 .checking .css-o4b71y-MuiAccordionSummary-content.Mui-expanded {

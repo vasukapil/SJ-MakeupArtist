@@ -11,13 +11,7 @@
     width: 228px;
     padding: 15px;
 }
-.Media-Container article{
-    width: 150px;
-    height: 34px;
-    font-size: 18px;
-    border-radius: 20px;
-    text-align: center;
-}
+
 .Media-Box .button{
     
     margin-left: -80px;
@@ -27,6 +21,28 @@
 }
 .Media-Box h2{
     text-align: center;
+}
+
+.span-contain{
+    text-align: center;
+}
+
+.viewmore{
+
+    background: #747171;
+    border-radius: 20px;
+    width: 150px;
+height: 34.62px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+    font-size: 1.125rem;
+    color: #ffffff;
+    padding:10px;
+   
+
+
 }
 
 @media only screen and (max-width: 600px){

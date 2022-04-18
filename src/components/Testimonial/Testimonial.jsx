@@ -58,14 +58,16 @@ align-items:center;
 `
 const First=styled.div`
 flex:1;
+max-width:100%;
+
 @media (max-width: 768px){
 
     margin:auto;
 }
 
 img{
-    width:469px;
-    height:661px;
+    max-width:469px;
+    max-height:661px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin-left:106px;
 }

@@ -34,7 +34,10 @@ const Publication = () => {
 
 
             </div>
-            <article>View More</article>
+
+            <div className="ap-contain">
+            <article className="ap">View More</article>
+            </div>
         </div>
         
             <Footer/>
