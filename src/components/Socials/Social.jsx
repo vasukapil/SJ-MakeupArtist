@@ -62,16 +62,13 @@ div{
 
 `
 const Gallery=styled.div`
-<<<<<<< HEAD:src/components/Socials/Social.jsx
 display: flex;
-=======
 
 display:flex;
 justfy-content:space-between;
 align-items:center;
 width:100%;
 
->>>>>>> upstream/main:src/components/Socials/Social.js
 height: 45.313em;
 margin-bottom:6rem;
 margin-left:3%;
@@ -119,10 +116,8 @@ const Social = () => {
         </Logo>
 
         <Gallery>
-<<<<<<< HEAD:src/components/Socials/Social.jsx
             <img  src="./Images/Group 46.png"></img>
             <img  src="./Images/Group 47.png"></img>
-=======
             <div className="imgone">
             <img src="./Images/Group 46.png"></img>
             </div>
@@ -130,7 +125,6 @@ const Social = () => {
             <img src="./Images/Group 47.png"></img>
             </div>
 
->>>>>>> upstream/main:src/components/Socials/Social.js
         </Gallery>
 
     </SocialMedia>

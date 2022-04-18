@@ -26,7 +26,7 @@ const Book = () => {
         textAlign:"center"
 
       }}
-      className="mainDiiv"
+      // className="mainDiiv"
     >
       <AccordionSummary sx={{
     
