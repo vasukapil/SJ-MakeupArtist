@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
-import './About_mb.css';
+import './AboutMb.css';
 
-export const About_mb = () => {
+export const AboutMb = () => {
 
 
     function handleClick(){

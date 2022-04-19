@@ -1,12 +1,25 @@
 import styled from '@emotion/styled'
 import React from 'react'
 import './Footer.css'
+import FooterMb from '../Mobile/FooterMb/FooterMb'
 
 const MobileContainer=styled.div`
 
 width:100%;
 
 
+
+`
+
+const MbFooter=styled.div`
+
+display:none;
+
+@media (max-width: 768px) {
+
+    display:block;
+
+}
 
 `
 
@@ -40,23 +53,7 @@ h1{
 
 @media (max-width: 768px) {
 
-    display:flex;
-    flex-direction:row;
-    width:100%;
-    margin-top:60px;
- 
-    .mb-first{
-        display:flex;
-        flex-direction:column;
-        width:50%;
-        order:2;
-    }
-    h1{
-        margin-top:0px;
-        margin-left:0;
-        font-size:16px;
-        text-align:left;
-    }
+   display:none;
   
 }
 
@@ -186,12 +183,18 @@ font-weight: 400;
 }
 
 
+
+
+
 `
+
+
 
 
 
 const Footer = () => {
   return (
+      <>
       <MobileContainer>
     <Container>
         <div className="mb-first">
@@ -246,19 +249,15 @@ const Footer = () => {
          
     </Container>
 
-    <div className="not-flex">
-        <OuterRight>
-           <img className="image-nav" src="./Images/fb.png" alt="" />
-           <img className="image-nav" src="./Images/Insta.png" alt="" />
-           <img className="image-nav" src="./Images/Link.png" alt="" />
-           <img className="image-nav" src="./Images/Mail.png" alt="" />
-           
-         </OuterRight>
-         <div className="footer">
-             <span>copyright@sohnijuneja.com</span>
-         </div>
-         </div>
     </MobileContainer>
+
+    <MbFooter>
+         <FooterMb/>
+   </MbFooter>
+
+
+
+    </>
   )
 }
 

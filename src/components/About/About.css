@@ -5,6 +5,9 @@
     height: 100vh;
     width: 100vw;
 }
+.aboutmb{
+    display: none;
+}
 .About-Section{
     display: flex;
     margin-bottom: 43px;
@@ -35,14 +38,8 @@ font-weight: 500;
     margin-left: 50px;
     
 }
-.Second p:nth-child(2){
-    margin-bottom: 66px;
-}
-h3{
-    font-size: 24px;
-    margin-bottom: 35px;
-    margin-left: 0px;
-}
+
+
 .outer{
     font-size: 18px;
     margin-left: 105px;
@@ -58,6 +55,10 @@ font-weight: 400;
 .Last{
     margin-left: 110px;
     margin-bottom: 90px;
+}
+.Last h3{
+    margin-bottom: 2.125rem;
+    font-size: 1.5rem;
 }
 .Last p{
     font-size: 18px;
@@ -79,7 +80,8 @@ font-weight: 400;
         display: none;
     }
 
-    .mobile-about-section{
+   
+    .aboutmb{
         display: block;
     }
    

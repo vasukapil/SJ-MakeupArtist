@@ -1,8 +1,8 @@
 import React from "react";
 import Footer from "../Footer/Footer";
-import { About_mb } from "../Mobile/About_mb/About_mb";
 import Navbar from "../Navbar/Navbar";
 import "./About.css";
+import { AboutMb } from "../Mobile/AboutMb/AboutMb";
 
 const About = () => {
   return (
@@ -119,7 +119,10 @@ const About = () => {
 
      
     </div>
-     <About_mb className="mobile-about-section"/>
+
+    <div className="aboutmb">
+     <AboutMb/>
+     </div>
     </>
   );
 };

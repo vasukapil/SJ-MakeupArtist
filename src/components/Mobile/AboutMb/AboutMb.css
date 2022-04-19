@@ -60,7 +60,7 @@ text-align: center;
     line-height: 12px;
 }
 .hidden-about{
-    /* display: none; */
+ display: none; 
 }
 .outer-about-mb{
     margin-left: 3%;

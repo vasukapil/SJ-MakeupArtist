@@ -40,6 +40,7 @@ const Home = () => {
         <Accolades/>
         <Accordian/>
         <Footer/>
+        <Modal/>
         <CarouselUse/>       
     </div>
   )

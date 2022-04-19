@@ -64,6 +64,8 @@ const Center=styled.div`
   
   img{
 width:220px;
+height:3.625rem;
+
   }
 }
 `

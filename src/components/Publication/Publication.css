@@ -117,22 +117,23 @@ margin:0.625rem;
   }
 
   .ap-contain{
-    margin: auto;
-    width: fit-content;
+    height: 1.188rem;
+    width: 5rem;
     margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
   }
 
   .ap{
     width:4.938rem;
-    height: 1.125rem;
+   
     border-radius: 1.25rem;
     font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
 font-size: 0.625rem;
-line-height: 0.938rem;
 margin-top: 0;
-
+margin-bottom: 0;
+padding-bottom: 0;
 color: #FFFFFF;
   }
 

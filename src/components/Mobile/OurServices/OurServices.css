@@ -9,6 +9,7 @@
         margin:0 auto;
         height: 1.5rem;
         width: 7.063;
+        padding-top: 0;
       }
       .text-wrap-mb{
           font-family: 'Montserrat';
@@ -20,6 +21,7 @@
       width: 22.625;
       margin-left: 3%;
       height: auto;
+      padding:5%;
       }
       .s1,.s2,.s3,.s4{
           width: 6 rem;
@@ -39,6 +41,7 @@
       .services-btn-mb{
           width: 100%;
           margin-left: 4%;
+          text-align: center;
       }
       
       .Service-Container-mb{
@@ -55,6 +58,7 @@
         
         background: #747171;
         border-radius: 10px;
+        color: white;
         transform: rotate(-180deg);
       }
 
@@ -71,6 +75,7 @@
       .hair-box-image{
           width: 50%;
           flex:1;
+          margin-left: 4%;
       }
       .hair-box-para{
           width: 50%;

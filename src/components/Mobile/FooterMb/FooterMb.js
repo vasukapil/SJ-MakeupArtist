@@ -1,14 +1,15 @@
-import { styled } from '@mui/system'
+
+import { styled } from '@mui/system';
 import React from 'react'
-import './Footer_mb.css'
+import './FooterMb.css'
 
 const Footer_mb = () => {
 
-    const Contain_mb= styled.div`
+
+   
     
-    `
   return (
-    <Contain_mb>
+    <div className="ContainMb">
         <div className="content-container">
 
             <div className="contact-contents">
@@ -56,7 +57,7 @@ const Footer_mb = () => {
 
         </div>
 
-
+        <div className="social-icons-contain">
         <div className="social-icons-mb">
 
            <img className="image-nav" src="./Images/fb.png" alt="" />
@@ -69,11 +70,12 @@ const Footer_mb = () => {
         <div className="footer-mb">
              <span>copyright@sohnijuneja.com</span>
          </div>
+         </div>
          
 
 
 
-    </Contain_mb>
+    </div>
   )
 }
 

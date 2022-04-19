@@ -1,26 +1,9 @@
-.not-flex{
 
-    display: none;
-}
+
 
 @media only screen and (min-width:368px) {
 
 
-    .not-flex{
-
-        display: block;
-
-    }
-    .not-flex img{
-        height: 1.069rem;
-        width: 0.875rem;
-        margin-left: 0;
-        
-    }
-
-    .content img{
-        height: 1.069rem;
-        width: 0.875rem;
-    }
+    
 }
 

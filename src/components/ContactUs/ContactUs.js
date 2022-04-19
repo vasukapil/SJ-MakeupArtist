@@ -32,7 +32,7 @@ const ContactUs = () => {
                 <p>Mon-Fri  8am - 8pm</p>
             </div>
             <div className="article1">
-                <span>BOOK APPOINTMENT</span>
+                <span className="sp3">BOOK APPOINTMENT</span>
                 <p>+91-9999963537</p>
                 <p>Mon-Fri  8am - 8pm</p>
             </div>
