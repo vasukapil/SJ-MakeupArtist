@@ -1,4 +1,4 @@
-@media only screen and (min-width:368px) {
+@media only screen and (min-width:320px) {
     
     .services-h1 {
         font-family: "Poppins";
@@ -51,11 +51,8 @@
       }
 
       .s1:hover,.s2:hover,.s3:hover,.s4:hover{
-        width: 150px;
-        height: 42.07px;
-        left: 265px;
-        top: 646px;
-        
+        width: 9.375rem;
+        height: 2.625rem;
         background: #747171;
         border-radius: 10px;
         color: white;
@@ -159,3 +156,20 @@ text-align: center;
       
 }
 
+@media only screen and (max-width:368px){
+
+
+    .services-h1 {
+
+        padding-top: 0;
+
+    }
+
+    .text-wrap-mb p:first-child{
+        padding: 3%;
+
+    }
+
+
+
+}
