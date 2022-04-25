@@ -17,7 +17,7 @@ export const Media = () => {
                 <a>BRIDAL MAKEUP</a>
                 <a>PARTY MAKEUP</a>
                 <a>BEFORE/ AFTER</a>
-                <a>EDITORIAL</a>
+                <a className="adjust">EDITORIAL</a>
             </div>
 
             <div className="Media-Gallery">
