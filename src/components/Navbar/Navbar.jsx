@@ -63,8 +63,8 @@ const Center=styled.div`
 @media (max-width: 768px) {
   
   img{
-width:220px;
 height:3.625rem;
+    margin-top:0;
 
   }
 }
