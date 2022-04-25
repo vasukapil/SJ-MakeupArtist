@@ -20,11 +20,16 @@ font-weight: 500;
 font-size: 20px;
 line-height: 30px;
 }
-.About-para{
+.About-para {
     flex: 1;
     width: 50%;
     margin-top: 20px;
     margin-right: 4%;
+   
+}
+.About-para p{
+    font-size: 13px;
+    line-height: 16px;
 }
 .about-image{
     flex: 1;
@@ -33,9 +38,10 @@ line-height: 30px;
    
    
 }
+
 .about-image img{
-    width: 9.375rem;
-    height: 10.813rem;
+    width: 10.375rem;
+    height: 13.813rem;
     margin-right: 0;
 
 }
@@ -43,7 +49,7 @@ p{
     font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
-font-size: 0.625rem;
+
 
 
 }
@@ -53,18 +59,20 @@ font-style: normal;
 font-weight: 500;
 font-size: 1.125rem;
 text-align: center;
+margin-top: 1rem;
 }
 
-.About-para p{
- 
-    line-height: 12px;
-}
+
 .hidden-about{
  display: none; 
 }
 .outer-about-mb{
     margin-left: 3%;
     margin-right: 3%;
+}
+.outer-about-mb p{
+    font-size: 13px;
+    line-height: 17px;
 }
 .Readmore h2{
     font-family: 'Poppins';
@@ -77,6 +85,9 @@ margin-bottom: 0;
 }
 .Readmore{
     text-align: center;
+}
+.about-box p{
+    text-align: justify;
 }
 
 }

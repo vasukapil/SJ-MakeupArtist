@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../Navbar/Navbar";
 import './AboutMb.css';
+import Footer from "../../Footer/Footer";
 
 export const AboutMb = () => {
 
@@ -34,14 +35,13 @@ export const AboutMb = () => {
             presence felt.
           </p>
 
-          <p className="mobile-about2">
-            You made me feel so comfortable (not to forget the soft brush touch,
-            asmr feeling), I couldn't have picked a better makeup artist.
-          </p>
+        
         </div>
       </div>
 
       <div className="outer-about-mb">
+        <p> You made me feel so comfortable (not to forget the soft brush touch,
+            asmr feeling), I couldn't have picked a better makeup artist.</p>
         <p>
           Her Quest for adding more feathers to her cap and wanting to have the
           ability to give people a whole body makeover took her to Pearl
@@ -110,7 +110,13 @@ export const AboutMb = () => {
               <img src="./Images/down.png"  onClick={handleClick}></img>
           </div>
       </div>
+                   
+ 
     </div>
+
+    <Footer/>
+
+
     </>
   );
 };

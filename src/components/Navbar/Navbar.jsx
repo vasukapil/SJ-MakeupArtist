@@ -26,7 +26,7 @@ const Wrapper=styled.div`
 
     display:flex;
     align-items:center;
-    justify-content:space-between;
+    justify-content:space-around;
 
  }
 
@@ -65,6 +65,7 @@ const Center=styled.div`
   img{
 height:3.625rem;
     margin-top:0;
+    padding-right:0;
 
   }
 }
@@ -205,6 +206,10 @@ const Navbar = () => {
            </div>
          </Right>
       </Wrapper>
+
+      <div className="borderLine">
+
+      </div>
       <Menu className="Menu">
          <ul>
             <li><NavLink className="linkText" to="/">Home</NavLink></li>
@@ -221,7 +226,7 @@ const Navbar = () => {
                 open={isOpen}
                 onClose={toggleDrawer}
                 direction='right'
-                className='bla bla bla'
+                className='blablabla'
             >
       <Menu2 className="Menu">
          <ul>

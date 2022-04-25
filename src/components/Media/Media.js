@@ -10,13 +10,14 @@ export const Media = () => {
         <Navbar/>
         <div className="Media-Box">
 
-            <h2>Album</h2>
+            <h2>Gallery</h2>
 
             <div className="button">
-               <a>HAIR STYLING</a>
+               
                 <a>BRIDAL MAKEUP</a>
                 <a>PARTY MAKEUP</a>
-                <a>OFFERS</a>
+                <a>BEFORE/ AFTER</a>
+                <a>EDITORIAL</a>
             </div>
 
             <div className="Media-Gallery">

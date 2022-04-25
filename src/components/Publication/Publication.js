@@ -38,8 +38,12 @@ const Publication = () => {
             </div>
 
             <div className="ap-contain">
-            <article className="ap">View More</article>
-            </div>
+            <article className="ap">
+                <p>View More</p>
+                </article>
+                </div>
+
+         
         
         
             <Footer/>
