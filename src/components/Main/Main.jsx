@@ -2,6 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import SliderSync from "../SliderSync/SliderSync";
 import "./Main.css";
+// import Accordion from '@mui/material/Accordion';
+// import AccordionSummary from '@mui/material/AccordionSummary';
+// import AccordionDetails from '@mui/material/AccordionDetails';
+// import Typography from '@mui/material/Typography';
+// import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Main_Boundary=styled.div`
 
@@ -305,7 +310,39 @@ const Mobile = styled.div`
 
 const Main = () => {
   return (
+    
     <div className="Main_Boundary">
+         {/* <Accordion 
+    sx={{
+       
+        // display:"none",
+        border:"none ",
+        borderBottom:"1px solid gray",
+        boxShadow:"none",
+        maxWidth:"88%",
+
+      }}
+    >
+        <AccordionSummary sx={{
+    color: "gray"
+  }}
+  expandIcon={<ExpandMoreIcon />}
+        aria-controls="panel2a-content"
+        id="panel2a-header"
+      >
+        <Typography style={{
+
+fontFamily: 'Poppins',
+fontStyle:'normal',
+fontWeight:'400',
+fontSize:'20px',
+color:'#464343'
+ 
+
+}} variant="h5">How many looks are available?</Typography>
+      </AccordionSummary>
+      <AccordionDetails> */}
+     
       <Container_main>
         <Leftdetails>
           <h1>Sohni Juneja</h1>
@@ -344,6 +381,8 @@ const Main = () => {
           </Imgdiv>
         </Rightdetail>
       </div>
+      {/* </AccordionDetails>
+    </Accordion> */}
     </div>
   );
 };

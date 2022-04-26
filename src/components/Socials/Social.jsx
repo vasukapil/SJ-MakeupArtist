@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import InstagramFeed  from 'react-ig-feed'
+import 'react-ig-feed/dist/index.css'
 const SocialMedia=styled.div`
 
-height:100%;
+// height:100%;
 width:100%;
 margin-top: 2rem;
 
@@ -11,7 +12,7 @@ margin-top: 2rem;
 @media (max-width: 768px){
 margin-top:50px;
     width:100vw;
-    height:100vh;
+    // height:100vh;
 }
 
 `
@@ -61,50 +62,17 @@ div{
 
 
 `
-const Gallery=styled.div`
-display: flex;
-
-display:flex;
-justfy-content:space-between;
-align-items:center;
-width:100%;
-
-height: 45.313em;
-margin-bottom:6rem;
-margin-left:3%;
-
-.imgone{
-    flex:1;
-    width:50%;
-    justfy-content:center;
-align-items:center;
-text-align:center;
-
-    
-
-    img{
-        width:92%;
-      
-        
-    }
-
-}
-.imgtwo{
-    flex:1;
-    width:50%;
-
-    img{
-        width:92%;
-        
-
-    }
-}
-
-
-
-`
 
 const Social = () => {
+    const [num,setNum]=React.useState(8);
+    React.useEffect(() => {
+        if(window.innerWidth>700){
+            setNum(18);
+            console.log(window.innerWidth);
+        }else{
+            setNum(8);
+        }
+      },[]);
   return (
     <SocialMedia>
         <Logo>
@@ -115,18 +83,15 @@ const Social = () => {
                 </div>
         </Logo>
 
-        <Gallery>
-            <img  src="./Images/Group 46.png"></img>
+            {/* <img  src="./Images/Group 46.png"></img>
             <img  src="./Images/Group 47.png"></img>
             <div className="imgone">
             <img src="./Images/Group 46.png"></img>
             </div>
             <div className="imgtwo">
             <img src="./Images/Group 47.png"></img>
-            </div>
-
-        </Gallery>
-
+            </div> */}
+            <InstagramFeed token={process.env.REACT_APP_INS_KEY}  counter={num}/> 
     </SocialMedia>
   )
 }

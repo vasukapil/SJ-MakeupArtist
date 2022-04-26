@@ -82,7 +82,7 @@ expandIcon={<ExpandMoreIcon />}
       </AccordionSummary >
       <AccordionDetails className="space"></AccordionDetails>
         
-        <Slider className="sliderWrap sliderWrapAr" {...settings}>
+        <Slider className="sliderWrap sliderWrapAr sllAr sllAr2" {...settings}>
           <div className="sliderGallery">
             <h3>
                 <img src="./Images/Rectangle 57.png"></img>
