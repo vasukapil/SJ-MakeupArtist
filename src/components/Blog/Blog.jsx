@@ -8,7 +8,6 @@ import './Blog.css'
 
 const Container=styled.div`
 
-height:100vh;
 width:100vw;
 
 @media (max-width: 768px){
@@ -17,22 +16,9 @@ width:100vw;
 height:auto;
 }
 @media(max-width:600px) {
-    .slick-next::after {
-        right: 5px;
-        content: ">";
-        top: 30%;
-        color: black;
-        font-size: 32px;
-        font-weight: bolder;
-        font-family: monospace;
-        position: absolute;
-        width: 25px;
-        z-index: 9999999;
-        height: 25px;
-        }
-    .slick-next {
-        background: red;
-    }
+  slick-arrow{
+    margin:0;
+  }
 }
 
 `
@@ -44,9 +30,22 @@ justify-content:space-around;
 
 @media (max-width: 768px){
     width:100vw;
-    // height:100vh;
+    height:auto;
     margin:auto;
     padding: 12px;
+    .slick-arrow.slick-next {
+      top: 40%;
+  }
+  
+  .slick-arrow.slick-prev {
+      top: 40%;
+  }
+  .p1{
+    margin-bottom:0px;
+  }
+  .slick-dots{
+    margin-bottom: 32px !important;
+  }
 }
 
 
@@ -232,7 +231,7 @@ const Blog = () => {
   return (
     <Container>
         <Heading>Blog</Heading>
-        <Wrapper className="sllAr">
+        <Wrapper className="">
         <Slider className="sliderWrap sliderWrapAr" {...settings}>
 
             <First>

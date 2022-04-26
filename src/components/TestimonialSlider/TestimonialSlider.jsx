@@ -29,6 +29,8 @@ export default class SimpleSlider extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: true,
+            dots: true
+
             // initialSlide: 2
           }
         },
@@ -38,12 +40,14 @@ export default class SimpleSlider extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: true,
+            dots: true
+
           }
         }
       ]
     };
     return (
-      <div className="SS sllAr">
+      <div className="sllAr sllAr2">
       <h1>Testimonials</h1>
         <Slider {...settings}>
           <div>

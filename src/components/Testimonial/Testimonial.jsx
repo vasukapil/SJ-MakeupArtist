@@ -4,13 +4,10 @@ import './Testimonial.css'
 
 const Container=styled.div`
  
-height:100vh;
 width:100vw;
 
 @media (max-width: 768px){
-    // height:100vh;
     width:100vw;
-    // margin-top:250px;
     height:auto;
     padding:0 10px;
 }

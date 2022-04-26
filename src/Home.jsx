@@ -32,6 +32,8 @@ const Home = () => {
     <div>
          <Navbar/>
          <Main/>
+      
+
         <Book/>
         <Responsive/>
         <Social/>

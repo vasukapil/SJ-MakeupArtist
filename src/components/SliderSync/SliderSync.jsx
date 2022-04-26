@@ -1,7 +1,7 @@
 
 
 import { Settings } from "@material-ui/icons";
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import Slider from "react-slick";
 import './SliderSync.css'
 
@@ -34,7 +34,8 @@ export default class AsNavFor extends Component {
     super(props);
     this.state = {
       nav1: null,
-      nav2: null
+      nav2: null,
+      num :1,
     };
   }
 
@@ -48,7 +49,7 @@ export default class AsNavFor extends Component {
   render() {
 
     const settings = {
-        dots: false,
+        dots: true,
         infinite: true,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow className="SampleNextArrow" />,
@@ -58,11 +59,21 @@ export default class AsNavFor extends Component {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 1.2,
+            slidesToShow: 1,
             slidesToScroll: 1,
+            arrows: true,
+
             // initialSlide: 2
           }
         },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        }
       ]
       };
 
@@ -77,19 +88,15 @@ export default class AsNavFor extends Component {
         >
 
           <div className="firstimgSS">
-            <img src="./Images/Rectangle 70.png" alt="" width="250px" height="auto" />
+            <img src={`./Images/sliImg/Rectangle${this.state.num}1.png`} alt="" width="250px" height="auto" />
            
             </div>
             <div className="firstimgSS">
-            <img src="./Images/Rectangle 58.png" alt="" width="250px" height="auto" />
+            <img src={`./Images/sliImg/Rectangle${this.state.num}2.png`} alt="" width="250px" height="auto" />
             
             </div>
             <div className="firstimgSS">
-            <img src="./Images/Rectangle 60.png" alt="" width="250px" height="auto" />
-            
-            </div>
-            <div className="firstimgSS">
-            <img src="./Images/Rectangle 59.png" alt="" width="250px" height="auto" />
+            <img src={`./Images/sliImg/Rectangle${this.state.num}3.png`} alt="" width="250px" height="auto" />
             
             </div>
          
@@ -98,32 +105,32 @@ export default class AsNavFor extends Component {
 
         <div className="img-slider-contain">
     
-        <Slider {...Settings}
+        {/* <Slider {...Settings}
           asNavFor={this.state.nav1}
           ref={slider => (this.slider2 = slider)}
           slidesToShow={4}
           swipeToSlide={true}
           focusOnSelect={true}  
-        >
+        > */}
            
-          <div className="img-slide">
-        <img src="./Images/Rectangle 78.png" alt="" width="115px" height="auto" />
+          <div onClick={()=>this.setState({ num: 1 })} className="img-slide" id={this.state.num===1 ? "active" : ""}>
+        <img  src="./Images/Rectangle 78.png" alt="" width="115px" height="auto" />
         <h2 className="img-slide-h2"  width="250px">Bridal Look</h2>
         </div>
-        <div className="img-slide">
-        <img src="./Images/Rectangle 46.png" alt="" width="115px" height="auto" />
+        <div onClick={()=>this.setState({ num: 2 })} className="img-slide" id={this.state.num===2 ? "active" : ""}>
+        <img  src="./Images/Rectangle 46.png" alt="" width="115px" height="auto" />
         <h2 className="img-slide-h2" width="250px">Party Look</h2>
         </div>
-        <div className="img-slide">
-        <img src="./Images/Rectangle 76.png" alt="" width="115px" height="auto" />
+        <div onClick={()=>this.setState({ num: 3 })} className="img-slide" id={this.state.num===3 ? "active" : ""}>
+        <img  src="./Images/Rectangle 76.png" alt="" width="115px" height="auto" />
         <h2 className="img-slide-h2" width="250px">Fashion</h2>
         </div>
-        <div className="img-slide">
-        <img src="./Images/Rectangle 77.png" alt="" width="115px" height="auto" />
+        <div onClick={()=>this.setState({ num: 4 })} className="img-slide" id={this.state.num===4 ? "active" : ""}>
+        <img  src="./Images/Rectangle 77.png" alt="" width="115px" height="auto" />
         <h2 className="img-slide-h2" width="250px">Day Look</h2>
         </div>
         
-        </Slider>
+        {/* </Slider> */}
         </div>
       </div>
     );

@@ -20,6 +20,7 @@
     "react": "^17.0.2",
     "react-bootstrap": "^2.2.3",
     "react-dom": "^17.0.2",
+    "react-ig-feed": "^1.0.4",
     "react-modern-drawer": "^1.1.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.0",
