@@ -8,9 +8,12 @@
 .SS .slick-arrow.slick-prev {
     border: none;
     margin-left: 2.813rem;
+    font-size: 12px;
+    font-weight: normal;
 }
 
 .SS .slick-arrow.slick-next {
     border: none;
     margin-right: 2.5rem;
+    font-size: 12px;
 }

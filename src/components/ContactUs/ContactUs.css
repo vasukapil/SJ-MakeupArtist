@@ -65,6 +65,12 @@
     font-size: 22px;
     
 }
+.article1 p{
+    margin-bottom: 0;
+}
+.under{
+    text-decoration: underline;
+}
 .FAQ{
     margin-top: 50px;
     
@@ -75,11 +81,14 @@
     .Contact-Container h2{
         margin-top: 20px;
         margin-bottom: 30px;
+        font-size: 16px;
+        padding-bottom: 0;
+      
     }
 
     .Contact-Container{
     font-size: 14px;
-    text-align: center;
+   
 
     }
 

@@ -35,7 +35,12 @@
         max-width: 1200px;
         margin: auto;
     }
-    
+    .mobile-white1{
+      display: none;
+    }
+    .mobile-white2{
+      display: none;
+    }
     @media (max-width: 768px) {
         .space {
             margin: 0;
@@ -50,10 +55,28 @@
             font-size: 12px;
             padding: 10px 0px;
             text-align: center;
+            white-space: nowrap;
         }
         .White {
             font-size: 10px;
             padding: 2px 8px;
+            display: none;
+        }
+        .mobile-white1{
+        
+          display: block;
+          width: 35px;
+          height: 35px;
+          margin: auto;
+  
+        }
+        .mobile-white2{
+        
+            display: block;
+
+          width: 35px;
+          height: 35px;
+          margin: auto;
         }
         h5 {
             font-size: 16px !important;

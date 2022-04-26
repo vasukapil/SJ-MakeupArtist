@@ -186,6 +186,8 @@ const Navbar = () => {
   const toggleDrawer = () => {
       setIsOpen((prevState) => !prevState)
   }
+
+
   return (
     <Container>
       <Wrapper>
