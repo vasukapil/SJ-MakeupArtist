@@ -40,9 +40,12 @@ const Home = () => {
         <Accolades/>
         <Accordian/>
         <Footer/>
+      
               
     </div>
   )
 }
 
 export default Home
+
+//kjhfksdajhkjfashhdfsak
