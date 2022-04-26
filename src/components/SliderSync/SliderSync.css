@@ -177,6 +177,7 @@
     .img-slide h2 {
         font-size: 12px;
         margin: 0;
+        text-align: center;
     }
     /* .slick-slider {
         transform: translateX(10%);
