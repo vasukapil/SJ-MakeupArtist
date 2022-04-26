@@ -12,7 +12,13 @@ margin-top: 2rem;
 @media (max-width: 768px){
 margin-top:50px;
     width:100vw;
+
     // height:100vh;
+}
+@media(max-width:450px){
+    ._wPDyp{
+        flex-basis: calc(100%/3 - 10px) !important;
+    }
 }
 
 `
@@ -70,7 +76,7 @@ const Social = () => {
             setNum(18);
             console.log(window.innerWidth);
         }else{
-            setNum(8);
+            setNum(9);
         }
       },[]);
   return (
