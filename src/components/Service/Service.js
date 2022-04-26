@@ -14,7 +14,7 @@ const Services = () => {
       <div className="Service-Container">
         <h2 className="h2">Services</h2>
 
-        <p>
+        <p className="SCP1">
           Sohni Juneja is a well Known Makeup Artist in Delhi for doing
           professional bridal makeup, party makeup and hairstyling. Her bridal
           services are tailored to meet the needs and requirements of the

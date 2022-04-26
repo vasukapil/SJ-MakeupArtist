@@ -42,7 +42,7 @@ const Home = () => {
         <Accolades/>
         <Accordian/>
         <Footer/>
-        <CarouselUse/>       
+              
     </div>
   )
 }

@@ -125,7 +125,7 @@ const Leftdetail = styled.div`
     margin-top: 3px;
 
     @media (max-width: 768px) {
-      width: 65px;
+     
       height: 19px;
       text-align: center;
     }
@@ -133,6 +133,7 @@ const Leftdetail = styled.div`
   article .White {
     margin-top: 10px;
     padding: 10px;
+    
   }
   .White {
     color: #fff;
@@ -145,6 +146,7 @@ const Leftdetail = styled.div`
         margin:0;
         width:45%;
         padding:0;
+        
         margin:5%;
         display:flex;
         align-items:center;
@@ -163,7 +165,7 @@ const Leftdetail = styled.div`
     line-height: 13px;
         }
         article{
-          width:75px;
+            width: 85px;
           display: flex;
           align-items: center;
           justify-content: center;

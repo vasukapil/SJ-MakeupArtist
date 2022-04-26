@@ -1,22 +1,23 @@
 import styled from '@emotion/styled'
 import React from 'react'
+import './Footer.css'
+import FooterMb from '../Mobile/FooterMb/FooterMb'
 
 const MobileContainer=styled.div`
 
 width:100%;
 
 
-.not-flex{
-    display:none;
-}
+
+`
+
+const MbFooter=styled.div`
+
+display:none;
 
 @media (max-width: 768px) {
 
-    .not-flex{
-        display:block;
-        margin-top:-100px;
-        margin-left:76px;
-    }
+    display:block;
 
 }
 
@@ -52,23 +53,7 @@ h1{
 
 @media (max-width: 768px) {
 
-    display:flex;
-    flex-direction:row;
-    width:100%;
-    margin-top:60px;
- 
-    .mb-first{
-        display:flex;
-        flex-direction:column;
-        width:50%;
-        order:2;
-    }
-    h1{
-        margin-top:0px;
-        margin-left:0;
-        font-size:16px;
-        text-align:left;
-    }
+   display:none;
   
 }
 
@@ -198,12 +183,18 @@ font-weight: 400;
 }
 
 
+
+
+
 `
+
+
 
 
 
 const Footer = () => {
   return (
+      <>
       <MobileContainer>
     <Container>
         <div className="mb-first">
@@ -221,20 +212,20 @@ const Footer = () => {
         </Wrapper>
         </div>
      
-        <Content>
+        <Content >
             <div className="check">
                 <h1 className="checkh1">Contact Us</h1>
             <div className="Container2">
                 
-        <Contacts>
+        <Contacts className="content">
             <img src="./Images/Telephone.png"></img>
             <span>+91-9999963537</span>
         </Contacts>
-        <Contacts>
+        <Contacts className="content">
         <img src="./Images/Group 188.png"></img>
             <span>R - 255, 2nd Floor, G K- 1, Delhi - 110048</span>
         </Contacts>
-        <Contacts>
+        <Contacts className="content">
         <img src="./Images/Group 188.png"></img>
             <span>123, lane, opp. Sai Temple, Emerald Hills, Dehradun- 248001</span>
         </Contacts>
@@ -258,19 +249,15 @@ const Footer = () => {
          
     </Container>
 
-    <div className="not-flex">
-        <OuterRight>
-           <img className="image-nav" src="./Images/fb.png" alt="" />
-           <img className="image-nav" src="./Images/Insta.png" alt="" />
-           <img className="image-nav" src="./Images/Link.png" alt="" />
-           <img className="image-nav" src="./Images/Mail.png" alt="" />
-           
-         </OuterRight>
-         <div className="footer">
-             <span>copyright@sohnijuneja.com</span>
-         </div>
-         </div>
     </MobileContainer>
+
+    <MbFooter>
+         <FooterMb/>
+   </MbFooter>
+
+
+
+    </>
   )
 }
 

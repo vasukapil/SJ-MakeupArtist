@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer'
 import Navbar from '../Navbar/Navbar'
 import './ContactUs.css'
 
+
 const ContactUs = () => {
   return (
     <div className="Contact-Container">
@@ -18,22 +19,22 @@ const ContactUs = () => {
         <div className="Contact-info">
             <div className="article1">
                 <span>CALL US</span>
-                <p>+91-9999963537</p>
+                <p className="under">+91-9999963537</p>
                 <p>Mon-Fri  8am - 8pm</p>
             </div>
             <div className="article1">
                 <span>EMAIL US</span>
-                <p>junejasohni@gmail.com</p>
+                <p className="under">junejasohni@gmail.com</p>
                 <p>24*7</p>
             </div>
             <div className="article1">
                 <span>WHATSAPP</span>
-                <p>+91-9999963537</p>
+                <p className="under">+91-9999963537</p>
                 <p>Mon-Fri  8am - 8pm</p>
             </div>
             <div className="article1">
-                <span>BOOK APPOINTMENT</span>
-                <p>+91-9999963537</p>
+                <span className="sp3">BOOK APPOINTMENT</span>
+                <p className="under">+91-9999963537</p>
                 <p>Mon-Fri  8am - 8pm</p>
             </div>
         </div>

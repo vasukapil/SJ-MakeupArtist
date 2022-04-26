@@ -10,6 +10,8 @@ import './Slider.css'
 
 
 export default class Responsive extends Component {
+
+ 
   render() {
     var settings = {
       dots: true,
@@ -48,7 +50,7 @@ export default class Responsive extends Component {
     return (
 
 
-      <Accordion 
+      <Accordion expanded={true}
     sx={{
        
         // display:"none",

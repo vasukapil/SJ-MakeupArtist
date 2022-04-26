@@ -11,9 +11,16 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 const Book = () => {
+
+  const [expanded, setExpanded] = React.useState(true);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
+ 
   return (
   
-    <Accordion className="toastwrap" defaultActiveKey={['0']} alwaysOpen
+    <Accordion expanded={true}
     sx={{
        
         // display:"none",
@@ -45,25 +52,42 @@ expandIcon={<ExpandMoreIcon />}
       <AccordionDetails className="space2" >
       <table>
               <tr>
-                  <td>Sohni Juneja</td>
+                  <td>Party Makeup look</td>
                   <td>₹ 40,000</td>
-                  <td><a className="White">Book Now</a></td>
-                  <td><a className="White">Call Now</a></td>
+                  <td><a className="White">Book Now</a>
+                     <img className="mobile-white1" src="./Images/Group 263.png"></img>
+                  </td>
+                  <td><a className="White">Call Now</a>
+                  <img className="mobile-white2" src="./Images/Group 264.png"></img></td>
               </tr>
 
               <tr>
-                  <td>Senior Sohni Juneja</td>
+                  <td>Bridal Makeup look </td>
                   <td>₹ 40,000</td>
-                  <td><a className="White">Book Now</a></td>
-                  <td><a className="White">Call Now</a></td>
+                  <td><a className="White">Book Now</a>
+                  <img className="mobile-white1" src="./Images/Group 263.png"></img></td>
+                  <td><a className="White">Call Now</a>
+                  <img className="mobile-white2" src="./Images/Group 264.png"></img></td>
               </tr>
 
               <tr>
-                  <td>Junior Sohni Juneja</td>
+                  <td>Pre-Wedding Look.</td>
                   <td>₹ 40,000</td>
-                  <td><a className="White">Book Now</a></td>
-                  <td><a className="White">Call Now</a></td>
+                  <td><a className="White mobile-white">Book Now</a>
+                  <img className="mobile-white1" src="./Images/Group 263.png"></img></td>
+                  <td><a className="White">Call Now</a>
+                  <img className="mobile-white2" src="./Images/Group 264.png"></img></td>
               </tr>
+
+              <tr>
+                  <td>Pre-Wedding Look.</td>
+                  <td>₹ 40,000</td>
+                  <td><a className="White">Book Now</a>
+                  <img className="mobile-white1" src="./Images/Group 263.png"></img></td>
+                  <td><a className="White">Call Now</a>
+                  <img className="mobile-white2" src="./Images/Group 264.png"></img></td>
+              </tr>
+
 
               
           </table>
