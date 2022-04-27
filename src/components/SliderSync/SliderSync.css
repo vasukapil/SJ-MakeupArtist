@@ -9,6 +9,9 @@
 .img-slide {
     margin-left: 10px;
 }
+.img-slide h2{
+    text-align: center;
+}
 
 .img-slider-contain .slick-slide {
     width: auto !important;

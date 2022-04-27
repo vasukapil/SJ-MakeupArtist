@@ -20,7 +20,8 @@ const Book = () => {
  
   return (
   
-    <Accordion expanded={true}
+    <Accordion expanded={expanded}
+    onChange={handleChange('panel1')}
     sx={{
        
         // display:"none",
@@ -53,7 +54,7 @@ expandIcon={<ExpandMoreIcon />}
       <table>
               <tr>
                   <td>Party Makeup look</td>
-                  <td>₹ 40,000</td>
+                 
                   <td><a className="White">Book Now</a>
                      <img className="mobile-white1" src="./Images/Group 263.png"></img>
                   </td>
@@ -63,7 +64,7 @@ expandIcon={<ExpandMoreIcon />}
 
               <tr>
                   <td>Bridal Makeup look </td>
-                  <td>₹ 40,000</td>
+                  
                   <td><a className="White">Book Now</a>
                   <img className="mobile-white1" src="./Images/Group 263.png"></img></td>
                   <td><a className="White">Call Now</a>
@@ -72,7 +73,7 @@ expandIcon={<ExpandMoreIcon />}
 
               <tr>
                   <td>Pre-Wedding Look.</td>
-                  <td>₹ 40,000</td>
+                  
                   <td><a className="White mobile-white">Book Now</a>
                   <img className="mobile-white1" src="./Images/Group 263.png"></img></td>
                   <td><a className="White">Call Now</a>
@@ -81,7 +82,7 @@ expandIcon={<ExpandMoreIcon />}
 
               <tr>
                   <td>Pre-Wedding Look.</td>
-                  <td>₹ 40,000</td>
+                 
                   <td><a className="White">Book Now</a>
                   <img className="mobile-white1" src="./Images/Group 263.png"></img></td>
                   <td><a className="White">Call Now</a>

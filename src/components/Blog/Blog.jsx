@@ -9,6 +9,7 @@ import './Blog.css'
 const Container=styled.div`
 
 width:100vw;
+margin:auto;
 
 @media (max-width: 768px){
     width:100%;
@@ -27,6 +28,9 @@ const Wrapper=styled.div`
 
 display:flex;
 justify-content:space-around;
+width:96vw;
+margin:auto;
+
 
 @media (max-width: 768px){
     width:100vw;

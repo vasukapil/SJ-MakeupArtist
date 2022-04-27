@@ -22,10 +22,12 @@ const Container=styled.div`
         }
     }
    img{
+       width:200px;
+       height:200px;
     @media (max-width: 768px){
         width:80px;
         height:80px;
-        object-fit:content;
+  
     }
    }
    li{
@@ -49,8 +51,9 @@ const Container=styled.div`
    }
    @media (max-width: 768px){
        ul{
-           padding:10;
+          
            width:100vw;
+           padding-left:0;
            
            li{
               width:20%; 
@@ -74,10 +77,10 @@ const Accolades = () => {
     <Container className="Accolades">
         <h2>Accolades</h2>
         <ul>
-            <li><img src="./Images/image 16 (1).png"></img></li>
-            <li><img src="./Images/image 16 (2).png"></img></li>
-            <li><img src="./Images/image 16 (3).png"></img></li>
-            <li><img src="./Images/image 16 (4).png"></img></li>
+            <li><img src="./Images/1.png"></img></li>
+            <li><img src="./Images/2.png"></img></li>
+            <li><img src="./Images/3.png"></img></li>
+            <li><img src="./Images/4.png"></img></li>
             
         </ul>
     </Container>

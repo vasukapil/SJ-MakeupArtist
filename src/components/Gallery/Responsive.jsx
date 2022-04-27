@@ -9,10 +9,16 @@ import './Slider.css'
 
 
 
-export default class Responsive extends Component {
+export default function Responsive (){
+
+  const [expanded, setExpanded] = React.useState(true);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
 
  
-  render() {
+ 
     var settings = {
       dots: true,
       infinite: false,
@@ -50,7 +56,8 @@ export default class Responsive extends Component {
     return (
 
 
-      <Accordion expanded={true}
+      <Accordion expanded={expanded}
+      onChange={handleChange('panel1')}
     sx={{
        
         // display:"none",
@@ -113,6 +120,3 @@ expandIcon={<ExpandMoreIcon />}
       </Accordion>
     );
   }
-}
-
-{}

@@ -6,12 +6,14 @@ const SocialMedia=styled.div`
 
 // height:100%;
 width:100%;
+padding:2rem;
 margin-top: 2rem;
 
 
 @media (max-width: 768px){
 margin-top:50px;
     width:100vw;
+    padding:1rem;
 
     // height:100vh;
 }
