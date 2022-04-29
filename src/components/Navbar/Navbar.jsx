@@ -22,6 +22,7 @@ const Wrapper = styled.div`
   @media (max-width: 768px) {
     display: flex;
     align-items: center;
+    padding-bottom:0;
     justify-content: space-around;
   }
 `;

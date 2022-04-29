@@ -121,6 +121,11 @@ margin-left:28px;
 margin-top:40px;
 }
 @media (max-width: 768px){
+.p1{
+  font-size:15px;
+  text-align : center;
+}
+@media (max-width: 768px){
     display:none;
     width: 100%;
     display: inline-block;
@@ -169,6 +174,9 @@ const Third=styled.div`
         margin-left:0px;
         margin-top:0px;
        }
+       .p1{
+        font-size:15px;
+        text-align : center;
  }
 `
 const View=styled.div`
