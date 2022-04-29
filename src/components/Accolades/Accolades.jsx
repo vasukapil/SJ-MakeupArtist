@@ -46,6 +46,8 @@ const Container=styled.div`
         font-size:20px;
         padding:0;
         margin-bottom:20px;
+        width: 100vw;
+    margin-left: 0;
     }
 
    }
