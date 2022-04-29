@@ -151,6 +151,12 @@ const Third=styled.div`
 
    flex:1;
 
+   @media (max-width: 768px){
+   
+    .sc-bhVIhj{
+   padding-bottom: 0;
+    }
+   }
  
 
  .p2,.p3{
@@ -167,6 +173,8 @@ const Third=styled.div`
     margin-left:30px;
    }
    @media (max-width: 768px){
+   
+     
     width: 100%;
     display: inline-block;
     padding: 12px;
@@ -259,7 +267,9 @@ const Blog = () => {
                 <p className="p3">Read More</p>
             </Second>
             <Third>
-                <Third><img src="./Images/Rectangle 19.png"/></Third>
+            
+                  <div className="sc-bhVIhj"><img src="./Images/Rectangle 19.png"/></div>
+                  
                 <p className="p1">WHAT ARE THE BENEFITS OF HYALURONIC ACID ON SKIN</p>
                 <p className="p2">By Sohni- June 30, 2021</p>
                 <p className="p3">Read More</p>
