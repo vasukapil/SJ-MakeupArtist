@@ -19,6 +19,7 @@
       font-size: 0.600rem;
       line-height: 0.75rem;
       text-align: center;
+      word-break: break-all;
 
       margin-left: 3%;
       height: auto;
@@ -26,6 +27,9 @@
       font-size: 13px;
     line-height: 17px;
       
+      }
+      .text-wrap-mb p:last-child{
+        padding: 0;
       }
       .s1,.s2,.s3,.s4{
           width: 6 rem;
