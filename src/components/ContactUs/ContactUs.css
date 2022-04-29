@@ -73,6 +73,7 @@
 }
 .FAQ{
     margin-top: 50px;
+
     
 }
 
@@ -109,6 +110,7 @@
     .article1{
         width: 100%;
         margin: auto;
+        margin-bottom: 1rem;
     
     
     }
@@ -126,6 +128,7 @@ color: #464343;
     }
     .article1 p{
         font-size: 15px;
+     
     
     }
     .Address{
@@ -135,6 +138,7 @@ color: #464343;
     .Address span{
 
         font-size: 18px;
+      
        
     }
 
@@ -187,14 +191,15 @@ line-height: 21px;
 
     .FAQ{
 
-        width: 380px;
-        margin: auto;
+        width: 100%;
+        margin-left: -1.25rem;
     }
     .Contact-info div {
         width: 160px;
     }
     .sp3{
         width: 230px;
+        white-space: nowrap;
     }
 
 }

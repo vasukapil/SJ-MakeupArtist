@@ -1,10 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Footer from '../Footer/Footer'
 import Navbar from '../Navbar/Navbar'
 import './Media.css'
 
 
 export const Media = () => {
+    const [active,setActive]=useState("first");
   return (
     <div className="Media-Container">
         <Navbar/>
@@ -14,10 +15,10 @@ export const Media = () => {
 
             <div className="button">
                
-                <a>BRIDAL MAKEUP</a>
-                <a>PARTY MAKEUP</a>
-                <a>BEFORE/ AFTER</a>
-                <a className="adjust">EDITORIAL</a>
+                <a onClick={()=>setActive("first")}>BRIDAL MAKEUP</a>
+                <a onClick={()=>setActive("second")}>PARTY MAKEUP</a>
+                <a onClick={()=>setActive("third")}>BEFORE/ AFTER</a>
+                <a  onClick={()=>setActive("four")}className="adjust">EDITORIAL</a>
             </div>
 
             <div className="Media-Gallery">
