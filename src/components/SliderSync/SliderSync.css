@@ -275,4 +275,8 @@
         transform: translateX(10%);
         transform: translateX(31.5%);
     } */
+
+    .firstimgSS{
+        padding: 0 15px;
+    }
 }

@@ -42,4 +42,18 @@
         justify-content: space-between;
     }
     
+   .MuiAccordionDetails-root{
+       display: flex;
+   }
+   .sc-jqUVSM{
+
+        margin: 0 !important;
+
+   }
+   .mobile-about .MuiAccordionSummary-expandIconWrapper .MuiSvgIcon-root{
+
+     margin-right: 2rem;
+
+   }
+    
 }

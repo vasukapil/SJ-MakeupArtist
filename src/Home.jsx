@@ -22,6 +22,7 @@ import Responsive from './components/Gallery/Responsive'
 import Book from './components/Book/Book'
 import SliderSync from './components/SliderSync/SliderSync'
 import TestimonialSlider from './components/TestimonialSlider/TestimonialSlider'
+import Coaching from './components/Coaching/Coaching'
 
 
 
@@ -35,7 +36,7 @@ const Home = () => {
       
 
         <Book/>
-        <Responsive/>
+        <Coaching/>
         <Social/>
         <TestimonialSlider/>
         <Blog/>

@@ -47,17 +47,17 @@ expandIcon={<ExpandMoreIcon />}
           color:'#464343'
            
         
-        }} variant="h5">How do I book an appointment?</Typography>
+        }} variant="h5">Which locations does professional makeup artist Sohni Juneja serve?</Typography>
       </AccordionSummary >
       <AccordionDetails>
         <Typography>
-        
+        Sohni Juneja is ranked among the Best Bridal makeup artists in Delhi, she also has a makeup studio in Dehradun and extends her makeup services worldwide.
         </Typography>
       </AccordionDetails>
     </Accordion>
     <Accordion
       sx={{
-        color: "red",
+        
         // display:"none",
         border:"none ",
         borderBottom:"1px solid gray",
@@ -82,17 +82,17 @@ fontSize:'20px',
 color:'#464343'
  
 
-}} variant="h5">How many looks are available?</Typography>
+}} variant="h5">Why is Sohni Juneja considered one of the best makeup artists all over India?</Typography>
       </AccordionSummary>
       <AccordionDetails>
         <Typography>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
+        Sohni Juneja is one of the best freelance makeup artists in India. She offers you all the services not only at her makeup studio but also at your respective venue. To give you a smooth and trouble-free makeover experience, she travels within the city, outstations, and at your doorstep as well.
+
         </Typography>
       </AccordionDetails>
     </Accordion>
     <Accordion sx={{
-        color: "red",
+        
         // display:"none",
         border:"none",
         borderBottom:"1px solid gray",
@@ -113,48 +113,56 @@ fontFamily: 'Poppins',
 fontStyle:'normal',
 fontWeight:'400',
 fontSize:'20px',
-color:'#464343'
+color:'#464343',
+textAlign:'inherit'
  
 
-}} variant="h5">How to reschedule/ cancel?</Typography>
-      </AccordionSummary>
-    </Accordion>
-    <Accordion sx={{
-        color: "red",
-        // display:"none",
-        border:"none ",
-        borderBottom:"1px solid gray",
-        boxShadow:"none",
-        maxWidth:"88%",
-
-      }}>
-      <AccordionSummary sx={{
-    color: "gray"
-  }}
-  expandIcon={<ExpandMoreIcon />}
-        aria-controls="panel1a-content"
-        id="panel1a-header"
-      >
-        <Typography style={{
-
-fontFamily: 'Poppins',
-fontStyle:'normal',
-fontWeight:'400',
-fontSize:'20px',
-color:'#464343'
- 
-
-}} variant="h5">How much is the minimum advance?</Typography>
+}} variant="h5">Why choose Sohni Juneja for Party Makeup?</Typography>
       </AccordionSummary>
       <AccordionDetails>
         <Typography>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
+        If you want amazing party looks, then choose the party makeup artist in Delhi-Sohni Juneja. She offers makeup with the best products that suit your skin perfectly and covers all the imperfections of the skin.
+
         </Typography>
       </AccordionDetails>
     </Accordion>
     <Accordion sx={{
-        color: "red",
+        
+        // display:"none",
+        border:"none ",
+        borderBottom:"1px solid gray",
+        boxShadow:"none",
+        maxWidth:"88%",
+
+      }}>
+      <AccordionSummary sx={{
+    color: "gray"
+  }}
+  expandIcon={<ExpandMoreIcon />}
+        aria-controls="panel1a-content"
+        id="panel1a-header"
+      >
+        <Typography style={{
+
+fontFamily: 'Poppins',
+fontStyle:'normal',
+fontWeight:'400',
+fontSize:'20px',
+color:'#464343',
+textAlign:'inherit'
+ 
+
+}} variant="h5">Does a Professional makeup artist in Delhi Sohni Juneja offer all kinds of bridal makeup services?</Typography>
+      </AccordionSummary>
+      <AccordionDetails>
+        <Typography>
+        The professional makeup artist in Delhi offers bridal makeup, party makeup, and hairstyling. With this Sohni Juneja offers engagement makeup, party makeup services, wedding makeup tips, and product recommendations
+
+        </Typography>
+      </AccordionDetails>
+    </Accordion>
+    <Accordion sx={{
+       
         // display:"none",
         border:"none ",
         boxShadow:"none",
@@ -175,15 +183,15 @@ fontFamily: 'Poppins',
 fontStyle:'normal',
 fontWeight:'400',
 fontSize:'20px',
-color:'#464343'
+color:'#464343',
+textAlign:'inherit'
  
 
-}} align="right" variant="h5">Payment Methods</Typography>
+}} align="right" variant="h5">What services are included in Bridal makeup packages offered by Sohni Juneja?</Typography>
       </AccordionSummary>
       <AccordionDetails>
         <Typography>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
+        Sohni Juneja provides exclusive bridal makeup services to her clients. She is an expert in grooming her brides. She offers makeup services to the brides by using high-quality makeup products so that brides can get a long-lasting look.
         </Typography>
       </AccordionDetails>
     </Accordion>

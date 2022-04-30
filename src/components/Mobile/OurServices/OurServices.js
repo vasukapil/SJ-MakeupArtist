@@ -1,7 +1,14 @@
-import React from "react";
+import React,{useState} from "react";
+
 import './OurServices.css'
 
+import Hair from "./Hair";
+import Bridal from "./Bridal";
+import Party from "./Party";
+import Offers from "./Offers";
+
 const OurServices = () => {
+  const [active,setActive]=useState("first");
   return (
     <div className="Service-Container-mb">
       <h1 className="services-h1">Our Services</h1>
@@ -19,7 +26,7 @@ const OurServices = () => {
           hairstyling as well as bridal makeup.
         </p>
 
-        <div className="text-wrap-mb">
+        <div className="text-wrap-mb2">
           <p>
             {" "}
             Professional makeup artist, Sohni Juneja not only provides you all
@@ -31,54 +38,18 @@ const OurServices = () => {
       </div>
 
       <div className="services-btn-mb">
-        <span className="s1">HAIR STYLING</span>
-        <span className="s2">BRIDAL MAKEUP</span>
-        <span className="s3">PARTY MAKEUP</span>
-        <span className="s4">OFFERS</span>
+        <span onClick={()=>setActive("first")} className="s1">HAIR STYLING</span>
+        <span onClick={()=>setActive("second")} className="s2">BRIDAL MAKEUP</span>
+        <span onClick={()=>setActive("third")} className="s3">PARTY MAKEUP</span>
+        <span onClick={()=>setActive("four")} className="s4">OFFERS</span>
       </div>
 
       <div className="hair-box">
-        <h2 className="hair-h2">HAIR STYLING</h2>
-        <div className="pureflex">
-        <div className="hair-box-image">
-          <img className="img-hair"  src="./Images/Rectangle 62.png"></img>
-        </div>
-        <div className="hair-box-para">
-          
-          <p className="mobile-hair1">
-            As Makeup plays an important role in glamorizing the look of a
-            person. It is always a great desire of every woman to look her best
-            on her special day.
-          </p>
-
-          <p className="mobile-hair2">
-            From the elaborate and traditional, to the trendy and quirky, our
-            experienced hands can give any twist to your tresses. Sohni Juneja
-            provides hair style &amp; hair extension service from eccentric to
-            knotty, to cultural and with latest tradition, you can get adorable
-            look so that every eye can appreciate your look on the big day.
-          </p>
-        </div>
-        </div>
-
-        <div className="outer-mb">
-          <p>
-            Sohni Juneja is a renowned professional makeup artist in Dehradun
-            and Delhi. Having enormous knowledge about makeup and styling, she
-            very well knows how to give attractive and charming look to her
-            clients. She has been involved in providing her services of makeover
-            to some well known T.V artists as well as celebs. She is
-            successfully transforming lives of the women by making them
-            beautiful.</p>
-            
-            <p> Get sensational look and let everyone adore your beauty
-            with Delhi best makeup artist at affordable rates. Call us or book
-            your appointment with Best wedding Makeup Artist in Delhi.
-
-            </p>
-          
-        </div>
-        <div className="btn-view">
+      {active==="first" && <Hair/>}
+        {active==="second" && <Bridal/>}
+        {active==="third" && <Party/>}
+        {active==="four" && <Offers/>}
+                <div className="btn-view">
           <p>View Gallery</p>
         </div>
       </div>

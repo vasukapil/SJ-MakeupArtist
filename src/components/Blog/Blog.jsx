@@ -185,6 +185,8 @@ const Third=styled.div`
        .p1{
         font-size:15px;
         text-align : center;
+        margin-bottom: 15px;
+        margin-left:0;
  }
 `
 const View=styled.div`

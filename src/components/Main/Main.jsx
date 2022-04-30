@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+
 import SliderSync from "../SliderSync/SliderSync";
 import "./Main.css";
-// import Accordion from '@mui/material/Accordion';
-// import AccordionSummary from '@mui/material/AccordionSummary';
-// import AccordionDetails from '@mui/material/AccordionDetails';
-// import Typography from '@mui/material/Typography';
-// import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Main_Boundary=styled.div`
 
@@ -193,6 +194,7 @@ const Rightdetail = styled.div`
 
   @media (max-width: 768px) {
 width:50%;
+
   }
 `;
 const Bottomdetails = styled.div`
@@ -362,6 +364,15 @@ color:'#464343'
       </Container_main>
 
       <div className="mobile-about">
+      <Accordion >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography sx={{margin:'auto'}}>ABOUT SOHNI JUNEJA</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
         <Leftdetail>
           <h1>Sohni Juneja</h1>
           <p>
@@ -380,6 +391,9 @@ color:'#464343'
             </div>
           </Imgdiv>
         </Rightdetail>
+        </AccordionDetails>
+      </Accordion>
+       
       </div>
       {/* </AccordionDetails>
     </Accordion> */}

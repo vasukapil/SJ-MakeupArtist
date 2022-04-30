@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import Footer from '../Footer/Footer'
 import Navbar from '../Navbar/Navbar'
+import Bridal from './Bridal'
 import './Media.css'
 
 
@@ -23,30 +24,7 @@ export const Media = () => {
 
             <div className="Media-Gallery">
 
-                <div className="First-row">
-                    <img className="resp" src="./Images/Rectangle 87.png"></img>
-                    <img className="resp resp2" src="./Images/Rectangle 92.png"></img>
-                    <img className="resp resp1" src="./Images/Rectangle 88.png"></img>
-                    <img className="mobile-gallery" src="./Images/Rectangle 87.png"></img>
-                    <img className="mobile-gallery" src="./Images/Rectangle 92.png"></img>
-                </div>
-
-                <div className="Second-row">
-                    <img className="resp" src="./Images/Rectangle 91.png"></img>
-                    <img className="resp resp2" src="./Images/Rectangle 89.png"></img>
-                    <img className="resp resp1" src="./Images/Rectangle 90.png"></img>
-                    <img className="mobile-gallery" src="./Images/Rectangle 91.png"></img>
-                    <img className="mobile-gallery" src="./Images/Rectangle 89.png"></img>
-                </div>
-
-                <div className="Third-row">
-                    <img className="resp" src="./Images/Rectangle 87.png"></img>
-                    <img className="resp resp2" src="./Images/Rectangle 92.png"></img>
-                    <img className="resp resp1" src="./Images/Rectangle 88.png"></img>
-                    <img className="mobile-gallery" src="./Images/Rectangle 87.png"></img>
-                    <img className="mobile-gallery" src="./Images/Rectangle 92.png"></img>
-                </div>
-
+            {active==="first" && <Bridal/>}
             </div>
 
 
