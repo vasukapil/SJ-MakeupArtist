@@ -62,13 +62,14 @@ max-width:100%;
     margin:auto;
 
     div{
-       
+    
     }
 }
 
 img{
-    max-width:469px;
-    max-height:661px;
+    width: 300px;
+    height: 422.81px;
+    margin: auto !important;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin-left:106px;
 }
@@ -164,7 +165,7 @@ const Testimonial = ({name}) => {
             <img className="r" src="./Images/Right.png"></img>
 
             <First>
-                <div><img src="./Images/Ellipse 5 (1).png"></img></div></First>
+                <div><img src="./Images/Ellipse 5.png"></img></div></First>
             <Second><Heading className="inner">Vatsala Wilson</Heading>
             
             <Paragraph className="p1">I am glad that I had you as my makeup artist on our big day. Thank you so much for all your help, you are one seriously talented woman! I looked so beautiful and not to mention that makeup looked stubbing on me. 
