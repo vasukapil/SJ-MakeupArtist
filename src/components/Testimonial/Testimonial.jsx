@@ -60,6 +60,10 @@ max-width:100%;
 @media (max-width: 768px){
 
     margin:auto;
+
+    div{
+       
+    }
 }
 
 img{
@@ -76,7 +80,9 @@ img{
         img{
             margin: auto;
             width:80%;
-            height:auto;
+            height:50%;
+            width:150px;
+            height:206px;
 
         }
     }
@@ -157,7 +163,8 @@ const Testimonial = ({name}) => {
             <img className="l" src="./Images/Left.png"></img>
             <img className="r" src="./Images/Right.png"></img>
 
-            <First><img src="./Images/Ellipse 5 (1).png"></img></First>
+            <First>
+                <div><img src="./Images/Ellipse 5 (1).png"></img></div></First>
             <Second><Heading className="inner">Vatsala Wilson</Heading>
             
             <Paragraph className="p1">I am glad that I had you as my makeup artist on our big day. Thank you so much for all your help, you are one seriously talented woman! I looked so beautiful and not to mention that makeup looked stubbing on me. 
