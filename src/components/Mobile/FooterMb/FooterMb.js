@@ -2,6 +2,7 @@
 import { styled } from '@mui/system';
 import React from 'react'
 import './FooterMb.css'
+import { NavLink } from "react-router-dom";
 
 const Footer_mb = () => {
 
@@ -38,13 +39,41 @@ const Footer_mb = () => {
                 <div className="footer-lists">
 
                 <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Gallery</li>
-            <li>Media</li>
-            <li>Blog</li>
-            <li>Contact Us</li>
+          <li>
+            <NavLink className="linkText" to="/">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="linkText" to="/about">
+              About Us
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="linkText" to="/services">
+              Services
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="linkText" to="/media">
+              Media
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="linkText" to="/album">
+              Album
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="linkText" to="/blog">
+              Blog
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="linkText" to="/contact">
+              Contact Us
+            </NavLink>
+          </li>
         </ul>
 
                     </div>

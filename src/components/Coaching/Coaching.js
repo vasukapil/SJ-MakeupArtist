@@ -85,27 +85,7 @@ const Coaching = () => {
 </p>
           </div>
 
-          <div className="fifth-p">
-            <h3>Additional Details</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec
-              posuere mauris, ut lacinia lectus. Donec ut enim mauris. Sed
-              molestie Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. In nec posuere mauris, ut lacinia
-              lectus. Donec ut enim mauris. Sed molestie Lorem ipsum dolor sit
-              amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              nec posuere mauris, ut lacinia lectus. Donec ut enim mauris. Sed
-              molestie Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. In nec posuere mauris, ut lacinia
-              lectus. Donec ut enim mauris. Sed molestie Lorem ipsum dolor sit
-              amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              nec posuere mauris, ut lacinia lectus. Donec ut enim mauris. Sed
-              molestie Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. In nec posuere mauris, ut lacinia
-              lectus. Donec ut enim mauris. Sed molestie Lorem ipsum dolor sit
-              amet,{" "}
-            </p>
-          </div>
+         
         </div>
       </div>
         </AccordionDetails>
