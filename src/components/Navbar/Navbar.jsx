@@ -38,8 +38,8 @@ const Left = styled.div`
     }
 
     img {
-      width: 20.89px;
-      height: 20.93px;
+      width: 25.89px;
+      height: 32px;
     }
   }
   span {
@@ -158,7 +158,7 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <img src="./Images/phone.png" alt="" />
+          <img className="phone-m" src="./Images/phone.png" alt="" />
           <span>+91-9999963537</span>
         </Left>
         <Center>
