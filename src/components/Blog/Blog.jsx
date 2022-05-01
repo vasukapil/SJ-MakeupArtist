@@ -63,7 +63,7 @@ const Heading=styled.h1`
   @media (max-width: 768px){
     font-size:25px;
     padding:0;
-    margin-bottom:20px;
+    
    }
 `
 const First=styled.div`

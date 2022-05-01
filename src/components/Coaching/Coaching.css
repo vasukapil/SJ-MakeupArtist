@@ -1,5 +1,5 @@
 .Coaching-Container{
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 .covid{
@@ -167,12 +167,12 @@ font-style: normal;
 font-weight: 400;
 font-size: 26px;
 line-height: 39px;
-margin: auto;
+
 }
 @media(max-width: 600px) {
 
     .Coaching-Container{
-        width: 80%;
+        width: 90%;
         margin: auto;
         padding-bottom: 60px;
     }

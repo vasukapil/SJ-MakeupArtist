@@ -95,10 +95,14 @@
         }
         .MuiAccordionSummary-expandIconWrapper.Mui-expanded.css-yw020d-MuiAccordionSummary-expandIconWrapper {
             transform: rotate(360deg);
-            margin-right: 2rem;
+             
+            
         }
         .MuiAccordionSummary-content.Mui-expanded.MuiAccordionSummary-contentGutters.css-o4b71y-MuiAccordionSummary-content {
             border-bottom: 1px solid;
             padding-bottom: 7px;
+        }
+        .type{
+          margin-left: 1rem;
         }
     }

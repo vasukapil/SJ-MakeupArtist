@@ -31,7 +31,7 @@ const Book = () => {
         boxShadow:"none",
         outline:"none",
         width:"100vw",
-        textAlign:"center"
+      
 
       }}
       // className="mainDiiv"
@@ -48,7 +48,7 @@ expandIcon={<ExpandMoreIcon />}
         id="panel1a-header"
       >
           
-        <Typography  style={{ fontWeight: 500 , color:"rgba(70, 67, 67, 1)"}} sx={{ mx: "auto"  }} className="type" align="center" variant="h5">BOOK SERVICES</Typography>
+        <Typography  style={{ fontWeight: 500 , color:"rgba(70, 67, 67, 1)"}} sx={{  }} className="type" variant="h5">BOOK SERVICES</Typography>
       </AccordionSummary >
       <AccordionDetails className="space2" >
       <table>
