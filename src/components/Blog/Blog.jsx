@@ -40,6 +40,7 @@ margin:auto;
     .slick-arrow.slick-next {
       top: 40%;
   }
+
   
   .slick-arrow.slick-prev {
       top: 40%;
@@ -47,7 +48,9 @@ margin:auto;
   .p1{
     margin-bottom:0px;
   }
-  .slick-dots{
+  .p1{
+
+    margin-bottom:-15px !important;
    
   }
 }
