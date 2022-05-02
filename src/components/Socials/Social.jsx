@@ -11,7 +11,7 @@ margin-top: 2rem;
 
 
 @media (max-width: 768px){
-margin-top:50px;
+
     width:100vw;
     padding:1rem;
 

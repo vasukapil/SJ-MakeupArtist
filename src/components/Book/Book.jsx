@@ -20,7 +20,7 @@ const Book = () => {
  
   return (
   
-    <Accordion expanded={expanded}
+    <Accordion className="changed" expanded={expanded}
     onChange={handleChange('panel1')}
     sx={{
        
@@ -47,7 +47,7 @@ expandIcon={<ExpandMoreIcon />}
         id="panel1a-header"
       >
           
-        <Typography  style={{ fontWeight: 500 , color:"rgba(70, 67, 67, 1)"}} sx={{  }} className="type" variant="h5">BOOK SERVICES</Typography>
+        <Typography  style={{color:'gray'}} sx={{  }} className="type" variant="h5">BOOK SERVICES</Typography>
       </AccordionSummary >
       <AccordionDetails className="space2" >
       <table>

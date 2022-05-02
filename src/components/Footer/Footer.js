@@ -219,7 +219,7 @@ const Footer = () => {
                 
         <Contacts className="content">
             <img src="./Images/Telephone.png"></img>
-            <span>+91-9999963537</span>
+            <span><a href="tel:+91-9999963537">+91-9999963537</a>+91-9999963537</span>
         </Contacts>
         <Contacts className="content">
         <img src="./Images/Group 188.png"></img>

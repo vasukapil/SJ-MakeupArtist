@@ -92,6 +92,16 @@ font-size: 18px;
         margin-bottom: 0;
         margin-bottom: 1.875rem;
     }
+    .abcd{
+        object-fit: contain;
+        height: 100px;
+        width: 130px;
+        flex-wrap: wrap;
+        padding: 2px;
+    }
+    .hid{
+        display: none;
+    }
 
     .First-flex img{
 width: 7.188rem;

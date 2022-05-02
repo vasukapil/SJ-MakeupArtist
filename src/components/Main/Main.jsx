@@ -31,7 +31,7 @@ const Container_main = styled.div`
   @media (max-width: 768px) {
     height: 100%;
     width: 100%;
-    padding-bottom:7px;
+    padding-bottom:15px;
   
   }
 `;
@@ -372,7 +372,7 @@ color:'#464343'
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography sx={{}}>ABOUT SOHNI JUNEJA</Typography>
+          <Typography style={{color:'gray'}} sx={{}}>ABOUT SOHNI JUNEJA</Typography>
         </AccordionSummary>
         <AccordionDetails>
         <Leftdetail>

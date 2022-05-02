@@ -27,7 +27,7 @@ const Coaching = () => {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography style={{ fontWeight: 400 , color:"rgba(70, 67, 67, 1)"}}variant="h5" className="typo">SOHNI JUNEJA SCHOOL OF MAKEUP</Typography>
+          <Typography style={{  color:'gray' }}variant="h5" className="typo">SOHNI JUNEJA SCHOOL OF MAKEUP</Typography>
         </AccordionSummary>
         <AccordionDetails>
         <div className="Coaching-Container">

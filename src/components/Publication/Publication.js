@@ -4,6 +4,12 @@ import Navbar from '../Navbar/Navbar'
 import './Publication.css'
 
 const Publication = () => {
+
+
+    function HandleMe(){
+        document.querySelector('.hid').style.display="block";
+    }
+
   return (
     <div className="Publication-Container">
         <Navbar/>
@@ -30,16 +36,25 @@ const Publication = () => {
 
                 </div>
 
+              
+
                 </div>
 
 
             </div>
+            <div className="hid">
 
+{
+[...new Array(30)].map((_,i)=>
+<img className="abcd" src={`./Images/Media Publications/x${i + 2}.jpg`} loading="lazy" />
+)
+}
+</div>
             </div>
 
             <div className="ap-contain">
             <article className="ap">
-                <p>View More</p>
+                <p onClick={HandleMe}>View More</p>
                 </article>
                 </div>
 
