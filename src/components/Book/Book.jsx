@@ -47,7 +47,7 @@ expandIcon={<ExpandMoreIcon />}
         id="panel1a-header"
       >
           
-        <Typography  style={{color:'gray'}} sx={{  }} className="type" variant="h5">BOOK SERVICES</Typography>
+        <Typography  style={{color:'rgb(70,67,67)'}} sx={{  }} className="type" variant="h5">BOOK SERVICES</Typography>
       </AccordionSummary >
       <AccordionDetails className="space2" >
       <table>

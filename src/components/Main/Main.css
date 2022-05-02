@@ -34,7 +34,8 @@
 }
 
 @media only screen and (max-width: 768px) {
-   
+
+    
     .mobile-about {
         width: 100vw;
         display: flex;

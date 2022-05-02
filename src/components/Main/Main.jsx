@@ -372,7 +372,7 @@ color:'#464343'
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography style={{color:'gray'}} sx={{}}>ABOUT SOHNI JUNEJA</Typography>
+          <Typography className="typi" style={{color:'rgb(70,67,67)'}} sx={{}}>ABOUT SOHNI JUNEJA</Typography>
         </AccordionSummary>
         <AccordionDetails>
         <Leftdetail>
