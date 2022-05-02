@@ -64,14 +64,17 @@ const Right = styled.div`
     img {
       display: none;
     }
-    .hidden {
-      width: 34px;
+   
+   
+     .hidden {
+      width: 24px;
       height: 0px;
       border: 1px solid #000000;
       display: block;
-      margin-bottom: 10px;
+      margin-bottom: 7px;
       cursor: pointer;
-    }
+      background:black;
+  }
   }
 `;
 const Menu = styled.div`

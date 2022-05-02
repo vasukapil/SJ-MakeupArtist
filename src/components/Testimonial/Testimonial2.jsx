@@ -25,7 +25,6 @@ padding-top:20px;
 @media (max-width: 768px){
     font-size:25px;
     padding:0;
-    width:100%;
 }
 
 
@@ -155,7 +154,7 @@ flex-direction:column;
 }
 `
 
-const Testimonial = ({name}) => {
+const Testimonial2 = ({name}) => {
   return (
 
     <>
@@ -167,10 +166,10 @@ const Testimonial = ({name}) => {
             <img className="r" src="./Images/Right.png"></img> */}
 
             <First>
-                <div className="first-"><img src="./Images/Ellipse 5.png"></img></div></First>
-            <Second><Heading className="inner">Vatsala Wilson</Heading>
+                <div className="first-"><img src="./Images/Ellipse 6 (1).png"></img></div></First>
+            <Second><Heading className="inner">Maneesha Thapa</Heading>
             
-            <Paragraph className="p1">I am glad that I had you as my makeup artist on our big day. Thank you so much for all your help, you are one seriously talented woman! I looked so beautiful and not to mention that makeup looked stubbing on me. 
+            <Paragraph className="p1">It was such a wonderful experience to have my makeup done from her. She is no doubt one of the finest makeup artist in India. My makeup and hair was everything I ever imagined.
             </Paragraph>
 
             <Paragraph className="p2">You made me feel so comfortable (not to forget the soft brush touch, asmr feeling), I couldn't have picked a better makeup artist.</Paragraph>
@@ -186,4 +185,4 @@ const Testimonial = ({name}) => {
   )
 }
 
-export default Testimonial
+export default Testimonial2

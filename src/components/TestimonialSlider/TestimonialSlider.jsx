@@ -4,12 +4,14 @@ import Testimonial from '../Testimonial/Testimonial'
 import React, { Component } from "react";
 import Slider from "react-slick";
 import "./TestimonialSlider.css";
+import Testimonial2 from '../Testimonial/Testimonial2';
+import Testimonial3 from '../Testimonial/Testimonial3';
 
 export default class SimpleSlider extends Component {
   render() {
     const settings = {
       dots: false,
-      infinite: true,
+      infinite: false,
       arrows: true,
       speed: 500,
       slidesToShow: 1,
@@ -54,10 +56,10 @@ export default class SimpleSlider extends Component {
             <Testimonial/>
           </div>
           <div>
-            <Testimonial/>
+            <Testimonial2/>
           </div>
           <div>
-            <Testimonial/>
+            <Testimonial3/>
           </div>
         </Slider>
       </div>
