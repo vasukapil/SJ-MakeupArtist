@@ -38,8 +38,8 @@ const Left = styled.div`
     }
 
     img {
-      width: 25.89px;
-      height: 32px;
+      width: 20.89px;
+      height: 20.93px;
     }
   }
   span {
@@ -145,6 +145,8 @@ const Menu2 = styled.div`
     a {
       margin: 0;
     }
+  
+  
   }
 `;
 

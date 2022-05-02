@@ -24,6 +24,7 @@ import SliderSync from './components/SliderSync/SliderSync'
 import TestimonialSlider from './components/TestimonialSlider/TestimonialSlider'
 import Coaching from './components/Coaching/Coaching'
 import {Helmet} from "react-helmet";
+import Testimonial2 from './components/Testimonial/Testimonial2'
 
 
 
@@ -183,6 +184,7 @@ const Home = () => {
         <Coaching/>
         <Social/>
         <TestimonialSlider/>
+
         <Blog/>
         <Accolades/>
         <Accordian/>

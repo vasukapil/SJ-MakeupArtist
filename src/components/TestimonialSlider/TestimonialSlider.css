@@ -3,6 +3,9 @@
         padding-bottom: 40px;
         margin-top: 30px;
     }
+    .sllAr h1{
+        padding-top: 1rem;
+    }
 }
 
 .SS .slick-arrow.slick-prev {

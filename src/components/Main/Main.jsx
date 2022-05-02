@@ -14,6 +14,7 @@ const Main_Boundary=styled.div`
 max-width:100%;
 height:100%;
 
+
 `
 
 const Container_main = styled.div`
@@ -364,7 +365,7 @@ color:'#464343'
       </Container_main>
 
       <div className="mobile-about">
-      <Accordion >
+      <Accordion  >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"

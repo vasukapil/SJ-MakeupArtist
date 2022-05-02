@@ -48,7 +48,7 @@ margin:auto;
     margin-bottom:0px;
   }
   .slick-dots{
-    margin-bottom: 32px !important;
+   
   }
 }
 
