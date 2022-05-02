@@ -163,7 +163,7 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <img className="phone-m" src="./Images/phone.png" alt="" />
+        <a href="tel:+91-9999963537"><img className="phone-m" src="./Images/Call Button.png" alt="" /></a>
           <span>+91-9999963537</span>
         </Left>
         <Center>
