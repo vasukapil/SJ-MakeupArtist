@@ -2,11 +2,20 @@ import React,{useState} from 'react'
 import Footer from '../Footer/Footer'
 import Navbar from '../Navbar/Navbar'
 import Bridal from './Bridal'
+import Party from './Party'
+import Editorial from './Editorial'
 import './Media.css'
+import Before from './Before'
 
 
 export const Media = () => {
     const [active,setActive]=useState("first");
+    const Handle = ()=>{
+
+        document.querySelector('.Media-Gallery').style.overflow="initial";
+        document.querySelector('.Media-Gallery').style.height="auto";
+
+    }
   return (
     <div className="Media-Container">
         <Navbar/>
@@ -25,6 +34,9 @@ export const Media = () => {
             <div className="Media-Gallery">
 
             {active==="first" && <Bridal/>}
+            {active==="second" && <Party/>}
+            {active==="third" && <Before/>}
+            {active==="four" && <Editorial/>}
             </div>
 
 
@@ -32,7 +44,7 @@ export const Media = () => {
 
         <div className="span-contain">
 
-        <span className="viewmore">View More</span>
+        <span onClick={Handle} className="viewmore">View More</span>
 
         </div>
 
