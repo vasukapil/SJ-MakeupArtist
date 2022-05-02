@@ -254,7 +254,7 @@ const Blog = () => {
     <Container>
         <Heading>Blog</Heading>
         <Wrapper className="">
-        <Slider className="sliderWrap sliderWrapAr" {...settings}>
+        <Slider className="sliderWrap sliderWrapAr sllAr2" {...settings}>
 
             <First>
                 <img src="./Images/Rectangle 17.png"></img>

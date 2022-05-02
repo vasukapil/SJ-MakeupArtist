@@ -15,6 +15,8 @@ max-width:100%;
 height:100%;
 
 
+
+
 `
 
 const Container_main = styled.div`
@@ -29,6 +31,7 @@ const Container_main = styled.div`
   @media (max-width: 768px) {
     height: 100%;
     width: 100%;
+    padding-bottom:7px;
   
   }
 `;
@@ -346,7 +349,7 @@ color:'#464343'
       </AccordionSummary>
       <AccordionDetails> */}
      
-      <Container_main>
+      <Container_main >
         <Leftdetails>
           <h1>Sohni Juneja</h1>
           <p>

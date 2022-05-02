@@ -34,16 +34,14 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .Main_Boundary .tyzaj {
-        padding-bottom: 17px;
-    }
+   
     .mobile-about {
         width: 100vw;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-     
+      
     }
     
    .MuiAccordionDetails-root{
