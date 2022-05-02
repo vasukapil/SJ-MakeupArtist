@@ -5,10 +5,10 @@ const Hair = () => {
       <>
     <h2 className="hair-h2">HAIR STYLING</h2>
         <div className="pureflex">
-        <div className="hair-box-image">
+        <div className="hair-box-image" style={{marginLeft:'1%'}}>
           <img className="img-hair"  src="./Images/Rectangle 62.png"></img>
         </div>
-        <div className="hair-box-para">
+        <div className="hair-box-para" style={{marginLeft:'-30px'}}>
           
           <p className="mobile-hair1">
             As Makeup plays an important role in glamorizing the look of a

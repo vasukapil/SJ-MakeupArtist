@@ -25,12 +25,13 @@ const Book = () => {
     sx={{
        
         // display:"none",
-        border:"none ",
-        borderTop:"none",
-        borderBottom:"none",
-        boxShadow:"none",
-        outline:"none",
+        // border:"none ",
+        // borderTop:"none",
+     
+        // boxShadow:"none",
+        // outline:"none",
         width:"100vw",
+        marginTop:'1px'
       
 
       }}
@@ -39,9 +40,7 @@ const Book = () => {
       <AccordionSummary sx={{
     
     // display:"none",
-    color:"gray",
-    
-boxShadow:"none",
+  
 }}
 expandIcon={<ExpandMoreIcon />}
         aria-controls="panel1a-content"

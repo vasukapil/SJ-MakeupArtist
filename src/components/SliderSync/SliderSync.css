@@ -11,6 +11,7 @@
 }
 .img-slide h2{
     text-align: center;
+
 }
 
 .img-slider-contain .slick-slide {
@@ -181,6 +182,7 @@
         font-size: 12px;
         margin: 0;
         text-align: center;
+        padding-top: 8px;
     }
     /* .slick-slider {
         transform: translateX(10%);

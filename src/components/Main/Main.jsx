@@ -353,9 +353,7 @@ color:'#464343'
         <Leftdetails>
           <h1>Sohni Juneja</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec
-            posuere mauris, ut lacinia lectus. Donec ut enim mauris. Sed
-            molestie Lorem ipsum dolor sit amet,{" "}
+          Sohni Juneja, a product of National Institute of Fashion Technology (Delhi) where she got her proficiency in her passion for Designing and Styling.
           </p>
           <article>
             <p className="White">Read More</p>
@@ -380,9 +378,7 @@ color:'#464343'
         <Leftdetail>
           <h1>Sohni Juneja</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec
-            posuere mauris, ut lacinia lectus. Donec ut enim mauris. Sed
-            molestie Lorem ipsum dolor sit amet,{" "}
+          Sohni Juneja, a product of National Institute of Fashion Technology (Delhi) where she got her proficiency in her passion for Designing and Styling.
           </p>
           <article>
             <p className="White">Read More</p>

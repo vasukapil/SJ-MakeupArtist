@@ -9,7 +9,19 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const Coaching = () => {
   return (
     <div className="wrap-d">
-        <Accordion>
+        <Accordion sx={{
+       
+       // display:"none",
+       // border:"none ",
+       // borderTop:"none",
+    
+       // boxShadow:"none",
+       // outline:"none",
+       width:"100vw",
+       marginTop:'4px'
+     
+
+     }} >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"

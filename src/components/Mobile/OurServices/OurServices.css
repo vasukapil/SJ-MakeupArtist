@@ -95,6 +95,16 @@
         box-sizing: border-box;
       }
 
+
+      .hair-box {
+        width: 99vw;
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
       .hair-box-image{
           width: 50%;
           flex:1;

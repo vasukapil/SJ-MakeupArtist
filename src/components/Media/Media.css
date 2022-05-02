@@ -11,6 +11,15 @@
     width: 228px;
     padding: 15px;
 }
+.Media-Gallery {
+    margin-left: 3%;
+    margin-bottom: 2rem;
+    height: auto;
+    max-width: 100%;
+    margin-top: 2rem;
+    height: 660px;
+    overflow: hidden;
+}
 
 .Media-Box .button{
     

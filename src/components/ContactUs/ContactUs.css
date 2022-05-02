@@ -121,6 +121,9 @@ font-weight: 500;
 font-size: 18px;
 color: #464343;
     }
+    .under a{
+        color: black;
+    }
   
     .article1 p:nth-child(2){
         text-decoration: underline;
@@ -140,6 +143,9 @@ color: #464343;
         font-size: 18px;
       
        
+    }
+    .Address a{
+        color: black;
     }
 
     .Address p{

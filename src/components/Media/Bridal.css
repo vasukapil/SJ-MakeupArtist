@@ -1,6 +1,8 @@
-.Bridal{
+.Media-Gallery div:first-child{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+
 }
 .img-mb-style{
     object-fit: cover;
@@ -9,4 +11,7 @@
     width: 100%;
 
  
+}
+.Media-Gallery{
+    margin-left: 0px !important;
 }
