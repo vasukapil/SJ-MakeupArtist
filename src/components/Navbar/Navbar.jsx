@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 import Drawer from "react-modern-drawer";
 import "./Navbar.css";
 import "react-modern-drawer/dist/index.css";
+import { removeClass } from "dom-helpers";
+import { getPanelId } from "@mui/base";
 
 const Container = styled.div`
   height: 20%;
@@ -82,12 +84,6 @@ const Menu = styled.div`
   margin-left: 280px;
   margin-bottom: 50px;
 
-  ul li:first-child {
-    font-weight: 600;
-    font-size: 22px;
-    font-family: "Roboto";
-    font-style: normal;
-  }
 
   ul li:not(:first-child) {
     font-weight: 400;
@@ -105,14 +101,8 @@ const Menu2 = styled.div`
   margin-left: 280px;
   margin-bottom: 50px;
 
-  ul li:first-child {
-    font-weight: 600;
-    font-size: 22px;
-    font-family: "Roboto";
-    font-style: normal;
-  }
 
-  ul li:not(:first-child) {
+  ul li {
     font-weight: 400;
     font-size: 18px;
     margin: 13.75px;
@@ -154,7 +144,26 @@ const Menu2 = styled.div`
 `;
 
 const Navbar = () => {
+
+  function removeClass(){
+    links.forEach((link) => {
+
+      link.classList.remove('active');
+
+    });
+  }
   const [isOpen, setIsOpen] = React.useState(false);
+  const links=document.querySelectorAll('.linkText');
+  links.forEach((link)=>{
+
+    link.addEventListener('click',()=>{
+
+      removeClass();
+    link.classList.add('active');
+    })
+    
+
+  });
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };
@@ -182,7 +191,7 @@ const Navbar = () => {
         </Right>
       </Wrapper>
 
-      <div className="borderLine"></div>
+     
       <Menu className="Menu">
         <ul>
           <li>
@@ -236,7 +245,7 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink className="linkText" to="/about">
+              <NavLink className="linkText " to="/about">
                 About Us
               </NavLink>
             </li>

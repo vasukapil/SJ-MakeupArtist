@@ -7,7 +7,7 @@
     
     border-left-style: solid;
     border-color: #909090;
-    font-size: 28px;
+    font-size: 20px;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     
@@ -29,15 +29,12 @@
     color: rgba(70, 67, 67, 1);
     text-decoration: none;
 }
-.linkText :active{
-    font-weight: 500;
-    color: rgba(70, 67, 67, 1);
-}
-.Menu li:first-child{
-    color: rgba(70, 67, 67, 1);
+.Menu .active{
 
-    
+    font-weight: 700;
+
 }
+
 .Menu li:last-child{
     border-right-style: solid;
     border-color: #909090;
@@ -61,6 +58,11 @@ margin-top: 20px;
     .phone-m{
         width:17.91px;
         height: 20.93px;
+    }
+    .Menu .active{
+
+        font-weight: 700;
+
     }
     
    

@@ -25,9 +25,6 @@
     background-color: #fff;
 }
 
-.SliderSyncwrapper {
-    margin-top: 80px;
-}
 
 .mobile-about {
     display: none;
@@ -44,7 +41,15 @@
         justify-content: space-between;
       
     }
-    
+    .SliderSyncwrapper{
+        margin-top: 15px !important;
+    }
+    .SliderSyncwrapper .slick-arrow.slick-prev,
+    .SliderSyncwrapper .slick-arrow.slick-next
+
+    {
+        display: none !important;
+    }
    .MuiAccordionDetails-root{
        display: flex;
    }
