@@ -6,7 +6,7 @@ const Offers = () => {
          <h2 className="hair-h2">OFFERS</h2>
         <div className="pureflex">
         <div className="hair-box-image">
-          <img className="img-hair"  src="./Images/Rectangle 133.png"></img>
+          <img className="img-hair" style={{objectFit:'cover'}}  src="./Images/Rectangle 133.png"></img>
         </div>
         <div className="hair-box-para">
           

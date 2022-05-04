@@ -176,7 +176,7 @@ const Navbar = () => {
           <span>+91-9999963537</span>
         </Left>
         <Center>
-          <img className="image-nav" src="./Images/Name.png" alt="" />
+        <NavLink className="linkText" to="/"><img className="image-nav" src="./Images/Name.png" alt="" /></NavLink>
         </Center>
         <Right>
           <div className="conn" onClick={toggleDrawer}>

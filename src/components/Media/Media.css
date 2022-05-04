@@ -136,7 +136,10 @@ margin: 1rem;
     .adjust{
         padding:4px 10px !important;
     }
-   
+    .act{
+        background-color: #747171;
+        font-size: 28px;
+    }
 
 
 }

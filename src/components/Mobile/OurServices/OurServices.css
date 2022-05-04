@@ -388,7 +388,7 @@ text-align: center;
 
 
       .btn-view{
-        margin-bottom: 1rem;
+        margin-bottom: 1rem !important;
         width: 6.25rem;
         height: 1.438rem;
         

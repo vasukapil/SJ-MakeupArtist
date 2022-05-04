@@ -10,6 +10,7 @@ import Before from './Before'
 
 export const Media = () => {
     const [active,setActive]=useState("first");
+    
     const Handle = ()=>{
 
         document.querySelector('.Media-Gallery').style.overflow="initial";
@@ -25,10 +26,10 @@ export const Media = () => {
 
             <div className="button">
                
-                <a onClick={()=>setActive("first")}>BRIDAL MAKEUP</a>
-                <a onClick={()=>setActive("second")}>PARTY MAKEUP</a>
-                <a onClick={()=>setActive("third")}>BEFORE/ AFTER</a>
-                <a  onClick={()=>setActive("four")}className="adjust">EDITORIAL</a>
+                <a className="button-change" onClick={()=>setActive("first")}>BRIDAL MAKEUP</a>
+                <a className="button-change" onClick={()=>setActive("second")}>PARTY MAKEUP</a>
+                <a className="button-change" onClick={()=>setActive("third")}>BEFORE/ AFTER</a>
+                <a className="button-change" onClick={()=>setActive("four")}className="adjust">EDITORIAL</a>
             </div>
 
             <div className="Media-Gallery">
