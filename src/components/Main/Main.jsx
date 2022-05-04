@@ -125,9 +125,8 @@ const Leftdetail = styled.div`
     border-radius: 1.25em;
     background-color: rgba(116, 113, 113, 1);
     color: #fff;
-    margin-left: 10px;
+    
     font-size: 24px;
-    margin-top: 3px;
 
     @media (max-width: 768px) {
      
