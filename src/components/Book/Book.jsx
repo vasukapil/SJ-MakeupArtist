@@ -52,40 +52,40 @@ expandIcon={<ExpandMoreIcon />}
       <AccordionDetails className="space2" >
       <table>
               <tr>
-                  <td>Party Makeup look</td>
+                  <td>Bridal look</td>
                  
                   <td><a className="White">Book Now</a>
                      <img className="mobile-white1" src="./Images/Group 263.png"></img>
                   </td>
                   <td><a className="White">Call Now</a>
-                  <img className="mobile-white2" src="./Images/Group 264.png"></img></td>
+                  <a href="tel:+91-9999963537"><img className="mobile-white2" src="./Images/Group 264.png"></img></a></td>
               </tr>
 
               <tr>
-                  <td>Bridal Makeup look </td>
+                  <td>Party </td>
                   
                   <td><a className="White">Book Now</a>
                   <img className="mobile-white1" src="./Images/Group 263.png"></img></td>
                   <td><a className="White">Call Now</a>
-                  <img className="mobile-white2" src="./Images/Group 264.png"></img></td>
+                  <a href="tel:+91-9999963537"><img className="mobile-white2" src="./Images/Group 264.png"></img></a></td>
               </tr>
 
               <tr>
-                  <td>Pre-Wedding Look.</td>
+                  <td>Fashion</td>
                   
                   <td><a className="White mobile-white">Book Now</a>
                   <img className="mobile-white1" src="./Images/Group 263.png"></img></td>
                   <td><a className="White">Call Now</a>
-                  <img className="mobile-white2" src="./Images/Group 264.png"></img></td>
+                  <a href="tel:+91-9999963537"><img className="mobile-white2" src="./Images/Group 264.png"></img></a></td>
               </tr>
 
               <tr>
-                  <td>Pre-Wedding Look.</td>
+                  <td>Day Look</td>
                  
                   <td><a className="White">Book Now</a>
                   <img className="mobile-white1" src="./Images/Group 263.png"></img></td>
                   <td><a className="White">Call Now</a>
-                  <img className="mobile-white2" src="./Images/Group 264.png"></img></td>
+                  <a href="tel:+91-9999963537"><img className="mobile-white2" src="./Images/Group 264.png"></img></a></td>
               </tr>
 
 

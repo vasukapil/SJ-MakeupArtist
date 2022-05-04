@@ -14,7 +14,7 @@
         font-size: 22px;
     }
     
-    td a {
+    .White{
         width: 150px;
         height: 40px;
         background: #747171;
@@ -127,4 +127,5 @@ color: #464343;
         .changed{
           padding-left: 0;
         }
+        
     }

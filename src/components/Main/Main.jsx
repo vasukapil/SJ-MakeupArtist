@@ -76,7 +76,7 @@ const Leftdetails = styled.div`
 
 
 
-    .White {
+    .White-dusra {
       color: #fff;
       text-align: center;
       padding: 5px;
@@ -135,12 +135,12 @@ const Leftdetail = styled.div`
       text-align: center;
     }
   }
-  article .White {
+  article .White-dusra {
     margin-top: 10px;
     padding: 10px;
     
   }
-  .White {
+  .White-dusra {
     color: #fff;
     height: 24px;
     margin: 10px;
@@ -176,7 +176,7 @@ const Leftdetail = styled.div`
           justify-content: center;
           padding-bottom:2px;
         }
-        .White{
+        .White-dusra{
           padding:0 ! important;
           font-size:11px;
         }
@@ -356,7 +356,7 @@ color:'#464343'
           Sohni Juneja, a product of National Institute of Fashion Technology (Delhi) where she got her proficiency in her passion for Designing and Styling.
           </p>
           <article>
-            <p className="White">Read More</p>
+            <p className="White-dusra">Read More</p>
           </article>
         </Leftdetails>
 
@@ -381,7 +381,7 @@ color:'#464343'
           Sohni Juneja, a product of National Institute of Fashion Technology (Delhi) where she got her proficiency in her passion for Designing and Styling.
           </p>
           <article>
-            <p className="White">Read More</p>
+            <p className="White-dusra">Read More</p>
           </article>
         </Leftdetail>
         <Rightdetail>
