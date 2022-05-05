@@ -326,6 +326,10 @@ text-align: center;
         cursor: pointer;
        
       }
+      .active1{
+        background: #747171;
+        color: white;
+      }
 
       .hair-box{
         width: 22.625rem;

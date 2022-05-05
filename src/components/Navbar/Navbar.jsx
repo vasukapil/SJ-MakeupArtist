@@ -26,6 +26,7 @@ const Wrapper = styled.div`
   @media (max-width: 768px) {
     display: flex;
     height:55px;
+    padding-left:0;
     align-items: center;
     padding-bottom:0;
     margin-bottom:0.8rem;
@@ -39,9 +40,12 @@ const Left = styled.div`
       display: none;
     }
 
+    .linkText a{
+      margin-left:0;
+    }
     img {
-      width: 20.89px;
-      height: 20.93px;
+   
+      height: auto;
     }
   }
   span {
@@ -55,6 +59,7 @@ const Center = styled.div`
       height: 3.625rem;
       margin-top: 0;
       padding-right: 0;
+      margin-left:-40px;
     }
   }
 `;
@@ -171,19 +176,23 @@ const Navbar = () => {
   return (
     <Container>
       <Wrapper>
-        <Left>
-        <a href="tel:+91-9999963537"><img className="phone-m" src="./Images/Call Button.png" alt="" /></a>
-          <span>+91-9999963537</span>
-        </Left>
-        <Center>
+      <Center>
         <NavLink className="linkText" to="/"><img className="image-nav" src="./Images/Name.png" alt="" /></NavLink>
         </Center>
+        <Left>
+        <a href="tel:+91-9999963537"><img className="phone-m" src="./Images/Call Button.png" alt="" /></a>
+        <img className="mb-whatsapp" src="./Images/whatsapp.png"></img>
+          <span>+91-9999963537</span>
+        </Left>
+    
         <Right>
+          
           <div className="conn" onClick={toggleDrawer}>
             <img className="image-nav" src="./Images/fb.png" alt="" />
             <img className="image-nav" src="./Images/Insta.png" alt="" />
             <img className="image-nav" src="./Images/Link.png" alt="" />
             <img className="image-nav" src="./Images/Mail.png" alt="" />
+  
             <a href="#" class="hidden"></a>
             <a href="#" class="hidden"></a>
             <a href="#" class="hidden"></a>

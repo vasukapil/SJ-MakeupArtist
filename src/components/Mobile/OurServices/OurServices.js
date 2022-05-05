@@ -9,6 +9,8 @@ import Offers from "./Offers";
 
 const OurServices = () => {
   const [active,setActive]=useState("first");
+  
+
   return (
     <div className="Service-Container-mb">
       <h1 className="services-h1">Our Services</h1>
@@ -38,8 +40,8 @@ const OurServices = () => {
       </div>
 
       <div className="services-btn-mb">
-        <span onClick={()=>setActive("first")} className="s1">HAIR STYLING</span>
-        <span onClick={()=>setActive("second")} className="s2">BRIDAL MAKEUP</span>
+        <span  onClick={()=>setActive("first")} className="s1 ">HAIR STYLING</span>
+        <span  onClick={()=>setActive("second")} className="s2">BRIDAL MAKEUP</span>
         <span onClick={()=>setActive("third")} className="s3">PARTY MAKEUP</span>
         <span onClick={()=>setActive("four")} className="s4">OFFERS</span>
       </div>

@@ -2,6 +2,9 @@
 .image-nav{
     padding-right: 30px;
 }
+.mb-whatsapp{
+    display: none;
+}
 .Menu li{
     display: inline;
     
@@ -58,11 +61,17 @@ margin-top: 20px;
     .phone-m{
         width:17.91px;
         height: 20.93px;
+        margin-right: 15px;
     }
     .Menu .active{
 
         font-weight: 700;
 
+    }
+    .mb-whatsapp{
+        width: 30px;
+        height: 30px;
+        display: inline-block;
     }
     
    

@@ -62,6 +62,7 @@ export default class AsNavFor extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: true,
+            autoplay: true,
 
             // initialSlide: 2
           }
@@ -72,6 +73,7 @@ export default class AsNavFor extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: true,
+            autoplay: true,
           }
         }
       ]
@@ -114,19 +116,19 @@ export default class AsNavFor extends Component {
         > */}
            
           <div onClick={()=>this.setState({ num: 1 })} className="img-slide" id={this.state.num===1 ? "active" : ""}>
-        <img  src="./Images/Rectangle 78.png" alt="" width="115px" height="auto" />
+        <img  src="./Images/Rectangle 76.jpg" alt="" width="115px" height="auto" />
         <h2 className="img-slide-h2"  width="250px">Bridal Look</h2>
         </div>
         <div onClick={()=>this.setState({ num: 2 })} className="img-slide" id={this.state.num===2 ? "active" : ""}>
-        <img  src="./Images/Rectangle 46.png" alt="" width="115px" height="auto" />
+        <img  src="./Images/Rectangle 46.jpg" alt="" width="115px" height="auto" />
         <h2 className="img-slide-h2" width="250px">Party Look</h2>
         </div>
         <div onClick={()=>this.setState({ num: 3 })} className="img-slide" id={this.state.num===3 ? "active" : ""}>
-        <img  src="./Images/Rectangle 76.png" alt="" width="115px" height="auto" />
+        <img  src="./Images/Rectangle 77.jpg" alt="" width="115px" height="auto" />
         <h2 className="img-slide-h2" width="250px">Fashion</h2>
         </div>
         <div onClick={()=>this.setState({ num: 4 })} className="img-slide" id={this.state.num===4 ? "active" : ""}>
-        <img  src="./Images/Rectangle 77.png" alt="" width="115px" height="auto" />
+        <img  src="./Images/Rectangle 78.jpg" alt="" width="115px" height="auto" />
         <h2 className="img-slide-h2" width="250px">Day Look</h2>
         </div>
         
