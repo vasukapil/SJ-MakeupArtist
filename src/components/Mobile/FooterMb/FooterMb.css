@@ -39,6 +39,9 @@ margin-left: 2.25rem;
 color: #464343;
     
 }
+.footer-lists ul{
+    padding-left: 0;
+}
 .contact-contents img{
     
     width: 0.938rem;
