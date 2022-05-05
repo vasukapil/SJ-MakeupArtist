@@ -242,7 +242,7 @@
         margin: 0;
     }
     .sliderContainer .slick-slide img{
-        height: 700px !important;
+        height: 80vh !important;
     }
     /* .img-slide#active {
         width: 26% !important;
