@@ -118,6 +118,7 @@ const Leftdetail = styled.div`
       font-size: 8px;
       text-align: center;
       line-height: 9.75px;
+      padding-right:10px;
     }
   }
   article {

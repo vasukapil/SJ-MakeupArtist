@@ -243,6 +243,7 @@
     }
     .sliderContainer .slick-slide img{
         height: 80vh !important;
+        object-fit: cover;
     }
     /* .img-slide#active {
         width: 26% !important;
