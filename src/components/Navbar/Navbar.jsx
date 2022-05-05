@@ -35,10 +35,13 @@ const Wrapper = styled.div`
 `;
 
 const Left = styled.div`
+  order:1;
   @media (max-width: 768px) {
+    order:1;
     span {
-      display: none;
+      display: none !important;
     }
+ 
 
     .linkText a{
       margin-left:0;
@@ -54,7 +57,10 @@ const Left = styled.div`
   }
 `;
 const Center = styled.div`
+  order:2;
   @media (max-width: 768px) {
+    order:1;
+    
     img {
       height: 3.625rem;
       margin-top: 0;
@@ -64,14 +70,17 @@ const Center = styled.div`
   }
 `;
 const Right = styled.div`
+order:3;
   .hidden {
     display: none;
   }
+ 
   @media (max-width: 768px) {
+    order:1;
     img {
       display: none;
     }
-   
+    
    
      .hidden {
       width: 24px;

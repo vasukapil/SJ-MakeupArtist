@@ -10,7 +10,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 
-const Book = () => {
+const Book = ({toggleDrawer}) => {
 
   const [expanded, setExpanded] = React.useState(false);
 
@@ -54,8 +54,8 @@ expandIcon={<ExpandMoreIcon />}
               <tr>
                   <td>Bridal look</td>
                  
-                  <td><a className="White">Book Now</a>
-                     <img className="mobile-white1" src="./Images/Group 263.png"></img>
+                  <td><a className="White" onClick={toggleDrawer}>Book Now</a>
+                     <img className="mobile-white1" onClick={toggleDrawer} src="./Images/Group 263.png"></img>
                   </td>
                   <td><a className="White">Call Now</a>
                   <a href="tel:+91-9999963537"><img className="mobile-white2" src="./Images/Group 264.png"></img></a></td>
@@ -64,8 +64,8 @@ expandIcon={<ExpandMoreIcon />}
               <tr>
                   <td>Party </td>
                   
-                  <td><a className="White">Book Now</a>
-                  <img className="mobile-white1" src="./Images/Group 263.png"></img></td>
+                  <td><a className="White" onClick={toggleDrawer}>Book Now</a>
+                  <img className="mobile-white1" onClick={toggleDrawer} src="./Images/Group 263.png"></img></td>
                   <td><a className="White">Call Now</a>
                   <a href="tel:+91-9999963537"><img className="mobile-white2" src="./Images/Group 264.png"></img></a></td>
               </tr>
@@ -73,8 +73,8 @@ expandIcon={<ExpandMoreIcon />}
               <tr>
                   <td>Fashion</td>
                   
-                  <td><a className="White mobile-white">Book Now</a>
-                  <img className="mobile-white1" src="./Images/Group 263.png"></img></td>
+                  <td><a className="White mobile-white" onClick={toggleDrawer}>Book Now</a>
+                  <img className="mobile-white1" src="./Images/Group 263.png" onClick={toggleDrawer}></img></td>
                   <td><a className="White">Call Now</a>
                   <a href="tel:+91-9999963537"><img className="mobile-white2" src="./Images/Group 264.png"></img></a></td>
               </tr>
@@ -82,8 +82,8 @@ expandIcon={<ExpandMoreIcon />}
               <tr>
                   <td>Day Look</td>
                  
-                  <td><a className="White">Book Now</a>
-                  <img className="mobile-white1" src="./Images/Group 263.png"></img></td>
+                  <td><a className="White" onClick={toggleDrawer}>Book Now</a>
+                  <img className="mobile-white1" src="./Images/Group 263.png" onClick={toggleDrawer}></img></td>
                   <td><a className="White">Call Now</a>
                   <a href="tel:+91-9999963537"><img className="mobile-white2" src="./Images/Group 264.png"></img></a></td>
               </tr>

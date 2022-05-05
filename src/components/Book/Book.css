@@ -3,7 +3,9 @@
         border-collapse: separate;
         border-spacing: 30px;
     }
-    
+    table td {
+      padding: 20px;
+  }
     td {
         width: 275px;
         text-align: center;

@@ -1,0 +1,182 @@
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 50px;
+    max-width: 1100px;
+}
+
+.section1 .block1 {
+    display: flex;
+}
+
+.mainImg {
+    display: flex;
+    width: 305px;
+    height: 330px;
+    margin-right: 20px;
+}
+
+.bridalCont .title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #525252;
+    margin-bottom: 50px;
+    display: block;
+}
+
+.sing {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.sing>span:nth-child(1) {
+    color: grey;
+    margin-right: 5px;
+}
+
+.inputs {
+    appearance: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.singg {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.singg>span:nth-child(1) {
+    display: block;
+    width: 80px;
+}
+
+.locSing {
+    margin-bottom: 30px;
+    justify-content: initial;
+}
+
+.singg input {
+    appearance: auto;
+    border: none;
+    border-bottom: 0.5px solid #8b8b8b73;
+    font-size: 12px;
+    color: grey;
+    padding-bottom: 7px;
+}
+
+.section2 {
+    width: fit-content;
+    margin: auto;
+    margin-top: 45px;
+    font-size: 16px;
+    color: #464343;
+}
+
+.section2 h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.finalPayment {
+    width: fit-content;
+    margin: auto;
+}
+
+.singgg {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.singgg>span:nth-child(1) {
+    width: 210px;
+}
+
+.checkCont {
+    font-size: 13px;
+}
+
+.underline {
+    padding-bottom: 3px;
+    border-bottom: 1px solid black;
+}
+
+.checkCont input {
+    margin-left: 0px !important;
+}
+
+.submitt {
+    display: block;
+    margin: auto !important;
+    margin-top: 60px !important;
+    border: none;
+    background: #747171;
+    color: white;
+    padding: 5px 30px;
+    cursor: pointer;
+}
+
+.payyCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payy {
+    display: block;
+    margin: auto !important;
+    margin-top: 60px !important;
+    border: none;
+    background: #747171;
+    color: white;
+    padding: 5px 30px;
+    cursor: pointer;
+    width: 150px;
+    margin-bottom: 40px;
+}
+
+.location {
+    margin-bottom: 30px;
+}
+
+.location select {
+    height: 40px;
+    width: 105%;
+}
+
+@media(max-width: 1200px) {
+    .section1 {
+        flex-direction: column;
+        margin: 30px 20px;
+    }
+    .section1 .block1 {
+        flex-direction: row !important;
+        align-items: initial;
+    }
+}
+
+@media(max-width: 600px) {
+    .mainImg {
+        display: flex;
+        width: 205px;
+        height: 230px;
+        max-width: 40vw;
+        max-height: 50vw;
+        margin-right: 20px;
+        margin-bottom: 25px;
+    }
+    .bridalCont .title {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .sing {
+        font-size: 13px;
+        margin-bottom: 15px !important;
+        margin-top: 0px !important;
+    }
+}

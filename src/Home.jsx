@@ -25,13 +25,27 @@ import TestimonialSlider from './components/TestimonialSlider/TestimonialSlider'
 import Coaching from './components/Coaching/Coaching'
 import {Helmet} from "react-helmet";
 import Testimonial2 from './components/Testimonial/Testimonial2'
-
+ import Drawer from 'react-modern-drawer'
+import 'react-modern-drawer/dist/index.css'
 
 
 
 const Home = () => {
+const [isOpen, setIsOpen] = React.useState(false)
+
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState)
+}
   return (
     <div>
+         <Drawer
+                open={isOpen}
+                onClose={toggleDrawer}
+                direction='center'
+                className='blablabla2'
+            >
+      <Modal toggleDrawer={toggleDrawer}/>
+      </Drawer>
       <Helmet>
 
       <script type="application/ld+json">
@@ -174,13 +188,13 @@ const Home = () => {
 
 
 
-
       </Helmet>
+   
          <Navbar/>
          <Main/>
       
 
-        <Book/>
+        <Book toggleDrawer={toggleDrawer}/>
         <Coaching/>
         <Social/>
         <TestimonialSlider/>

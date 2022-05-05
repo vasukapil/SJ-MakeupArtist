@@ -7,11 +7,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {RecoilRoot} from "recoil";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <RecoilRoot>
     <App />
-  </React.StrictMode>,
+  </RecoilRoot>,
   document.getElementById('root')
 );
 

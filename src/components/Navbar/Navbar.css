@@ -37,6 +37,10 @@
     font-weight: 700;
 
 }
+.phone-m{
+    height: 30px;
+    width: 30px;
+}
 
 .Menu li:last-child{
     border-right-style: solid;

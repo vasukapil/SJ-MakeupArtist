@@ -9,6 +9,10 @@ import Services from './components/Service/Service';
 import { Media } from './components/Media/Media';
 import Blog from './components/Blog/Blog';
 import Publication from './components/Publication/Publication';
+import Checkout from './Checkout';
+import Congrats from './Congrats';
+
+
 
 function App() {
   return (
@@ -21,6 +25,10 @@ function App() {
         <Route path="/media" element={<Publication/>}/>
         <Route path="/album" element={<Media/>}/>
         <Route path="/blog" element={<Blog/>}/>
+        <Route path="/checkout" element={<Checkout/>}/>
+        <Route path="/congrats" element={<Congrats/>}/>
+
+
       </Routes>
          
     </Router>
