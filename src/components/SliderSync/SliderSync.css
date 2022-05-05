@@ -241,6 +241,9 @@
         position: relative;
         margin: 0;
     }
+    .sliderContainer .slick-slide img{
+        height: 700px !important;
+    }
     /* .img-slide#active {
         width: 26% !important;
         position: relative;
