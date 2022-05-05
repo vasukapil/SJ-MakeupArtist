@@ -59,8 +59,9 @@ margin-top: 20px;
 
     }
     .phone-m{
-        width:17.91px;
-        height: 20.93px;
+        width:21px;
+        height: 25px !important;
+        transform: rotate(8deg);
         margin-right: 15px;
     }
     .Menu .active{
@@ -73,7 +74,9 @@ margin-top: 20px;
         height: 30px;
         display: inline-block;
     }
-    
+    .conn {
+        margin-top: 7px;
+    }
    
    
 }

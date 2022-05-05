@@ -185,10 +185,10 @@
         padding-top: 8px;
     }
     .sliderContainer .slick-dots{
-        bottom:22px;
+        bottom:18px;
     }
     .sliderContainer .slick-dots li button:before{
-        font-size: 15px;
+        font-size: 9px;
         opacity: 1;
         color: white;
     }

@@ -180,8 +180,8 @@ const Navbar = () => {
         <NavLink className="linkText" to="/"><img className="image-nav" src="./Images/Name.png" alt="" /></NavLink>
         </Center>
         <Left>
-        <a href="tel:+91-9999963537"><img className="phone-m" src="./Images/Call Button.png" alt="" /></a>
-        <img className="mb-whatsapp" src="./Images/whatsapp.png"></img>
+        <a href="tel:+91-9999963537"><img className="phone-m" src="./Images/phone.png" alt="" /></a>
+        <img className="mb-whatsapp" src="./Images/whatsapp_grey.png"></img>
           <span>+91-9999963537</span>
         </Left>
     
