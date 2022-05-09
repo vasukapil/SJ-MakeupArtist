@@ -192,6 +192,13 @@
         opacity: 1;
         color: white;
     }
+    .same1{
+       transition: transform 450ms;
+    }
+    .same1:hover{
+        transform:scale(1.08);
+    }
+    
     /* .slick-slider {
         transform: translateX(10%);
         border-radius: 15px;

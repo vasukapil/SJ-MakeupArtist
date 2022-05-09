@@ -98,8 +98,10 @@ const Leftdetail = styled.div`
     margin: 30px;
   }
   h1 {
+      display:none;
     font-size: 3.75em;
     text-align: left;
+  }
 
     @media (max-width: 768px) {
       font-size: 16px;

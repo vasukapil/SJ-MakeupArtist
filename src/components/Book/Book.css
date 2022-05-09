@@ -63,11 +63,18 @@ font-weight: 500;
 font-size: 16px;
 line-height: 24px;
 padding: 16px;
+
 /* identical to box height */
 
 
 color: #464343;
             white-space: nowrap;
+        }
+        table td{
+
+          padding-left: 0;
+padding-bottom: 5px;
+
         }
         .White {
             font-size: 10px;
@@ -77,8 +84,8 @@ color: #464343;
         .mobile-white1{
         
           display: block;
-          width: 35px;
-          height: 35px;
+          width: 33px;
+          height: 33px;
           margin: auto;
           margin-right: 2px;
   
@@ -87,8 +94,8 @@ color: #464343;
         
             display: block;
 
-          width: 35px;
-          height: 35px;
+            width: 33px;
+            height: 33px;
           margin: auto;
         }
         h5 {
