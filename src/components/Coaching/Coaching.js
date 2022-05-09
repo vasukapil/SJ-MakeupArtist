@@ -7,29 +7,14 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Coaching = () => {
+    const [expanded, setExpanded] = React.useState(false);
+
+    const handleChange = (panel) => (event, isExpanded) => {
+      setExpanded(isExpanded ? panel : false);
+    };
   return (
     <div className="wrap-d">
-        <Accordion sx={{
-       
-       // display:"none",
-       // border:"none ",
-       // borderTop:"none",
-    
-       // boxShadow:"none",
-       // outline:"none",
-       width:"100vw",
-       marginTop:'4px'
-     
-
-     }} >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography style={{  color:'rgb(70,67,67)' }}variant="h5" className="typo">SOHNI JUNEJA SCHOOL OF MAKEUP</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
+   
         <div className="Coaching-Container">
         <div className="first-p">
           Sohni Juneja School of Makeup offers premier makeup, grooming, and
@@ -100,8 +85,7 @@ const Coaching = () => {
          
         </div>
       </div>
-        </AccordionDetails>
-      </Accordion>
+     
      
      
     </div>

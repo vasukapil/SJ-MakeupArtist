@@ -27,6 +27,12 @@ import {Helmet} from "react-helmet";
 import Testimonial2 from './components/Testimonial/Testimonial2'
  import Drawer from 'react-modern-drawer'
 import 'react-modern-drawer/dist/index.css'
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Group from './components/Group/Group'
 
 
 
@@ -36,6 +42,13 @@ const [isOpen, setIsOpen] = React.useState(false)
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState)
 }
+
+const [expanded, setExpanded] = React.useState(true);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
+
   return (
     <div>
          <Drawer
@@ -191,11 +204,76 @@ const [isOpen, setIsOpen] = React.useState(false)
       </Helmet>
    
          <Navbar/>
+         <Group/>
+         <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography className="typi" style={{color:'rgb(70,67,67)'}} sx={{}}>ABOUT SOHNI JUNEJA</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
          <Main/>
+         </AccordionDetails>
+      </Accordion>
+      
+      <Accordion  expanded={expanded === 'panel2'} onChange={handleChange('panel2')}
+    sx={{
+       
+        // display:"none",
+        // border:"none ",
+        // borderTop:"none",
+     
+        // boxShadow:"none",
+        // outline:"none",
+        width:"100vw",
+        marginTop:'1px'
       
 
+      }}
+      // className="mainDiiv"
+    >
+      <AccordionSummary sx={{
+    
+    // display:"none",
+  
+}}
+expandIcon={<ExpandMoreIcon />}
+        aria-controls="panel1a-content"
+        id="panel1a-header"
+      >
+          
+        <Typography  style={{color:'rgb(70,67,67)'}} sx={{  }} className="type" variant="h5">BOOK SERVICES</Typography>
+      </AccordionSummary >
+      <AccordionDetails className="space2" >
         <Book toggleDrawer={toggleDrawer}/>
+        </AccordionDetails>
+    </Accordion>
+    <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')} sx={{
+       
+       // display:"none",
+       // border:"none ",
+       // borderTop:"none",
+    
+       // boxShadow:"none",
+       // outline:"none",
+       width:"100vw",
+       marginTop:'-2px'
+     
+
+     }} >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography style={{  color:'rgb(70,67,67)' }}variant="h5" className="typo">SOHNI JUNEJA SCHOOL OF MAKEUP</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
         <Coaching/>
+        </AccordionDetails>
+      </Accordion>
         <Social/>
         <TestimonialSlider/>
 

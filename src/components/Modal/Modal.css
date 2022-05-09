@@ -11,6 +11,7 @@
     margin: auto;
 }
 
+
 #close {
     display: block;
     margin: -80px 0 0px auto;
@@ -51,13 +52,13 @@
 
 .Popup h3 {
     font-size: 22px;
-    text-align: center;
+    
     margin-bottom: 45px;
 }
 
 .Popup h4 {
     font-size: 18px;
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 25px;
 }
 
@@ -83,12 +84,12 @@
 }
 
 .form-One h4 {
-    text-align: center;
+    /* text-align: center; */
     font-size: 20px;
 }
 
 .Outside .span1 {
-    margin-left: 40px;
+    /* margin-left: 40px; */
     padding-top: 20px;
     width: 236px;
     height: 30px;

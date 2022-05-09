@@ -1,8 +1,9 @@
-import React from "react";
+import React from 'react'
+
 import styled from "styled-components";
 
 import SliderSync from "../SliderSync/SliderSync";
-import "./Main.css";
+
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -304,64 +305,15 @@ const Imgdiv = styled.div`
   .firstimg-m {
     display: none;
   }
-`;
-const Mobile = styled.div`
-  @media (max-width: 768px) {
-    h1 {
-      text-align: center;
-    }
-    p {
-      display: block;
-    }
-  }
-`;
+`
 
-const Main = () => {
-    const [expanded, setExpanded] = React.useState(false);
-
-  const handleChange = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
-  };
+const Group = () => {
 
   return (
-    
-    <div className="Main_Boundary">
-         {/* <Accordion 
-    sx={{
-       
-        // display:"none",
-        border:"none ",
-        borderBottom:"1px solid gray",
-        boxShadow:"none",
-        maxWidth:"88%",
+    <div>
 
-      }}
-    >
-        <AccordionSummary sx={{
-    color: "gray"
-  }}
-  expandIcon={<ExpandMoreIcon />}
-        aria-controls="panel2a-content"
-        id="panel2a-header"
-      >
-        <Typography style={{
-
-fontFamily: 'Poppins',
-fontStyle:'normal',
-fontWeight:'400',
-fontSize:'20px',
-color:'#464343'
- 
-
-}} variant="h5">How many looks are available?</Typography>
-      </AccordionSummary>
-      <AccordionDetails> */}
-     
-    
-
-      <div className="mobile-about">
-      
-        <Leftdetail>
+<Container_main >
+        <Leftdetails>
           <h1>Sohni Juneja</h1>
           <p>
           Sohni Juneja, a product of National Institute of Fashion Technology (Delhi) where she got her proficiency in her passion for Designing and Styling.
@@ -369,21 +321,15 @@ color:'#464343'
           <article>
             <p className="White-dusra">Read More</p>
           </article>
-        </Leftdetail>
-        <Rightdetail>
-          <Imgdiv>
-            <div className="bride">
-              <img src="./Images/Rectangle 6.png" alt="" />
-            </div>
-          </Imgdiv>
-        </Rightdetail>
-      
-       
-      </div>
-      {/* </AccordionDetails>
-    </Accordion> */}
-    </div>
-  );
-};
+        </Leftdetails>
 
-export default Main;
+        <div className="SliderSyncwrapper">
+          <SliderSync  />
+        </div>
+      </Container_main>
+
+    </div>
+  )
+}
+
+export default Group

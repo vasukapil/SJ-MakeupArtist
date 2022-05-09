@@ -10,12 +10,17 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Accordian = () => {
 
-  
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
+
 
   return (
     <div className="contain">
         <h1>FAQ'S</h1>
-    <Accordion
+    <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}
     sx={{
        
         // display:"none",
@@ -55,7 +60,7 @@ expandIcon={<ExpandMoreIcon />}
         </Typography>
       </AccordionDetails>
     </Accordion>
-    <Accordion
+    <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}
       sx={{
         
         // display:"none",
@@ -91,7 +96,7 @@ color:'#464343'
         </Typography>
       </AccordionDetails>
     </Accordion>
-    <Accordion sx={{
+    <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')} sx={{
         
         // display:"none",
         border:"none",
@@ -126,7 +131,7 @@ textAlign:'inherit'
         </Typography>
       </AccordionDetails>
     </Accordion>
-    <Accordion sx={{
+    <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')} sx={{
         
         // display:"none",
         border:"none ",
@@ -161,7 +166,7 @@ textAlign:'inherit'
         </Typography>
       </AccordionDetails>
     </Accordion>
-    <Accordion sx={{
+    <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')} sx={{
        
         // display:"none",
         border:"none ",

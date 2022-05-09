@@ -12,44 +12,15 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Book = ({toggleDrawer}) => {
 
-  const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = React.useState(true);
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
- 
+
   return (
   
-    <Accordion className="changed" expanded={expanded}
-    onChange={handleChange('panel1')}
-    sx={{
-       
-        // display:"none",
-        // border:"none ",
-        // borderTop:"none",
-     
-        // boxShadow:"none",
-        // outline:"none",
-        width:"100vw",
-        marginTop:'1px'
-      
-
-      }}
-      // className="mainDiiv"
-    >
-      <AccordionSummary sx={{
-    
-    // display:"none",
   
-}}
-expandIcon={<ExpandMoreIcon />}
-        aria-controls="panel1a-content"
-        id="panel1a-header"
-      >
-          
-        <Typography  style={{color:'rgb(70,67,67)'}} sx={{  }} className="type" variant="h5">BOOK SERVICES</Typography>
-      </AccordionSummary >
-      <AccordionDetails className="space2" >
       <table>
               <tr>
                   <td>Bridal look</td>
@@ -94,8 +65,7 @@ expandIcon={<ExpandMoreIcon />}
               
           </table>
           
-      </AccordionDetails>
-    </Accordion>
+    
     
   )
 }
