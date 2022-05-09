@@ -105,7 +105,7 @@ const Modal = ({toggleDrawer}) => {
                 <table>
                   <tr>
                     <th>Sohni Juneja</th>
-                    <td style={{paddingLeft:"7px"}}>
+                    <td className="checkcheck" style={{paddingLeft:"7px"}}>
                       <input
                         name="price"
                         {...register("price", { required: true })}

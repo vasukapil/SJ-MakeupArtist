@@ -57,7 +57,7 @@ const [expanded, setExpanded] = React.useState(true);
                 direction='center'
                 className='blablabla2'
             >
-      <Modal toggleDrawer={toggleDrawer}/>
+      <Modal  toggleDrawer={toggleDrawer}/>
       </Drawer>
       <Helmet>
 
@@ -202,6 +202,7 @@ const [expanded, setExpanded] = React.useState(true);
 
 
       </Helmet>
+
    
          <Navbar/>
          <Group/>

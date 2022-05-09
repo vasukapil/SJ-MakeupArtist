@@ -61,8 +61,18 @@ const Left = styled.div`
 `;
 const Center = styled.div`
   order:2;
+
+  .image-nav{
+    height:66px;
+    width:250px;
+  }
+ 
   @media (max-width: 768px) {
     order:1;
+    .image-nav{
+      width:188px;
+      height:58px;
+    }
     
     img {
       height: 3.625rem;
