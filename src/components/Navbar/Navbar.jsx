@@ -39,7 +39,7 @@ const Left = styled.div`
   @media (max-width: 768px) {
     order:1;
     display:flex;
-    width:34vw;
+    width:30vw;
     justify-content:end;
     align-items: center;
     span {
