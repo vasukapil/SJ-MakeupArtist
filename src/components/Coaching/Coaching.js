@@ -76,7 +76,7 @@ const Coaching = () => {
           </div>
 
           <div className="btn-p">
-            <button>Course Fee : Rs. XXXXXX + GST = Rs. XXXX</button>
+            <button>Course Fee : Rs 18,500</button>
 
             <p className="covid"><b>*Note:</b> Class timings are subject to changes as per the prevailing COVID-19 norms implemented by the government. 
 </p>

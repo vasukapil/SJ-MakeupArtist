@@ -245,9 +245,9 @@ const Modal = ({toggleDrawer}) => {
         </div>
       <div className="infoss">
         <h5>Contact Us</h5>
-        <div className="sing"><img src="/callIcon.svg" alt="" /><a href="tel:+91-9999963537">+91-9999963537</a></div>
-        <div className="sing"><img src="/whatsapp.png" alt="" /><a href="whatsapp://send?phone=+91-9999963537">+91-9999963537</a></div>
-        <div className="sing"><img src="/mail.png" alt="" /><a href="mailto:junejasohni@gmail.com">junejasohni@gmail.com</a></div>
+        <div className="sing"><img src="/Images/phone.png" alt="" /><a href="tel:+91-9999963537">+91-9999963537</a></div>
+        <div className="sing"><img src="/Images/whatsapp_grey.png" alt="" /><a href="whatsapp://send?phone=+91-9999963537">+91-9999963537</a></div>
+        <div className="sing"><img src="/Images/mail.png" alt="" /><a href="mailto:junejasohni@gmail.com">junejasohni@gmail.com</a></div>
       </div>
       </form>
     </div>
