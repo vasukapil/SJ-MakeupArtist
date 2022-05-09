@@ -25,7 +25,7 @@ const Wrapper = styled.div`
 
   @media (max-width: 768px) {
     display: flex;
-    height:55px;
+    height:42px;
     padding-left:0;
     align-items: center;
     padding-bottom:0;
@@ -38,6 +38,9 @@ const Left = styled.div`
   order:1;
   @media (max-width: 768px) {
     order:1;
+    display:flex;
+    width:118px;
+    justify-content:end;
     span {
       display: none !important;
     }
@@ -65,7 +68,7 @@ const Center = styled.div`
       height: 3.625rem;
       margin-top: 0;
       padding-right: 0;
-      margin-left:-40px;
+      margin-left:-32px;
     }
   }
 `;
@@ -186,7 +189,7 @@ const Navbar = () => {
     <Container>
       <Wrapper>
       <Center>
-        <NavLink className="linkText" to="/"><img className="image-nav" src="./Images/Name.png" alt="" /></NavLink>
+        <NavLink className="linkText" to="/"><img className="image-nav" src="./Images/sohni logo-02.png" alt="" /></NavLink>
         </Center>
         <Left>
         <a href="tel:+91-9999963537"><img className="phone-m" src="./Images/phone.png" alt="" /></a>

@@ -22,7 +22,7 @@ height:100%;
 const Container_main = styled.div`
 
     width:94%;
-  height: 80%;
+  height: 84%;
   display: flex;
   justify-content: space-around;
   margin:auto;

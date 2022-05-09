@@ -80,6 +80,9 @@ margin-top: 20px;
     }
     .conn {
         margin-top: 7px;
+        position: absolute;
+    top: 15px;
+    right: 13px;
     }
    
    
