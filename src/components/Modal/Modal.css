@@ -316,6 +316,9 @@ table td {
         margin-left: 0px;
         margin-top: 30px;
     }
+    select.event{
+        color: black;
+    }
     .block1 {
         display: flex;
         flex-direction: column;
