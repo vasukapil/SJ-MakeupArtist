@@ -316,8 +316,9 @@ table td {
         margin-left: 0px;
         margin-top: 30px;
     }
-    select.event{
+    .event,.Msing{
         color: black;
+       
     }
     .block1 {
         display: flex;
