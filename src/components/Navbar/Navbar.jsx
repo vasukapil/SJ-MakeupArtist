@@ -299,9 +299,9 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink className="linkText" to="/blog">
-              Blog
-            </NavLink>
+            <a className="linkText" href="https://sohnijuneja.com/blog">Blog</a>
+              
+          
           </li>
           <li>
             <NavLink className="linkText" to="/contact">

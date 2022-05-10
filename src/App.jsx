@@ -2,7 +2,7 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Home from './Home';
-import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import {HashRouter as Router,Routes,Route} from 'react-router-dom'
 import About from './components/About/About';
 import ContactUs from './components/ContactUs/ContactUs';
 import Services from './components/Service/Service';
