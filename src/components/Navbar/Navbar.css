@@ -65,7 +65,7 @@ margin-top: 20px;
     .phone-m{
         width:21px;
         height: 25px !important;
-        transform: rotate(8deg);
+        transform: rotate(2deg);
         margin-right: 15px;
     }
     .Menu .active{

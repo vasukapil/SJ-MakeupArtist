@@ -43,7 +43,12 @@ const Container=styled.div`
 
         margin:auto;
         text-align:center;
-        font-size:20px;
+        font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: #464343;
         padding:0;
         margin-bottom:20px;
         width: 100vw;

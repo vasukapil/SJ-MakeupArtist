@@ -64,7 +64,12 @@ const Heading=styled.h1`
   margin-top:20px;
   font-size: 40px;
   @media (max-width: 768px){
-    font-size:25px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: #464343;
     padding:0;
     
    }

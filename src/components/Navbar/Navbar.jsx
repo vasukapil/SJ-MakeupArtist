@@ -17,6 +17,28 @@ const Container = styled.div`
     overflow: hidden;
   }
 `;
+const Extreme=styled.div`
+display:none;
+@media (max-width: 768px)
+
+{
+  order:1;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  .hidden2 {
+    width: 24px;
+    height: 0px;
+    border: 1px solid #000000;
+    display: block;
+    margin-bottom: 7px;
+    cursor: pointer;
+    background:black;
+    margin-left:15px;
+}
+}
+
+`;
 const Wrapper = styled.div`
   padding: 25px 22px;
   display: flex;
@@ -25,22 +47,32 @@ const Wrapper = styled.div`
 
   @media (max-width: 768px) {
     display: flex;
+    
     height:42px;
     padding-left:0;
+    padding-right: 0px;
     align-items: center;
     padding-bottom:0;
     margin-bottom:0.8rem;
     justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 18px;
+    padding-right: 19px;
   }
 `;
 
 const Left = styled.div`
+
   order:1;
   @media (max-width: 768px) {
     order:1;
     display:flex;
+display: none;
+
     width:30vw;
     justify-content:end;
+   
     align-items: center;
     span {
       display: none !important;
@@ -70,6 +102,7 @@ const Center = styled.div`
  
   @media (max-width: 768px) {
     order:1;
+  
     .image-nav{
       width:188px;
       height:58px;
@@ -90,6 +123,8 @@ order:3;
   }
  
   @media (max-width: 768px) {
+    display: none;
+
     order:1;
     img {
       display: none;
@@ -221,6 +256,18 @@ const Navbar = () => {
             <a href="#" class="hidden"></a>
           </div>
         </Right>
+        <Extreme>
+
+        <a href="tel:+91-9999963537"><img className="phone-m" src="./Images/phone.png" alt="" /></a>
+        <img className="mb-whatsapp" src="./Images/whatsapp_grey.png"></img>
+
+        <div className="conn" onClick={toggleDrawer}>
+            <a href="#" class="hidden2"></a>
+            <a href="#" class="hidden2"></a>
+            <a href="#" class="hidden2"></a>
+          </div>
+
+        </Extreme>
       </Wrapper>
 
      
