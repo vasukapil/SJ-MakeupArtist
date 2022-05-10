@@ -260,7 +260,7 @@ expandIcon={<ExpandMoreIcon />}
        // boxShadow:"none",
        // outline:"none",
        width:"100vw",
-       marginTop:'-2px'
+       marginTop:'2px'
      
 
      }} >
@@ -269,7 +269,7 @@ expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography style={{  color:'rgb(70,67,67)' }}variant="h5" className="typo">SOHNI JUNEJA SCHOOL OF MAKEUP</Typography>
+          <Typography  style={{  color:'rgb(70,67,67)' }}variant="h5" className="typo">SOHNI JUNEJA SCHOOL OF MAKEUP</Typography>
         </AccordionSummary>
         <AccordionDetails>
         <Coaching/>
