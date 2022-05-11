@@ -60,7 +60,76 @@ const [expanded, setExpanded] = React.useState(true);
       <Modal  toggleDrawer={toggleDrawer}/>
       </Drawer>
       <Helmet>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+    <title>Sohni Juneja | Professional Makeup Artist in In Delhi NCR </title>
+
+    <meta name="description"
+        content="Sohni Juneja is a name to reckon with in the make-up and fashion industry with over 10 years of experience and is ranked among the top makeup artists." />
+    <meta name="keywords"
+        content="sohni juneja, professional makeup artist, makeup artist in Dehradun, makeup artist in Delhi NCR, makeup artist in delhi, bridal makeup artist in delhi ncr, bridal makeup in dehradun, makeup schools in delhi ncr, makeup schools in dehradun" />
+ <meta name="google-site-verification" content="eStAc0QCTNYuA85jcmU-A0fnBU6N3nSP5Da3gZYCltA" />
+<meta name="robots" content="index, follow"/>
+ <meta name="robots" content="noodp,noydir" />
+<link rel="canonical" href="https://sohnijuneja.com/" />
+<link rel="icon" 
+      type="image/png" 
+      href="https://sohnijuneja.com/wp-content/uploads/2018/09/sohni-juneja-bridal-makeup-artist-favicon-2.png" />
+
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@JunejaSohni" />
+    <meta name="twitter:description"
+        content="Sohni Juneja is a name to reckon with in the make-up and fashion industry with over 10 years of experience and is ranked among the top makeup artists" />
+    <meta name="twitter:title" content="Sohni Juneja | Professional Makeup Artist in In Delhi NCR" />
+    <meta name="twitter:url" content="https://twitter.com/junejasohni" />
+    <meta name="twitter:image"
+        content="https://pbs.twimg.com/profile_images/920209467047739392/dO9Drh8K_400x400.jpg" />
+
+
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title"
+        content="Best Makeup artist in DELHI NCR Dehradun- Sohni Juneja" />
+    <meta property="og:description"
+        content="Sohni Juneja is a name to reckon with in the make-up and fashion industry with over 10 years of experience and is ranked among the top makeup artists" />
+    <meta property="og:url" content="https://sohnijuneja.com/" />
+    <meta property="og:site_name" content="Sohni Juneja | Professional Makeup Artist in In Delhi NCR" />
+    <meta property="og:image"
+        content="https://sohnijuneja.com/Images/sliImg/Rectangle11.png" />
+    <meta property="og:video" content="https://www.youtube.com/watch?v=sQuygyaSnxI" />
+ 
+    <script type="application/ld+json">
+
+  {
+  JSON.stringify(
+    {
+
+  "@context": "https://schema.org/", 
+  "@type": "Product", 
+  "name": "Sohni Juneja",
+  "image": "https://sohnijuneja.com/Images/sliImg/Rectangle11.png",
+  "description": "Sohni Juneja is a name to reckon with in the make-up and fashion industry with over 10 years of experience and is ranked among the top makeup artists.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Sohni Juneja | Professional Makeup Artist in In Delhi NCR"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "url": "https://sohnijuneja.com/",
+    "priceCurrency": "",
+    "lowPrice": ""
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "258"
+  }
+  })}
+</script>
       <script type="application/ld+json">
         {JSON.stringify(
 
