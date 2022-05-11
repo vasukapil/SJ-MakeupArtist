@@ -249,7 +249,7 @@
         margin: 0;
     }
     .sliderContainer .slick-slide img{
-        height: 80vh !important;
+        height: 75vh !important;
         object-fit: cover;
     }
     /* .img-slide#active {
