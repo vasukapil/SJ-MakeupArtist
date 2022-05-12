@@ -12,3 +12,15 @@ html {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+.close-desk{
+    display: none;
+}
+
+ @media only screen and(max-width:600px){
+
+    .close-desk{
+
+        display: block;
+    }
+
+}

@@ -125,6 +125,9 @@ margin-bottom: 1rem;
 
 
 }
+.css-1m7p053-MuiPaper-root-MuiAccordion-root{
+    width: 96vw !important;
+}
 .btn-p button{
     font-family: 'Poppins';
     font-style: normal;
@@ -135,7 +138,7 @@ margin-bottom: 1rem;
     background-color: #ffffff;
     text-align: center;
     margin: auto;
-    padding-left: 50px;
+    padding-left: 146px;
     padding-top: 15px;
    
 }

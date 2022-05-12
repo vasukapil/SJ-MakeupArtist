@@ -43,7 +43,10 @@
     .mobile-white2{
       display: none;
     }
-   
+    .css-4r7yfq-MuiPaper-root-MuiAccordion-root{
+      width: 96vw !important;
+    }
+    
   
     @media (max-width: 768px) {
         .space {
@@ -98,6 +101,7 @@ padding-bottom: 5px;
             height: 33px;
           margin: auto;
         }
+        
         h5 {
             font-size: 16px !important;
         }

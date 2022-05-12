@@ -17,6 +17,7 @@ height:100%;
 
 
 
+
 `
 
 const Container_main = styled.div`
@@ -27,6 +28,7 @@ const Container_main = styled.div`
   justify-content: space-around;
   margin:auto;
   padding-bottom: 50px;
+  
 
   @media (max-width: 768px) {
     height: 100%;
@@ -36,71 +38,28 @@ const Container_main = styled.div`
   }
 `;
 
-const Leftdetails = styled.div`
-  width: 50%;
-  max-height: 189px;
-  flex:1;
 
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-
-  margin: auto 0;
-  flex-wrap: wrap;
-  text-align: left;
-  vertical-align: middle;
-  padding-left: 2.875em;
-  h1 {
-    font-size: 3.75em;
-    text-align: left;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 3rem;
-   
-  }
-  p {
-    max-width: 33.75em;
-    font-size: 1.25rem;
-    line-height: 24.8px;
-    margin-bottom: 1.75em;
-  }
-  article {
-    max-width: 150px;
-    border-radius: 1.25em;
-    background-color: rgba(116, 113, 113, 1);
-    color: #fff;
-    font-size: 1.25rem;
-
-
-
-
-    .White-dusra {
-      color: #fff;
-      text-align: center;
-      padding: 5px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
 const Leftdetail = styled.div`
-  margin: auto 0;
+
   flex-wrap: wrap;
   text-align: left;
   vertical-align: middle;
-  padding-left: 2.875em;
+ margin-top:70px;
+
+
+  
+  
 
   @media (max-width: 768px) {
     margin: 30px;
   }
   h1 {
       display:none;
+
     font-size: 3.75em;
     text-align: left;
+    margin-top:0;
+    padding-top:0;
   }
 
     @media (max-width: 768px) {
@@ -184,14 +143,7 @@ const Leftdetail = styled.div`
         }
       }
 `;
-const Rightdetails = styled.div`
 
-  flex:1;
-  img {
-    height: 562px;
-    width: 500px;
-  }
-`;
 const Rightdetail = styled.div`
   img {
     height: 562px;
@@ -203,38 +155,8 @@ width:50%;
 
   }
 `;
-const Bottomdetails = styled.div`
-  display: flex;
 
-  h2 {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    text-align: center;
-    margin-top: 18px;
-  }
 
-  img:not(:first-child) {
-    height: 130px;
-    width: 115px;
-
-    @media (max-width: 768px) {
-      width: 100px;
-      height: 112.42px;
-    }
-  }
-  img:first-child {
-    height: 140px;
-    width: 125px;
-    border: 2px solid black;
-
-    @media (max-width: 768px) {
-      width: 90px;
-      height: 101.42px;
-    }
-  }
-`;
 const LeftArrow = styled.div`
   img {
     height: 40px;
@@ -362,6 +284,7 @@ color:'#464343'
       <div className="mobile-about">
       
         <Leftdetail>
+          
           <h1>Sohni Juneja</h1>
           <p>
           Sohni Juneja, a product of National Institute of Fashion Technology (Delhi) where she got her proficiency in her passion for Designing and Styling.

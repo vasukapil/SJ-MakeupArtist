@@ -61,8 +61,10 @@ margin:auto;
 const Heading=styled.h1`
 
   text-align : center;
-  margin-top:20px;
+  margin-top:3rem;
   font-size: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
   @media (max-width: 768px){
     font-family: 'Poppins';
     font-style: normal;
@@ -215,6 +217,7 @@ margin:auto;
 font-style: normal;
 font-weight: 500;
 font-size: 20px;
+margin-top:0;
 
   
     @media (max-width: 768px){

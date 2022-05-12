@@ -14,7 +14,7 @@ import Service from "./components/Service/Service";
 import { Media } from "./components/Media/Media";
 import Publication from "./components/Publication/Publication";
 import ContactUs from "./components/ContactUs/ContactUs";
-import { HashRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 import Modal from "./components/Modal/Modal";
 import CarouselUse from "./components/Carousel/CarouselUse";
@@ -63,7 +63,7 @@ const Home = () => {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <title>
-          Sohni Juneja | Professional Makeup Artist in In Delhi NCR{" "}
+          Sohni Juneja | Professional Makeup Artist In Delhi NCR{" "}
         </title>
         <meta
           name="description"
@@ -113,7 +113,7 @@ const Home = () => {
         <meta property="og:url" content="https://sohnijuneja.com/" />
         <meta
           property="og:site_name"
-          content="Sohni Juneja | Professional Makeup Artist in In Delhi NCR"
+          content="Sohni Juneja | Professional Makeup Artist In Delhi NCR"
         />
         <meta
           property="og:image"
@@ -134,7 +134,7 @@ const Home = () => {
               "Sohni Juneja is a name to reckon with in the make-up and fashion industry with over 10 years of experience and is ranked among the top makeup artists.",
             brand: {
               "@type": "Brand",
-              name: "Sohni Juneja | Professional Makeup Artist in In Delhi NCR",
+              name: "Sohni Juneja | Professional Makeup Artist In Delhi NCR",
             },
             offers: {
               "@type": "AggregateOffer",
@@ -295,7 +295,7 @@ const Home = () => {
 
       <Navbar />
       <Group />
-      <Accordion
+      <Accordion className="close-desk"
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
       >
@@ -306,6 +306,7 @@ const Home = () => {
         >
           <Typography
             className="typi"
+            variant="h5"
             style={{ color: "rgb(70,67,67)" }}
             sx={{}}
           >
@@ -317,7 +318,7 @@ const Home = () => {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion
+      <Accordion className="book"
         expanded={expanded === "panel2"}
         onChange={handleChange("panel2")}
         sx={{

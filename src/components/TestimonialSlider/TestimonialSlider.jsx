@@ -10,9 +10,9 @@ import Testimonial3 from '../Testimonial/Testimonial3';
 export default class SimpleSlider extends Component {
   render() {
     const settings = {
-      dots: false,
+      dots: true,
       infinite: false,
-      arrows: true,
+      arrows: false,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,responsive: [
@@ -41,7 +41,7 @@ export default class SimpleSlider extends Component {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: true,
+            
             dots: true
 
           }

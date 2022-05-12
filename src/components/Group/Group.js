@@ -47,7 +47,7 @@ const Leftdetails = styled.div`
   font-weight: 400;
   font-size: 20px;
 
-  margin: auto 0;
+  
   flex-wrap: wrap;
   text-align: left;
   vertical-align: middle;
@@ -94,6 +94,7 @@ const Leftdetail = styled.div`
   text-align: left;
   vertical-align: middle;
   padding-left: 2.875em;
+  margin-top:0;
 
   @media (max-width: 768px) {
     margin: 30px;

@@ -39,6 +39,7 @@ const Container=styled.div`
     }
    }
    h2{
+       margin-top:64px;
     @media (max-width: 768px){
 
         margin:auto;
