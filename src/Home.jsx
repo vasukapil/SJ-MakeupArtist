@@ -93,7 +93,7 @@ const Home = () => {
         />
         <meta
           name="twitter:title"
-          content="Sohni Juneja | Professional Makeup Artist in In Delhi NCR"
+          content="Sohni Juneja | Professional Makeup Artist in Delhi NCR"
         />
         <meta name="twitter:url" content="https://twitter.com/junejasohni" />
         <meta
