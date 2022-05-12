@@ -356,7 +356,7 @@ const Home = () => {
           <Book toggleDrawer={toggleDrawer} />
         </AccordionDetails>
       </Accordion>
-      <Accordion
+      <Accordion className="coach"
         expanded={expanded === "panel3"}
         onChange={handleChange("panel3")}
         sx={{
