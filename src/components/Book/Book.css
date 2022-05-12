@@ -58,6 +58,10 @@
             border-spacing: 0;
             
         }
+        .book{
+          width: 100vw !important;
+        }
+        
         td {
             
 font-family: 'Poppins';

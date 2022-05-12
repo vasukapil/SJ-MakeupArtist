@@ -180,6 +180,9 @@ line-height: 39px;
         margin: auto;
         padding-bottom: 60px;
     }
+    .coach{
+        width: 100vw !important;
+    }
 
     .wrap-d .typo{
         font-family: 'Poppins';
