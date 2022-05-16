@@ -2,6 +2,7 @@ import styled from '@emotion/styled'
 import React from 'react'
 import './Footer.css'
 import FooterMb from '../Mobile/FooterMb/FooterMb'
+import { NavLink } from "react-router-dom";
 
 const MobileContainer=styled.div`
 
@@ -201,13 +202,41 @@ const Footer = () => {
         <h1>Useful Links</h1>
         <Wrapper>
         <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Gallery</li>
-            <li>Media</li>
-            <li>Blog</li>
-            <li>Contact Us</li>
+          <li>
+            <NavLink className="linkText" to="/">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="linkText" to="/about">
+              About Us
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="linkText" to="/services">
+              Services
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="linkText" to="/media">
+              Media
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="linkText" to="/album">
+              Album
+            </NavLink>
+          </li>
+          <li>
+            <a className="linkText" href="https://sohnijuneja.com/blog">Blog</a>
+              
+          
+          </li>
+          <li>
+            <NavLink className="linkText" to="/contact">
+              Contact Us
+            </NavLink>
+          </li>
         </ul>
         </Wrapper>
         </div>

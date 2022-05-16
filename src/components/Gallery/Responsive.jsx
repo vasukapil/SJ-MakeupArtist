@@ -92,7 +92,7 @@ expandIcon={<ExpandMoreIcon />}
         <Slider className="sliderWrap sliderWrapAr sllAr sllAr2" {...settings}>
           <div className="sliderGallery">
             <h3>
-                <img src="./Images/Rectangle 57.png"></img>
+                <img src="./Images/Rectangle 57.png" ></img>
             </h3>
           </div>
           <div>

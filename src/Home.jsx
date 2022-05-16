@@ -63,11 +63,11 @@ const Home = () => {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <title>
-          Sohni Juneja | Professional Makeup Artist In Delhi NCR{" "}
+        Awarded No 1 Bridal Makeup Artists in Delhi NCR Dehradun 2022
         </title>
         <meta
           name="description"
-          content="Sohni Juneja is a name to reckon with in the make-up and fashion industry with over 10 years of experience and is ranked among the top makeup artists."
+          content="Sohni Juneja is one of the top and professional bridal makeup artist in Delhi &amp; Dehradun. Offer best wedding makeup, party and event makeup services to clients."
         />
         <meta
           name="keywords"
