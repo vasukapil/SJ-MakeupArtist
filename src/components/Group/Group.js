@@ -148,6 +148,7 @@ const Leftdetail = styled.div`
     color: #fff;
     height: 24px;
     margin: 10px;
+    cursor:pointer;
   }
   
       @media (max-width: 768px) {
