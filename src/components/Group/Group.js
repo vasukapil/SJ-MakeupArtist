@@ -9,7 +9,8 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
+import { NavLink } from 'react-router-dom';
+import './Group.css'
 const Main_Boundary=styled.div`
 
 max-width:100%;
@@ -52,18 +53,20 @@ const Leftdetails = styled.div`
   text-align: left;
   vertical-align: middle;
   padding-left: 2.875em;
+  margin-top:230px;
   h1 {
-    font-size: 3.75em;
+    font-size: 3.6em;
     text-align: left;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
     font-size: 3rem;
+    padding-bottom:0 !important;
    
   }
   p {
     max-width: 33.75em;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 24.8px;
     margin-bottom: 1.75em;
   }
@@ -145,11 +148,13 @@ const Leftdetail = styled.div`
     
   }
   .White-dusra {
-    color: #fff;
+    color: #fff !important;
     height: 24px;
     margin: 10px;
     cursor:pointer;
+
   }
+  
   
       @media (max-width: 768px) {
         text-align: center;
@@ -321,7 +326,11 @@ const Group = () => {
           Sohni Juneja, a product of National Institute of Fashion Technology (Delhi) where she got her proficiency in her passion for Designing and Styling.
           </p>
           <article>
-            <p className="White-dusra">Read More</p>
+            <p className="White-dusra">
+            <NavLink className="cc" to="/about">
+            Read More
+            </NavLink></p>
+              
           </article>
         </Leftdetails>
 
