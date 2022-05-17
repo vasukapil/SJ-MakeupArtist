@@ -173,6 +173,12 @@ font-size: 26px;
 line-height: 39px;
 
 }
+.coach-check{
+    text-decoration: none;
+}
+.coach-check:hover{
+    color: black;
+}
 @media(max-width: 600px) {
 
     .Coaching-Container{

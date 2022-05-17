@@ -167,7 +167,7 @@ const Testimonial = ({name}) => {
             <img className="r" src="./Images/Right.png"></img> */}
 
             <First>
-                <div className="first-"><img src="./Images/Ellipse 5.png"></img></div></First>
+                <div className="first-"><img alt="bridal makeup in delhi" src="./Images/Ellipse 5.webp"></img></div></First>
             <Second><Heading className="inner">Vatsala Wilson</Heading>
             
             <Paragraph className="p1">I am glad that I had you as my makeup artist on our big day. Thank you so much for all your help, you are one seriously talented woman! I looked so beautiful and not to mention that makeup looked stubbing on me. 

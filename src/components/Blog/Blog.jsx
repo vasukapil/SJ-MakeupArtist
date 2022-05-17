@@ -268,20 +268,20 @@ const Blog = () => {
         <Slider className="sliderWrap sliderWrapAr sllAr2" {...settings}>
 
             <First>
-                <img src="./Images/Rectangle 17.png"></img>
+                <img src="./Images/Rectangle 17.webp" alt="makeup schools in delhi ncr"></img>
                 <p className="p1">ROSEWATER BENEFITS: FROM ANTIOXIDANTS TO ANTI-AGING</p>
                 <p className="p2">By Sohni- June 30, 2021</p>
                 <p className="p3">Read More</p>
             </First>
             <Second>
-                <img src="./Images/Rectangle 18.png"></img>
+                <img src="./Images/Rectangle 18.webp" alt="makeup schools in delhi"></img>
                 <p className="p1">EXCITING 2021 EYE MAKEUP TRENDS</p>
                 <p className="p2">By Sohni- June 30, 2021</p>
                 <p className="p3">Read More</p>
             </Second>
             <Third>
             
-                  <div className="sc-bhVIhj"><img src="./Images/Rectangle 19.png"/></div>
+                  <div className="sc-bhVIhj"><img alt="makeup schools in dehradun" src="./Images/Rectangle 19.webp"/></div>
                   
                 <p className="p1">WHAT ARE THE BENEFITS OF HYALURONIC ACID ON SKIN</p>
                 <p className="p2">By Sohni- June 30, 2021</p>

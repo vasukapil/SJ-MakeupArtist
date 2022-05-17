@@ -166,7 +166,7 @@ const Testimonial2 = ({name}) => {
             <img className="r" src="./Images/Right.png"></img> */}
 
             <First>
-                <div className="first-"><img src="./Images/Ellipse 6 (1).png"></img></div></First>
+                <div className="first-"><img alt="Best makeup artist in dehradun" src="./Images/Ellipse 6 (1).webp"></img></div></First>
             <Second><Heading className="inner">Maneesha Thapa</Heading>
             
             <Paragraph className="p1">It was such a wonderful experience to have my makeup done from her. She is no doubt one of the finest makeup artist in India. My makeup and hair was everything I ever imagined.

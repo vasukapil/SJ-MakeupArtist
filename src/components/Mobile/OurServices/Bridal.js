@@ -6,7 +6,7 @@ const Bridal = () => {
         <h2 className="hair-h2">BRIDAL MAKEUP</h2>
         <div className="pureflex">
         <div className="hair-box-image">
-          <img className="img-hair" style={{objectFit:'cover'}}  src="./Images/Rectangle 89.png"></img>
+          <img className="img-hair" style={{objectFit:'cover'}}  src="./Images/Rectangle 89.webp"></img>
         </div>
         <div className="hair-box-para">
           

@@ -6,7 +6,7 @@ const Bridal = () => {
       <h2>BRIDAL MAKEUP</h2>
       <div className="Box">
         <div className="One">
-          <img src="./Images/Rectangle 89.png"></img>
+          <img src="./Images/Rectangle 89.webp"></img>
         </div>
         <div className="Two">
           <p>

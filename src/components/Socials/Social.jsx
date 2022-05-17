@@ -96,7 +96,7 @@ const Social = () => {
         <Logo>
                 <img className="insta" src="./Images/image 18.png"></img>
                 <div>
-                    <img className="foll" src="./Images/FOLLOW US ON.png"></img>
+                    <img className="foll" src="./Images/FOLLOW US ON.webp"></img>
                     <img className="ins" src="./Images/image 19.png"></img>
                 </div>
         </Logo>

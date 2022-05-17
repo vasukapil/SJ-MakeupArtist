@@ -69,14 +69,14 @@ const Coaching = () => {
             <li>EVENING MAKEUP(SMOKEY EYES, ETC)</li>
           </ul>
 
-          <span>DM on 9999963537 to enroll</span>
-          <span>Email: junejasohni@gmail.com</span>
+          <a className="coach-check" href="tel:+91-9999963537"><span>DM on 9999963537 to enroll</span></a>
+          <a className="coach-check" href="mailto:junejasohni@gmail.com"><span>Email: junejasohni@gmail.com</span></a>
           <span>Website: www.sohnijuneja.com</span>
 
           </div>
 
           <div className="btn-p">
-            <button>Course Fee : Rs 18,500</button>
+            <button>Rs 97,000 + GST</button>
 
             <p className="covid"><b>*Note:</b> Class timings are subject to changes as per the prevailing COVID-19 norms implemented by the government. 
 </p>

@@ -12,7 +12,7 @@ const About = () => {
       <h2>About Us</h2>
       <div className="About-Section">
         <div className="First">
-          <img src="./Images/Rectangle 6.png" alt="Bridal makeup artist in Delhi "></img>
+          <img src="./Images/Rectangle 6.webp" alt="Bridal makeup artist in Delhi "></img>
         </div>
         <div className="Second">
           <p className="numberone">
