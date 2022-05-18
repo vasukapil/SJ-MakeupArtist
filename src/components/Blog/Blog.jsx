@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
+
 import styled from 'styled-components'
 import Navbar from '../Navbar/Navbar'
 import './Blog.css'
@@ -127,6 +128,8 @@ const First=styled.div`
 const Second=styled.div`
 
 img{
+  width:418px;
+  height:279px;
 margin-left:28px;
 margin-top:40px;
 }
@@ -152,12 +155,25 @@ p{
    flex:1;
    @media (max-width: 768px){
     img{
-        margin-left:0px;
-        margin-top:0px;
-       }
+      width:95%;
+      height:auto;
+      margin-left:0;
+      margin-top:0px;
+      margin-left:2.5%;
+
+  }
+     
+
  }
 `
 const Third=styled.div`
+
+img{
+  width:418px;
+  height:279px;
+margin-left:28px;
+margin-top:40px;
+}
 
    flex:1;
 
@@ -176,7 +192,9 @@ const Third=styled.div`
     }
     }
    img{
-    margin-left:30px;
+    width:418px;
+    height:279px;
+    margin-left:28px;
     margin-top:40px;
    }
    p{
@@ -189,9 +207,13 @@ const Third=styled.div`
     display: inline-block;
     padding: 12px;
     img{
-        margin-left:0px;
-        margin-top:0px;
-       }
+      width:95%;
+      height:auto;
+      margin-left:0;
+      margin-top:0px;
+      margin-left:2.5%;
+
+  }
        .p1{
         font-size:15px;
         text-align : center;
@@ -227,6 +249,32 @@ margin-top:0;
 
 `
 const Blog = () => {
+  const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+ "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+function dateFormat(d){
+  var t = new Date(d);
+  return t.getDate()+'-'+monthNames[t.getMonth()]+'-'+t.getFullYear();
+}
+  const source_url="https://sohnijuneja.com/blog/how-to-get-dewy-skin-without-makeup/get-dewy-skin-without-makeup/";
+
+  
+  const [posts, setPosts] = useState([]);
+  useEffect(() => {
+      async function loadPosts() {
+          const response = await fetch('https://sohnijuneja.com/blog/wp-json/wp/v2/posts?_embed');
+          if(!response.ok) {
+              // oups! something went wrong
+              return;
+          }
+  
+          const posts = await response.json();
+          setPosts(posts);
+          console.log(posts);
+      }
+  
+      loadPosts();
+ }, [])
     var settings = {
         dots: true,
         infinite: true,
@@ -263,29 +311,35 @@ const Blog = () => {
       };
   return (
     <Container>
+     
+      { posts[0] &&
+<>
         <Heading>Blog</Heading>
         <Wrapper className="">
         <Slider className="sliderWrap sliderWrapAr sllAr2" {...settings}>
 
             <First>
-                <img src="./Images/Rectangle 17.webp" alt="makeup schools in delhi ncr"></img>
-                <p className="p1">ROSEWATER BENEFITS: FROM ANTIOXIDANTS TO ANTI-AGING</p>
-                <p className="p2">By Sohni- June 30, 2021</p>
-                <p className="p3">Read More</p>
+            <a href={posts[0].guid.rendered}><img src={posts[0]._embedded['wp:featuredmedia']['0'].source_url} alt="makeup schools in delhi ncr"></img></a>
+                <p className="p1"><a href={posts[0].guid.rendered}>{posts[0].title.rendered}</a></p>
+                <p className="p2">By Sohni-{dateFormat(posts[0].date.substring(0,10))}</p>
+                <p className="p3"><a href={posts[0].guid.rendered}>Read More</a></p>
             </First>
             <Second>
-                <img src="./Images/Rectangle 18.webp" alt="makeup schools in delhi"></img>
-                <p className="p1">EXCITING 2021 EYE MAKEUP TRENDS</p>
-                <p className="p2">By Sohni- June 30, 2021</p>
-                <p className="p3">Read More</p>
+            <a href={posts[0].guid.rendered}><img src={posts[1]._embedded['wp:featuredmedia']['0'].source_url} alt="makeup schools in delhi"></img></a>
+                <p className="p1"><a href={posts[1].guid.rendered}>{posts[1].title.rendered}</a></p>
+                <p className="p2"> By Sohni-{dateFormat(posts[1].date.substring(0,10))}</p>
+                <p className="p3"><a href={posts[1].guid.rendered}>Read More</a></p>
             </Second>
             <Third>
             
-                  <div className="sc-bhVIhj"><img alt="makeup schools in dehradun" src="./Images/Rectangle 19.webp"/></div>
+                  <div className="sc-bhVIhj">
+                    
+                  <a href={posts[0].guid.rendered}><img alt="makeup schools in dehradun" src={posts[2]._embedded['wp:featuredmedia']['0'].source_url}/></a>
+                  </div>
                   
-                <p className="p1">WHAT ARE THE BENEFITS OF HYALURONIC ACID ON SKIN</p>
-                <p className="p2">By Sohni- June 30, 2021</p>
-                <p className="p3">Read More</p>
+                <p className="p1"><a href={posts[2].guid.rendered}>{posts[2].title.rendered}</a></p>
+                <p className="p2">By Sohni-{dateFormat(posts[2].date.substring(0,10))}</p>
+                <p className="p3"><a href={posts[2].guid.rendered}>Read More</a></p>
             </Third>
         </Slider>
 
@@ -293,6 +347,8 @@ const Blog = () => {
         <View>
             View More
         </View>
+        </>
+      }
         
     </Container>
   )

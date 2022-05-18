@@ -25,6 +25,13 @@
     font-weight: 400;
     font-size: 18px;
 }
+.sllAr2 a{
+    
+    text-decoration: none;
+    color: inherit;
+
+}
+
 
 @media(max-width:600px) {
     /* .sllAr .slick-arrow.slick-next::before {
