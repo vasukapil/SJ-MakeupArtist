@@ -239,7 +239,7 @@ const Navbar = () => {
         </Center>
         <Left>
         <a href="tel:+91-9999963537"><img className="phone-m" src="./Images/phone.png" alt="" /></a>
-        <img className="mb-whatsapp" src="./Images/whatsapp_grey.png"></img>
+        <a href="whatsapp://send?phone=+91-9999963537"><img className="mb-whatsapp" src="./Images/whatsapp_grey.png"></img></a>
           <span>+91-9999963537</span>
         </Left>
     
@@ -259,7 +259,8 @@ const Navbar = () => {
         <Extreme>
 
         <a href="tel:+91-9999963537"><img className="phone-m" src="./Images/phone.png" alt="" /></a>
-        <img src="/Images/whatsapp_grey.png" alt=""><a href="whatsapp://send?phone=+91-9999963537">+91-9999963537</a></img>
+        <a href="whatsapp://send?phone=+91-9999963537"><img className="mb-whatsapp" src="./Images/whatsapp_grey.png"></img></a>
+        
 
         <div className="conn" onClick={toggleDrawer}>
             <a href="#" class="hidden2"></a>
