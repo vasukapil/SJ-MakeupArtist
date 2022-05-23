@@ -46,6 +46,9 @@
     .book{
       width: 96vw !important;
   }
+  .White{
+    cursor: pointer;
+  }
     
   
     @media (max-width: 768px) {

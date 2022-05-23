@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Modal.css";
 import { useForm } from "react-hook-form";
 import { atom, useRecoilState } from "recoil";
 import { reposState } from "./state";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
-const Modal = ({toggleDrawer}) => {
+
+const Modal = ({id,title,image,price,toggleDrawer}) => {
+
+  function myFunction() {
+ let x= document.getElementById("drop").value;
+
+  console.log(x); 
+  }
+
+  const [look,setLook]=useState()
+ 
   const [info, setInfo] = useRecoilState(reposState);
+  const products = useSelector((state)=>state);
   const navigate = useNavigate();
   const {
     register,
@@ -16,18 +28,22 @@ const Modal = ({toggleDrawer}) => {
   const onSubmit = (data) => {
     setInfo(data);
     console.log(data);
+    console.log(title);
+ console.log(image);
     navigate("/checkout");
   };
 
   return (
+    
     <div className="Popup-Container">
+      
       <form onSubmit={handleSubmit(onSubmit)} className="Popup">
         <h3>BOOK APPOINTMENT</h3>
         <button id="close" onClick={toggleDrawer}>&times;</button>
         <div className="form-wrapper">
           <div className="form-One">
-            <img src="./Images/Rectangle 98.png"></img>
-            <h4 className="bgH4">BRIDAL LOOK</h4>
+            <img src="./Images/Rectangle 89.webp"></img>
+            <h4 className="bgH4">{title}</h4>
           </div>
 
           <div className="form-Two">
@@ -37,14 +53,17 @@ const Modal = ({toggleDrawer}) => {
                 <div className="Msing">
                   <label>Event:</label>
 
-                  <select
+                  <select id="drop"
                     className="event"
+                    onChange={(e) => {setLook(e.target.value);
+                    console.log(e);
+                    }}
                     {...register("look", { required: true })}
                   >
-                    <option value="BridalLook">Bridal Look</option>
-                    <option value="saab">1</option>
-                    <option value="opel">2</option>
-                    <option value="audi">3</option>
+                    <option value="1">Bridal Look</option>
+                    <option value="2">Party Look</option>
+                    <option value="3">Editorial</option>
+                    <option value="4">Pre-wedding</option>
                   </select>
                 </div>
                 <div className="Msing ">
@@ -250,6 +269,8 @@ const Modal = ({toggleDrawer}) => {
         <div className="sing"><img src="/Images/mail.png" alt="" /><a href="mailto:junejasohni@gmail.com">junejasohni@gmail.com</a></div>
       </div>
       </form>
+
+      
     </div>
   );
 };

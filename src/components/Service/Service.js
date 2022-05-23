@@ -13,6 +13,11 @@ import "./Service.css";
 
 const Services = () => {
   const [active,setActive]=useState("first");
+  function HandleHover(){
+   return document.querySelector('.first').style.backgroundColor='red';
+  
+  }
+  
   return (
     <>
     <Navbar/>
@@ -40,13 +45,14 @@ const Services = () => {
       </div>
 
       <div className="button">
-        <a onClick={()=>setActive("first")}>HAIR STYLING</a>
+        <a onLoad={HandleHover} onClick={()=>setActive("first")}>HAIR STYLING</a>
         <a onClick={()=>setActive("second")}>BRIDAL MAKEUP</a>
         <a onClick={()=>setActive("third")}>PARTY MAKEUP</a>
         <a onClick={()=>setActive("four")}>OFFERS</a>
       </div>
 
       <div className="Box-Container">
+      
       {active==="first" && <Hair/>}
         {active==="second" && <Bridal/>}
         {active==="third" && <Party/>}

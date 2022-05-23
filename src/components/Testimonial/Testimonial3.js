@@ -52,6 +52,11 @@ align-items:center;
     height:auto;
     // margin-top:60px;
 }
+@media (max-width:358px){
+    flex:1;
+max-width:90%;
+flex-wrap:wrap;
+}
 `
 const First=styled.div`
 flex:1;
@@ -166,7 +171,7 @@ const Testimonial3 = ({name}) => {
             <img className="r" src="./Images/Right.png"></img> */}
 
             <First>
-                <div className="first-"><img alt="Best makeup arrist in Delhi ncr" src="./Images/Ellipse 6 (2).webp"></img></div></First>
+                <div className="first-"><img alt="Best makeup arrist in Delhi ncr" src="./Images/Ellipse 6 (2).png"></img></div></First>
             <Second><Heading className="inner">Vishakha Dodhi</Heading>
             
             <Paragraph className="p1">Hey guys, if you are looking for a perfect makeup artist then you should definitely go for Sohni. She is extremely professional. She understand the need of the client and yes she is a magician. 

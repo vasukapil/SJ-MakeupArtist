@@ -6,6 +6,11 @@
     .sllAr h1{
         padding-top: 1rem;
     }
+    .sllAr{
+        height: auto;
+        width: 100%;
+    }
+   
 }
 
 .SS .slick-arrow.slick-prev {

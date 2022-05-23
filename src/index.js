@@ -8,10 +8,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {RecoilRoot} from "recoil";
+import {Provider} from 'react-redux';
+import store from './Redux/Store'
 
 ReactDOM.render(
   <RecoilRoot>
-    <App />
+    <Provider store={store}>    
+      <App />
+    </Provider>
+
   </RecoilRoot>,
   document.getElementById('root')
 );

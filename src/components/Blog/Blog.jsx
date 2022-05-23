@@ -241,6 +241,12 @@ font-weight: 500;
 font-size: 20px;
 margin-top:0;
 
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+
   
     @media (max-width: 768px){
        display:none;
@@ -345,7 +351,7 @@ function dateFormat(d){
 
         </Wrapper>
         <View>
-            View More
+        <a href="https://sohnijuneja.com/blog">View More</a>
         </View>
         </>
       }

@@ -7,5 +7,11 @@
     display: none;
 
 }
+
+@media (max-width:600px){
+    .p1{
+        padding: 1rem;
+    }
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');

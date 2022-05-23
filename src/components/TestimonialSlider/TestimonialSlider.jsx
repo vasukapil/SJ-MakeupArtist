@@ -52,13 +52,13 @@ export default class SimpleSlider extends Component {
       <div className="sllAr sllAr2">
       <h1>Testimonials</h1>
         <Slider {...settings}>
-          <div>
+          <div className="sl1">
             <Testimonial/>
           </div>
-          <div>
+          <div className="sl2">
             <Testimonial2/>
           </div>
-          <div>
+          <div className="sl3">
             <Testimonial3/>
           </div>
         </Slider>

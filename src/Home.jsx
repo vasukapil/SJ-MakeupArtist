@@ -33,9 +33,67 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Group from "./components/Group/Group";
+import Signup from "./components/Signup";
+
+
 
 const Home = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+//   const data = [
+
+//     {
+//         id:"1",
+//         title:"Bridal Look",
+//         image:"./Images/Rectangle 98.png",
+//         price: 
+//             {
+//                SJ: [17000,20000],
+//                Senior_SJ : [26000,29000] ,
+//                Junior_SJ : [23000,26000]
+
+//             }
+        
+//     },
+//     {
+//       id:"2",
+//       title:"Party Look",
+//       image:"./Images/Party.png",
+//       price: 
+//           {
+//              SJ: [17000,20000],
+//              Senior_SJ : [26000,29000] ,
+//              Junior_SJ : [23000,26000]
+
+//           }
+      
+//   },
+//   {
+//     id:"3",
+//     title:"Editorial Look",
+//     image:"./Images/Rectangle 98.png",
+//     price: 
+//         {
+//            SJ: [17000,20000],
+//            Senior_SJ : [26000,29000] ,
+//            Junior_SJ : [23000,26000]
+
+//         }
+    
+// },
+// {
+//   id:"4",
+//   title:"Pre-Wedding",
+//   image:"./Images/Rectangle 98.png",
+//   price: 
+//       {
+//          SJ: [17000,20000],
+//          Senior_SJ : [26000,29000] ,
+//          Junior_SJ : [23000,26000]
+
+//       }
+  
+// }
+//   ]
 
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
@@ -55,7 +113,7 @@ const Home = () => {
         direction="center"
         className="blablabla2"
       >
-        <Modal toggleDrawer={toggleDrawer} />
+        <Modal  toggleDrawer={toggleDrawer} />
       </Drawer>
       <Helmet>
         <meta
@@ -391,9 +449,11 @@ const Home = () => {
       <TestimonialSlider />
 
       <Blog />
+    
       <Accolades />
       <Accordian />
       <Footer />
+  
     </div>
   );
 };
