@@ -5,17 +5,14 @@ import { atom, useRecoilState } from "recoil";
 import { reposState } from "./state";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import {TimePicker} from 'react-time-picker'
 
 
-const Modal = ({id,title,image,price,toggleDrawer}) => {
+const Modal = ({data,toggleDrawer}) => {
 
-  function myFunction() {
- let x= document.getElementById("drop").value;
-
-  console.log(x); 
-  }
-
-  const [look,setLook]=useState()
+console.log(data);
+  const [look,setLook]=useState();
+ 
  
   const [info, setInfo] = useRecoilState(reposState);
   const products = useSelector((state)=>state);
@@ -28,26 +25,28 @@ const Modal = ({id,title,image,price,toggleDrawer}) => {
   const onSubmit = (data) => {
     setInfo(data);
     console.log(data);
-    console.log(title);
- console.log(image);
     navigate("/checkout");
   };
+
+  console.log(look);
 
   return (
     
     <div className="Popup-Container">
+
+{data &&
       
       <form onSubmit={handleSubmit(onSubmit)} className="Popup">
         <h3>BOOK APPOINTMENT</h3>
         <button id="close" onClick={toggleDrawer}>&times;</button>
         <div className="form-wrapper">
           <div className="form-One">
-            <img src="./Images/Rectangle 89.webp"></img>
-            <h4 className="bgH4">{title}</h4>
+            <img src={data.image}></img>
+            <h4 className="bgH4"></h4>
           </div>
 
           <div className="form-Two">
-            <h4 className="smH4">BRIDAL LOOK</h4>
+            <h4 className="smH4">{data.title}</h4>
             <form>
               <div className="block block1">
                 <div className="Msing">
@@ -55,9 +54,14 @@ const Modal = ({id,title,image,price,toggleDrawer}) => {
 
                   <select id="drop"
                     className="event"
-                    onChange={(e) => {setLook(e.target.value);
-                    console.log(e);
+                    onChange={(e) => {
+                   
+                      setLook(e.target.value);
+                 
+                      
+                  
                     }}
+                    
                     {...register("look", { required: true })}
                   >
                     <option value="1">Bridal Look</option>
@@ -95,16 +99,7 @@ const Modal = ({id,title,image,price,toggleDrawer}) => {
                 <div className="Msing">
                   <label>Time:</label>
 
-                  <select
-                    className="event"
-                    {...register("time", { required: true })}
-                    placeholder="Time"
-                  >
-                    <option value="2">2</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                  </select>
+                  <input type="time" name="time"/>
                 </div>
                 {/* <div className="Msing">
                   <label>Artist:</label>
@@ -119,8 +114,10 @@ const Modal = ({id,title,image,price,toggleDrawer}) => {
                 </div> */}
               </div>
               {/* block block2 */}
+              
               <div className="">
                 <h4>SELECT ARTIST</h4>
+                
                 <table>
                   <tr>
                     <th>Sohni Juneja</th>
@@ -132,10 +129,13 @@ const Modal = ({id,title,image,price,toggleDrawer}) => {
                         type="radio"
                         className="radio2"
                       ></input>
+
+                
                       <label>
+                     
                         HD Makeup
                         <br />
-                        (INR 38000)
+                        INR {data.price.SJ[0]} 
                       </label>
                     </td>
                     <td>
@@ -149,11 +149,15 @@ const Modal = ({id,title,image,price,toggleDrawer}) => {
                       <label>
                         Airbrush Makeup
                         <br />
-                        (INR 43000)
+                        INR {data.price.SJ[1]}
+                    
                       </label>
+                   
                     </td>
                   </tr>
                   <tr>
+
+
                   <th>Senior SJ</th>
                     
                     <td>
@@ -167,7 +171,7 @@ const Modal = ({id,title,image,price,toggleDrawer}) => {
                       <label>
                         HD Makeup
                         <br />
-                        (INR 28000)
+                        INR {data.price.Senior_SJ[0]}
                       </label>
                     </td>
                     <td>
@@ -181,7 +185,7 @@ const Modal = ({id,title,image,price,toggleDrawer}) => {
                       <label>
                         Airbrush Makeup
                         <br />
-                        (INR 33000)
+                        INR {data.price. Senior_SJ[1]}
                       </label>
                     </td>
                   </tr>
@@ -198,7 +202,7 @@ const Modal = ({id,title,image,price,toggleDrawer}) => {
                       <label>
                         HD Makeup
                         <br />
-                        (INR 18000)
+                        INR {data.price.Junior_SJ[0]}
                       </label>
                     </td>
                     
@@ -215,7 +219,7 @@ const Modal = ({id,title,image,price,toggleDrawer}) => {
                       <label>
                         Airbrush Makeup
                         <br />
-                        (INR 23000)
+                        INR {data.price.Junior_SJ[1]}
                       </label>
                     </td>
                   </tr>
@@ -270,8 +274,10 @@ const Modal = ({id,title,image,price,toggleDrawer}) => {
       </div>
       </form>
 
-      
+              }   
+                   
     </div>
+              
   );
 };
 

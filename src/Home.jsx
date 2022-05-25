@@ -39,63 +39,80 @@ import Signup from "./components/Signup";
 
 const Home = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-//   const data = [
+  const [faltu,setFaltu]=React.useState();
+  const data = [
 
-//     {
-//         id:"1",
-//         title:"Bridal Look",
-//         image:"./Images/Rectangle 98.png",
-//         price: 
-//             {
-//                SJ: [17000,20000],
-//                Senior_SJ : [26000,29000] ,
-//                Junior_SJ : [23000,26000]
+    {
+        id:"1",
+        title:"Bridal Look",
+        image:"./Images/Rectangle 98.png",
+        price: 
+            {
+               SJ: [17000,20000],
+               Senior_SJ : [26000,29000] ,
+               Junior_SJ : [23000,26000]
 
-//             }
+            }
         
-//     },
-//     {
-//       id:"2",
-//       title:"Party Look",
-//       image:"./Images/Party.png",
-//       price: 
-//           {
-//              SJ: [17000,20000],
-//              Senior_SJ : [26000,29000] ,
-//              Junior_SJ : [23000,26000]
+    },
+    {
+      id:"2",
+      title:"Party Look",
+      image:"./Images/Rectangle41.png",
+      price: 
+          {
+             SJ: [16000,21000],
+             Senior_SJ : [26000,29000] ,
+             Junior_SJ : [8000,12000]
 
-//           }
+          }
       
-//   },
-//   {
-//     id:"3",
-//     title:"Editorial Look",
-//     image:"./Images/Rectangle 98.png",
-//     price: 
-//         {
-//            SJ: [17000,20000],
-//            Senior_SJ : [26000,29000] ,
-//            Junior_SJ : [23000,26000]
+  },
+  {
+    id:"3",
+    title:"Fashion",
+    image:"./Images/Rectangle31.png",
+    price: 
+        {
+           SJ: [25000,30000],
+           Senior_SJ : [18000,23000] ,
+           Junior_SJ : [14000,19000]
 
-//         }
+        }
     
-// },
-// {
-//   id:"4",
-//   title:"Pre-Wedding",
-//   image:"./Images/Rectangle 98.png",
-//   price: 
-//       {
-//          SJ: [17000,20000],
-//          Senior_SJ : [26000,29000] ,
-//          Junior_SJ : [23000,26000]
+},
+{
+  id:"4",
+  title:"Pre-Wedding",
+  image:"./Images/Rectangle42.png",
+  price: 
+      {
+         SJ: [17000,20000],
+         Senior_SJ : [26000,29000] ,
+         Junior_SJ : [23000,26000]
 
-//       }
+      }
   
-// }
-//   ]
+}
+  ]
 
-  const toggleDrawer = () => {
+  const toggleDrawer = (num) => {
+    if(num===1)
+    {
+      setFaltu(data[0])
+
+    }
+    if(num===2)
+    {
+      setFaltu(data[1])
+    }
+    if(num===3){
+      setFaltu(data[2])
+    }
+    if(num===4)
+    {
+      setFaltu(data[3])
+    }
     setIsOpen((prevState) => !prevState);
   };
 
@@ -113,7 +130,7 @@ const Home = () => {
         direction="center"
         className="blablabla2"
       >
-        <Modal  toggleDrawer={toggleDrawer} />
+        <Modal  data={faltu} toggleDrawer={toggleDrawer} />
       </Drawer>
       <Helmet>
         <meta

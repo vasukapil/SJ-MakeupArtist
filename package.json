@@ -34,6 +34,7 @@
     "react-simply-carousel": "^5.1.4",
     "react-slick": "^0.28.1",
     "react-stripe-checkout": "^2.6.3",
+    "react-time-picker": "^4.5.0",
     "react-toastify": "^9.0.0",
     "recoil": "^0.7.2",
     "redux": "^4.2.0",

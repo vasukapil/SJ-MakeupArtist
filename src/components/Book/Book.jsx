@@ -129,8 +129,8 @@ const [val,setVal]=useState()
               <tr>
                   <td>Bridal look</td>
                  
-                  <td><a className="White" onClick={toggleDrawer}>Book Now</a>
-                     <img className="mobile-white1" onClick={(event) => [toggleDrawer(), setProp(data[0])]} src="./Images/Group 263.png"></img>
+                  <td><a className="White" onClick={ ()=>toggleDrawer(1)}>Book Now</a>
+                     <img className="mobile-white1" onClick={()=>toggleDrawer(1)} src="./Images/Group 263.png"></img>
                   </td>
                   <td><a className="White">Call Now</a>
                   <a href="tel:+91-9999963537"><img className="mobile-white2" src="./Images/Group 264.png"></img></a></td>
@@ -139,8 +139,8 @@ const [val,setVal]=useState()
               <tr>
                   <td>Party </td>
                   
-                  <td><a className="White" onClick={toggleDrawer}>Book Now</a>
-                  <img className="mobile-white1" onClick={(event) => [toggleDrawer(), second()]} src="./Images/Group 263.png"></img></td>
+                  <td><a className="White" onClick={() => toggleDrawer(2)}>Book Now</a>
+                  <img className="mobile-white1" onClick={()=>toggleDrawer(2)} src="./Images/Group 263.png"></img></td>
                   <td><a className="White">Call Now</a>
                   <a href="tel:+91-9999963537"><img className="mobile-white2" src="./Images/Group 264.png"></img></a></td>
               </tr>
@@ -148,8 +148,8 @@ const [val,setVal]=useState()
               <tr>
                   <td>Fashion</td>
                   
-                  <td><a className="White mobile-white" onClick={toggleDrawer}>Book Now</a>
-                  <img className="mobile-white1" src="./Images/Group 263.png" onClick={(event) => [toggleDrawer(), third()]}></img></td>
+                  <td><a className="White mobile-white" onClick={() => toggleDrawer(3)}>Book Now</a>
+                  <img className="mobile-white1" src="./Images/Group 263.png" onClick={() => toggleDrawer(3)}></img></td>
                   <td><a className="White">Call Now</a>
                   <a href="tel:+91-9999963537"><img className="mobile-white2" src="./Images/Group 264.png"></img></a></td>
               </tr>
@@ -157,8 +157,8 @@ const [val,setVal]=useState()
               <tr>
                   <td>Day Look</td>
                  
-                  <td><a className="White" onClick={toggleDrawer}>Book Now</a>
-                  <img className="mobile-white1" src="./Images/Group 263.png" onClick={toggleDrawer}></img></td>
+                  <td><a className="White" onClick={() => toggleDrawer(4)}>Book Now</a>
+                  <img className="mobile-white1" src="./Images/Group 263.png" onClick={() => toggleDrawer(4)}></img></td>
                   <td><a className="White">Call Now</a>
                   <a href="tel:+91-9999963537"><img className="mobile-white2" src="./Images/Group 264.png"></img></a></td>
               </tr>
