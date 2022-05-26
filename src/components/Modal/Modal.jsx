@@ -5,7 +5,7 @@ import { atom, useRecoilState } from "recoil";
 import { reposState } from "./state";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import {TimePicker} from 'react-time-picker'
+
 
 
 const Modal = ({data,toggleDrawer}) => {
@@ -93,13 +93,13 @@ console.log(data);
                     min="09:00"
                     max="18:00"
                     step="3600"
-                    {...register("time", { required: true })}
+                    
                   ></input>
                 </div> */}
                 <div className="Msing">
                   <label>Time:</label>
 
-                  <input type="time" name="time"/>
+                  <input {...register("time", { required: true })} type="time" name="time"/>
                 </div>
                 {/* <div className="Msing">
                   <label>Artist:</label>
