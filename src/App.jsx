@@ -12,7 +12,7 @@ import Publication from './components/Publication/Publication';
 import Checkout from './Checkout';
 import Congrats from './Congrats';
 
-import Signup from './components/Signup';
+
 
 
 
@@ -29,7 +29,7 @@ function App() {
         <Route path="/blog" element={<Blog/>}/>
         <Route path="/checkout" element={<Checkout/>}/>
         <Route path="/congrats" element={<Congrats/>}/>
-        <Route path="/login" element={<Signup/>}/>
+   
 
 
       </Routes>

@@ -1,22 +1,19 @@
 
 
 import React, { useState } from 'react';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
+
 import './Book.css'
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Modal from '../Modal/Modal'
-import { useSelector } from 'react-redux';
+
+
+
 
 
 
 const Book = ({toggleDrawer}) => {
 
   const [expanded, setExpanded] = React.useState(true);
-  const products = useSelector((state)=>state);
-  console.log(products);
+
+
 const [val,setVal]=useState()
 
   const data = [
@@ -84,44 +81,7 @@ const [val,setVal]=useState()
     setExpanded(isExpanded ? panel : false);
   };
 
-  function first(){
-
-      return (
-          <div>
-              <Modal data={data[0]}/>
-          </div>
-      )
-  }
-
-  function second(){
-     
-
-    return (
-        <div>
-            <Modal data={data[1]}/>
-            
-        </div>
-    )
-
-  }
-  function third(){
-
-    return (
-        <div>
-            <Modal data={data[2]}/>
-        </div>
-    )
-
-  }
-  function fourth(){
-
-    return (
-        <div>
-            <Modal data={data[3]}/>
-        </div>
-    )
-
-  }
+  
   return (
   
   

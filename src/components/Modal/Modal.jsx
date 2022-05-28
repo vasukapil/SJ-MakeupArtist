@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { atom, useRecoilState } from "recoil";
 import { reposState } from "./state";
 import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
+
 
 
 
@@ -15,7 +15,7 @@ console.log(data);
  
  
   const [info, setInfo] = useRecoilState(reposState);
-  const products = useSelector((state)=>state);
+
   const navigate = useNavigate();
   const {
     register,
