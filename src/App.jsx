@@ -13,14 +13,11 @@ import Checkout from './Checkout';
 import Congrats from './Congrats';
 
 
-
-
-
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<ContactUs/>}/>
         <Route path="/services" element={<Services/>}/>
@@ -29,6 +26,7 @@ function App() {
         <Route path="/blog" element={<Blog/>}/>
         <Route path="/checkout" element={<Checkout/>}/>
         <Route path="/congrats" element={<Congrats/>}/>
+        <Route path="/" element={<Home/>}/>
    
 
 
