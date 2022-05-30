@@ -50,9 +50,9 @@ console.log(data);
             <form>
               <div className="block block1">
                 <div className="Msing">
-                  <label>Event:</label>
+                  <label style={{marginRight:5}}>Event:</label>
 
-                  <select id="drop"
+                  {/* <select id="drop"
                     className="event"
                     onChange={(e) => {
                    
@@ -68,7 +68,10 @@ console.log(data);
                     <option value="2">Party Look</option>
                     <option value="3">Editorial</option>
                     <option value="4">Pre-wedding</option>
-                  </select>
+                  </select> */}
+                  <input type="text" value={data.title} style={{textAlign:"center",height:'37px',width:'124px',backgroundColor:'#eee'}}>
+
+                  </input>
                 </div>
                 <div className="Msing ">
                   <label for="start">Date:</label>
