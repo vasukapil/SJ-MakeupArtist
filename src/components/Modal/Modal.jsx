@@ -125,7 +125,7 @@ console.log(data);
                       <input
                         name="price"
                         {...register("price", { required: true })}
-                        value="38000"
+                        value={data.price.SJ[0]} 
                         type="radio"
                         className="radio2"
                       ></input>
@@ -164,7 +164,7 @@ console.log(data);
                       <input
                         name="price"
                         {...register("price", { required: true })}
-                        value="28000"
+                        value={data.price.Senior_SJ[0]}
                         type="radio"
                         className="radio2"
                       ></input>
@@ -178,7 +178,7 @@ console.log(data);
                       <input
                         name="price"
                         {...register("price", { required: true })}
-                        value="33000"
+                        value={data.price. Senior_SJ[1]}
                         type="radio"
                         className="radio2"
                       ></input>
@@ -195,7 +195,7 @@ console.log(data);
                       <input
                         name="price"
                         {...register("price", { required: true })}
-                        value="18000"
+                        value={data.price.Junior_SJ[0]}
                         type="radio"
                         className="radio2"
                       ></input>
@@ -212,7 +212,7 @@ console.log(data);
                       <input
                         name="price"
                         {...register("price", { required: true })}
-                        value="23000"
+                        value={data.price.Junior_SJ[1]}
                         type="radio"
                         className="radio2"
                       ></input>

@@ -28,6 +28,7 @@ function Index() {
   } = useForm();
   const onSubmit = (data) => {
     setDatta(data);
+    console.log(data);
     setpaBtn(true);
     setDiscription(`
         Email=${data.email},
