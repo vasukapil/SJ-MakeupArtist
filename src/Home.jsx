@@ -462,7 +462,7 @@ const Home = () => {
           <Coaching />
         </AccordionDetails>
       </Accordion>
-      <Social />
+     
       <TestimonialSlider />
 
       <Blog />
