@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Main from "./components/Main/Main";
 import Services from "./components/Service/Service";
-import Social from "./components/Socials/Social";
+
 import Testimonial from "./components/Testimonial/Testimonial";
 import Blog from "./components/Blog/Blog";
 import Accordian from "./components/Accordian/Accordian";
@@ -33,6 +33,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Group from "./components/Group/Group";
+import Social from "./components/Socials/Social";
 
 
 
@@ -462,6 +463,7 @@ const Home = () => {
           <Coaching />
         </AccordionDetails>
       </Accordion>
+      {/* <Social/> */}
      
       <TestimonialSlider />
 

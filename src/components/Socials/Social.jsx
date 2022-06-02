@@ -74,22 +74,22 @@ div{
 `
 
 const Social = () => {
-//     const [num,setNum]=React.useState(8);
-//     React.useEffect(() => {
-//         if(window.innerWidth>700){
-//             setNum(18);
-//             console.log(window.innerWidth);
-//         }else{
-//             setNum(9);
-//         }
-//       },[]);
+    const [num,setNum]=React.useState(8);
+    React.useEffect(() => {
+        if(window.innerWidth>700){
+            setNum(18);
+            console.log(window.innerWidth);
+        }else{
+            setNum(9);
+        }
+      },[]);
   return (
    
 
     <SocialMedia>
          <Helmet>
 
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+{/* <script src="https://apps.elfsight.com/p/platform.js" defer></script> */}
 
 </Helmet>
 
@@ -100,7 +100,7 @@ const Social = () => {
                     <img className="ins" src="./Images/image 19.png"></img>
                 </div>
         </Logo>
-            <div class="elfsight-app-99718820-f781-473d-ae34-e7367558be91"></div>
+            {/* <div class="elfsight-app-99718820-f781-473d-ae34-e7367558be91"></div> */}
             {/* <img  src="./Images/Group 46.png"></img>
             <img  src="./Images/Group 47.png"></img>
             <div className="imgone">
@@ -109,7 +109,9 @@ const Social = () => {
             <div className="imgtwo">
             <img src="./Images/Group 47.png"></img>
             </div> */}
-            {/* <InstagramFeed token={process.env.REACT_APP_INS_KEY}  counter={num}/>  */}
+           
+           <InstagramFeed token={process.env.REACT_APP_INS_KEY}  counter={num}/> 
+
     </SocialMedia>
   )
 }
