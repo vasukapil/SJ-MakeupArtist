@@ -463,7 +463,7 @@ const Home = () => {
           <Coaching />
         </AccordionDetails>
       </Accordion>
-      <Social/>
+      {/* <Social/> */}
      
       <TestimonialSlider />
 
