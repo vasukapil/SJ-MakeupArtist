@@ -464,8 +464,12 @@ const Home = () => {
         </AccordionDetails>
       </Accordion>
 <<<<<<< HEAD
+<<<<<<< HEAD
       {/* <Social/> */}
      
+=======
+      <Social />
+>>>>>>> parent of 76aedd8 (delete inatagram)
 =======
       <Social />
 >>>>>>> parent of 76aedd8 (delete inatagram)
