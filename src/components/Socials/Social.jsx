@@ -1,9 +1,10 @@
 import React,{useState,useEffect} from 'react'
 import styled from 'styled-components'
-import InstagramFeed  from 'instagram-feed'
+import InstagramFeed  from 'react-ig-feed'
+import 'react-ig-feed/dist/index.css'
+import {Helmet} from "react-helmet";
+import './Social.css'
 
- import {Helmet} from "react-helmet";
-// import './Social.css'
 
 const SocialMedia=styled.div`
 
@@ -72,44 +73,16 @@ div{
 `
 
 const Social = () => {
-//     const axios = require('axios');
 
-// axios({
-//     method: 'get',
-//     url: 'https://v1.nocodeapi.com/vasukapil03062022/instagram/wJNySbEFLNQECGnW', 
-//     params: {},
-// }).then(function (response) {
-//         // handle success
-//         console.log(response.data);
-// }).catch(function (error) {
-//         // handle error
-//         console.log(error);
-// })
-    const [num,setNum]=React.useState(8);
-//     const [insta, setInsta] = useState([]);
-//   useEffect(() => {
-//       async function loadPosts() {
-//           const response = await fetch('https://v1.nocodeapi.com/vasukapil03062022/instagram/wJNySbEFLNQECGnW');
-//           if(!response.ok) {
-//               // oups! something went wrong
-//               return;
-//           }
-  
-//           const insta = await response.json();
-//           setInsta(insta);
-//           console.log(insta);
-//       }
-  
-//       loadPosts();
-//  }, [])
-    React.useEffect(() => {
-        if(window.innerWidth>700){
-            setNum(18);
-            console.log(window.innerWidth);
-        }else{
-            setNum(9);
-        }
-      },[]);
+//     const [num,setNum]=React.useState(8);
+//     React.useEffect(() => {
+//         if(window.innerWidth>700){
+//             setNum(18);
+//             console.log(window.innerWidth);
+//         }else{
+//             setNum(9);
+//         }
+//       },[]);
   return (
    
 
@@ -117,9 +90,9 @@ const Social = () => {
          <Helmet>
 
 
-         <script src='https://unpkg.com/instagram-feed/dist/instagram-feed.js'></script> 
+       
 
-{/* <script src="https://apps.elfsight.com/p/platform.js" defer></script> */}
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
 
 </Helmet>
 
@@ -130,7 +103,7 @@ const Social = () => {
                     <img className="ins" src="./Images/image 19.png"></img>
                 </div>
         </Logo>
-            {/* <div class="elfsight-app-99718820-f781-473d-ae34-e7367558be91"></div> */}
+            <div class="elfsight-app-99718820-f781-473d-ae34-e7367558be91"></div>
             {/* <img  src="./Images/Group 46.png"></img>
             <img  src="./Images/Group 47.png"></img>
             <div className="imgone">
@@ -140,7 +113,7 @@ const Social = () => {
             <img src="./Images/Group 47.png"></img>
             </div> */}
            
-           <InstagramFeed token={process.env.REACT_APP_INS_KEY}  counter={num}/> 
+           {/* <InstagramFeed token={process.env.REACT_APP_INS_KEY}  counter={num}/>  */}
 
     </SocialMedia>
   )

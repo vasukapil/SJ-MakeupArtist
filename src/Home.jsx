@@ -465,10 +465,11 @@ const Home = () => {
       </Accordion>
 
       {/* <Social/> */}
+     
 
       <Social />
 
-      <Social />
+  
 
       <TestimonialSlider />
 

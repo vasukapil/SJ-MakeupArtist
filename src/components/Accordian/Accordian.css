@@ -2,14 +2,44 @@
     width: 900px;
     margin: auto;
 }
+.map{
+    width:1000px;
+    height: 600px;
+    border: 0;
+    
+    
+     
+    
+}
+.map-contain{
+    text-align: center;
+    margin: 40px;
+}
+
 
 h1 {
     text-align: center;
     padding-bottom: 69px;
     padding-top: 32px;
 }
+.mb-map{
+    display: none;
+}
 
 @media screen and (max-width: 750px) {
+    .map{
+        display: none;
+
+    }
+    .mb-map{
+        display: block;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+    .mb-map .map-mb{
+        width: 100%;
+    }
     .contain {
         width: 420px;
         display: flex;

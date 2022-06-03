@@ -18,6 +18,7 @@ const Accordian = () => {
 
 
   return (
+    <>
     <div className="contain">
         <h1>FAQ'S</h1>
     <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}
@@ -200,8 +201,21 @@ textAlign:'inherit'
         </Typography>
       </AccordionDetails>
     </Accordion>
+
+    
     
   </div>
+
+  <div className="map-contain">
+  <iframe className="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13767.769856120969!2d78.08343627934566!3d30.380991644575506!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x13e8933f0d1cb787!2sMakeup%20by%20Sohni%20Juneja!5e0!3m2!1sen!2sin!4v1654251573890!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div className="mb-map"> 
+  <iframe className="map-mb" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13767.769856120969!2d78.08343627934566!3d30.380991644575506!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x13e8933f0d1cb787!2sMakeup%20by%20Sohni%20Juneja!5e0!3m2!1sen!2sin!4v1654251573890!5m2!1sen!2sin" width="400" height="300" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  </>
+
+
   )
 }
 
