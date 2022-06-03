@@ -1,9 +1,9 @@
 import React,{useState,useEffect} from 'react'
 import styled from 'styled-components'
-import InstagramFeed  from 'react-ig-feed'
-import 'react-ig-feed/dist/index.css'
-import {Helmet} from "react-helmet";
-import './Social.css'
+// import InstagramFeed  from 'react-ig-feed'
+// import 'react-ig-feed/dist/index.css'
+ import {Helmet} from "react-helmet";
+// import './Social.css'
 
 const SocialMedia=styled.div`
 
@@ -92,14 +92,14 @@ const Social = () => {
   
 //       loadPosts();
 //  }, [])
-    React.useEffect(() => {
-        if(window.innerWidth>700){
-            setNum(18);
-            console.log(window.innerWidth);
-        }else{
-            setNum(9);
-        }
-      },[]);
+    // React.useEffect(() => {
+    //     if(window.innerWidth>700){
+    //         setNum(18);
+    //         console.log(window.innerWidth);
+    //     }else{
+    //         setNum(9);
+    //     }
+    //   },[]);
   return (
    
 
@@ -127,7 +127,7 @@ const Social = () => {
             <img src="./Images/Group 47.png"></img>
             </div> */}
            
-           <InstagramFeed token={process.env.REACT_APP_INS_KEY}  counter={num}/> 
+           {/* <InstagramFeed token={process.env.REACT_APP_INS_KEY}  counter={num}/>  */}
 
     </SocialMedia>
   )
