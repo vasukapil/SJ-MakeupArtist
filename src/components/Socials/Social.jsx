@@ -1,8 +1,9 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import styled from 'styled-components'
 import InstagramFeed  from 'react-ig-feed'
 import 'react-ig-feed/dist/index.css'
 import {Helmet} from "react-helmet";
+import './Social.css'
 
 const SocialMedia=styled.div`
 
@@ -75,6 +76,22 @@ div{
 
 const Social = () => {
     const [num,setNum]=React.useState(8);
+    const [insta, setInsta] = useState([]);
+  useEffect(() => {
+      async function loadPosts() {
+          const response = await fetch('https://v1.nocodeapi.com/sohnijunejamakeup_official/instagram/REACT_APP_INS_KEY');
+          if(!response.ok) {
+              // oups! something went wrong
+              return;
+          }
+  
+          const insta = await response.json();
+          setInsta(insta);
+          console.log(insta);
+      }
+  
+      loadPosts();
+ }, [])
     React.useEffect(() => {
         if(window.innerWidth>700){
             setNum(18);
