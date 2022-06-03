@@ -463,8 +463,12 @@ const Home = () => {
           <Coaching />
         </AccordionDetails>
       </Accordion>
+<<<<<<< HEAD
       {/* <Social/> */}
      
+=======
+      <Social />
+>>>>>>> parent of 76aedd8 (delete inatagram)
       <TestimonialSlider />
 
       <Blog />

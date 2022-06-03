@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import styled from 'styled-components'
-// import InstagramFeed  from 'react-ig-feed'
-// import 'react-ig-feed/dist/index.css'
+import InstagramFeed  from 'instagram-feed'
+
  import {Helmet} from "react-helmet";
 // import './Social.css'
 
@@ -35,9 +35,6 @@ align-items:center;
 
 div img{
     display:block;
-
-    
-
 }
 
 div{
@@ -75,11 +72,24 @@ div{
 `
 
 const Social = () => {
+//     const axios = require('axios');
+
+// axios({
+//     method: 'get',
+//     url: 'https://v1.nocodeapi.com/vasukapil03062022/instagram/wJNySbEFLNQECGnW', 
+//     params: {},
+// }).then(function (response) {
+//         // handle success
+//         console.log(response.data);
+// }).catch(function (error) {
+//         // handle error
+//         console.log(error);
+// })
     const [num,setNum]=React.useState(8);
 //     const [insta, setInsta] = useState([]);
 //   useEffect(() => {
 //       async function loadPosts() {
-//           const response = await fetch('https://v1.nocodeapi.com/sohnijunejamakeup_official/instagram/REACT_APP_INS_KEY');
+//           const response = await fetch('https://v1.nocodeapi.com/vasukapil03062022/instagram/wJNySbEFLNQECGnW');
 //           if(!response.ok) {
 //               // oups! something went wrong
 //               return;
@@ -92,19 +102,22 @@ const Social = () => {
   
 //       loadPosts();
 //  }, [])
-    // React.useEffect(() => {
-    //     if(window.innerWidth>700){
-    //         setNum(18);
-    //         console.log(window.innerWidth);
-    //     }else{
-    //         setNum(9);
-    //     }
-    //   },[]);
+    React.useEffect(() => {
+        if(window.innerWidth>700){
+            setNum(18);
+            console.log(window.innerWidth);
+        }else{
+            setNum(9);
+        }
+      },[]);
   return (
    
 
     <SocialMedia>
          <Helmet>
+
+
+         <script src='https://unpkg.com/instagram-feed/dist/instagram-feed.js'></script> 
 
 {/* <script src="https://apps.elfsight.com/p/platform.js" defer></script> */}
 
@@ -127,7 +140,7 @@ const Social = () => {
             <img src="./Images/Group 47.png"></img>
             </div> */}
            
-           {/* <InstagramFeed token={process.env.REACT_APP_INS_KEY}  counter={num}/>  */}
+           <InstagramFeed token={process.env.REACT_APP_INS_KEY}  counter={num}/> 
 
     </SocialMedia>
   )
