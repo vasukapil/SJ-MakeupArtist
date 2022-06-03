@@ -76,22 +76,22 @@ div{
 
 const Social = () => {
     const [num,setNum]=React.useState(8);
-    const [insta, setInsta] = useState([]);
-  useEffect(() => {
-      async function loadPosts() {
-          const response = await fetch('https://v1.nocodeapi.com/sohnijunejamakeup_official/instagram/REACT_APP_INS_KEY');
-          if(!response.ok) {
-              // oups! something went wrong
-              return;
-          }
+//     const [insta, setInsta] = useState([]);
+//   useEffect(() => {
+//       async function loadPosts() {
+//           const response = await fetch('https://v1.nocodeapi.com/sohnijunejamakeup_official/instagram/REACT_APP_INS_KEY');
+//           if(!response.ok) {
+//               // oups! something went wrong
+//               return;
+//           }
   
-          const insta = await response.json();
-          setInsta(insta);
-          console.log(insta);
-      }
+//           const insta = await response.json();
+//           setInsta(insta);
+//           console.log(insta);
+//       }
   
-      loadPosts();
- }, [])
+//       loadPosts();
+//  }, [])
     React.useEffect(() => {
         if(window.innerWidth>700){
             setNum(18);
